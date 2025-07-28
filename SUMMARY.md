@@ -2,14 +2,14 @@
 
 ## Firmware
 
-* [Why?](README.md)
+* [About](README.md)
 * [Supported Commands](firmware/supported-commands/README.md)
   * [GCodes](firmware/supported-commands/gcodes.md)
   * [MCodes](firmware/supported-commands/mcodes.md)
 
 ## Controller
 
-* [Why?](controller/why.md)
+* [About](controller/about.md)
 * [Where to Get](controller/where-to-get.md)
 * [Supported OS](controller/supported-os.md)
 * [Features](controller/features/README.md)

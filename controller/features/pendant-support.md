@@ -27,9 +27,9 @@ To enable the WBH04 pendant support in the Controller:
 
 The WBH04 pendant devices have action buttons which can also be set to run Macros. In the Pendant configuration screen is the setting _**`Primary button action is`**_ which defines what happens when the button is pressed. This can be _**Key-specific Action**_ or _**Macro**_. The opposite of this setting is what will occur when the button is pressed at the same time as the _**FN**_ key.
 
-For example if the _**`Primary button action is` setting is set to Key-specific Action**_, pressing the key<img src="../../.gitbook/assets/image.png" alt="" data-size="line">will increase the Feed override by 10%. Pushing the <img src="../../.gitbook/assets/image (1).png" alt="" data-size="line">+<img src="../../.gitbook/assets/image.png" alt="" data-size="line"> will run Macro #1.
+For example if the _**`Primary button action is` setting is set to Key-specific Action**_, pressing the key<img src="../../.gitbook/assets/image (1).png" alt="" data-size="line">will increase the Feed override by 10%. Pushing the <img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="line">+<img src="../../.gitbook/assets/image (1).png" alt="" data-size="line"> will run Macro #1.
 
-For example if the _**`Primary button action is` setting is set to Macro**_, pressing the key<img src="../../.gitbook/assets/image.png" alt="" data-size="line">will run Macro #1. Pushing the <img src="../../.gitbook/assets/image (1).png" alt="" data-size="line">+<img src="../../.gitbook/assets/image.png" alt="" data-size="line"> will run increase the Feed override by 10%
+For example if the _**`Primary button action is` setting is set to Macro**_, pressing the key<img src="../../.gitbook/assets/image (1).png" alt="" data-size="line">will run Macro #1. Pushing the <img src="../../.gitbook/assets/image (1) (1).png" alt="" data-size="line">+<img src="../../.gitbook/assets/image (1).png" alt="" data-size="line"> will run increase the Feed override by 10%
 
 ### Setting Macros
 
@@ -43,7 +43,7 @@ This will bring up the Macro edit screen:
 
 ## Usage
 
-To jogging with the pendant you must have the <img src="../../.gitbook/assets/image (5).png" alt="Enable Pendant" data-size="line"> enabled in the main control screen. The button is blue when the pendant based jogging is enabled. The action/macro buttons will work irrespective if <img src="../../.gitbook/assets/image (5).png" alt="Enable Pendant" data-size="line"> is enabled or not.
+To jog with the pendant you must have the <img src="../../.gitbook/assets/image (5).png" alt="Enable Pendant" data-size="line"> enabled on the main control screen. The button is blue when pendant based jogging is enabled. The action/macro buttons will work irrespective if <img src="../../.gitbook/assets/image (5).png" alt="Enable Pendant" data-size="line"> is enabled or not.
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
@@ -74,6 +74,8 @@ There are a number of known limitations to the WBH04 pendant/integration.
 
 #### Movement step is shown as % on LCD
 
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="188"><figcaption></figcaption></figure>
+
 The pendant LCD screen always shows the movement step (STP) as a %, however the actual movement size per rotary dial "click" is defined by the white text in mm:
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt="" width="188"><figcaption></figcaption></figure>
@@ -88,4 +90,4 @@ Due to a number of factors relating to command queue processing on the machine w
 
 #### Invalid Axis Values
 
-When the Axis selector is set to Off or the Controller has not yet connected to the machine, the axis position values on the Pendant screen can display invalid values.When the Axis selector is set to Off
+When the Axis selector is set to Off or the Controller has not yet connected to the machine, the axis position values on the Pendant screen can display incorrect values.&#x20;

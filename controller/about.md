@@ -1,4 +1,4 @@
-# Why?
+# About
 
 The Community developed version of the Carvera Controller has a number of benefits and fixes above and beyond the Makera software. See the [CHANGELOG](https://github.com/Carvera-Community/Carvera_Controller/blob/develop/CHANGELOG.md) and [screenshots](https://github.com/Carvera-Community/Carvera_Controller/blob/develop/docs/screenshots) for more details.
 
@@ -23,3 +23,35 @@ The Community developed version of the Carvera Controller has a number of benefi
   * **Previous** file browsing location is **reopened** and **previously** used locations stored to **quick access list**
   * **Greater speed/feed** override scaling range from **10%** and up to **300%**
   * **Improved** 3D gcode visualisations, including **correct rendering** of movements around the **A axis**
+
+## **Screenshots**
+
+Please note that the below screenshots may be from previous versions.
+
+<figure><img src="../.gitbook/assets/3d_probe_inside_corner.png" alt=""><figcaption><p>3D Probe Inside Corner</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/3d_probe_outside_corner.png" alt=""><figcaption><p>3D Probe Inside Corner</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/3d_probe_pocket.png" alt=""><figcaption><p>3D Probe Pocket</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/3d_probe_single_axis.png" alt=""><figcaption><p>3D Probe Single axis</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/3d_visualisation.png" alt=""><figcaption><p>3D Visualisation</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/autolevel_with_offsets_config.png" alt=""><figcaption><p>Autolevel with Offset Config</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/collet_clamp_dropdown.png" alt=""><figcaption><p>Collet clamp dropdown</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/config_and_run_with_offsets_and_background_image.png" alt=""><figcaption><p>Config and Run with Offsets and Background Image</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/controller_settings.png" alt=""><figcaption><p>Controller Settings</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/custom_tool_numbers.png" alt=""><figcaption><p>Custom Tool Numbers</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/laser_safety_prompt.png" alt=""><figcaption><p>Laser Safety Prompt</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/reconnect_button (1).png" alt=""><figcaption><p>Reconnect Button</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/rotated_wcs_support.png" alt=""><figcaption><p>Rotated WCS Support in Config and Run preview</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/unlock_w_safez_move (1).png" alt=""><figcaption><p>Unlock and Move to Safe Z</p></figcaption></figure>
