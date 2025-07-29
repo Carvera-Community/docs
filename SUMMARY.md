@@ -1,11 +1,6 @@
 # Table of contents
 
-## Firmware
-
-* [About](README.md)
-* [Supported Commands](firmware/supported-commands/README.md)
-  * [GCodes](firmware/supported-commands/gcodes.md)
-  * [MCodes](firmware/supported-commands/mcodes.md)
+* [Community Software Documentation](README.md)
 
 ## Controller
 
@@ -18,6 +13,14 @@
   * [WCS Rotation](controller/features/wcs-rotation.md)
   * [Controller in a Web Browser](controller/features/controller-in-a-web-browser.md)
 
-## Post Processors
+## Firmware
 
-* [Fusion 360](post-processors/fusion-360.md)
+* [About](<README (1).md>)
+* [Supported Commands](firmware/supported-commands/README.md)
+  * [GCodes](firmware/supported-commands/gcodes.md)
+  * [MCodes](firmware/supported-commands/mcodes.md)
+
+## Other
+
+* [Fusion 360](other/fusion-360.md)
+* [HSM Tool Library](other/hsm-tool-library.md)

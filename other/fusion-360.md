@@ -1,6 +1,6 @@
 # Fusion 360
 
-The Carvera Community Fusion 360 Post-Processor can be downloaded from [here](https://github.com/Carvera-Community/Carvera_Community_Profiles/releases).
+The Carvera Community Fusion 360 profiles can be downloaded from [here](https://github.com/Carvera-Community/Carvera_Community_Profiles/releases).
 
 The Community developed version of the post-processor has a number of benefits and fixes above and beyond the Makera software:
 
@@ -9,6 +9,12 @@ The Community developed version of the post-processor has a number of benefits a
 * Ability to pass through Gcode directly into the nc files as an operation
 * Ability to run machine specific macros such as turning vacuum/lights on/off using Action commands
 * Allows the definition of tools numbered >6
+
+## Installation
+
+{% embed url="https://youtu.be/1xPcono_qTk" %}
+
+## Post-Processor
 
 ### Action Commands
 
@@ -32,4 +38,6 @@ The following ACTION commands are supported by this post:\
 * LightOn - turns on the light
 * LightOff - turns off the light
 * ShrinkA - Shrinks the A axis with offset 0, so A365 will turn into A5
+
+
 
