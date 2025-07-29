@@ -1,3 +1,7 @@
+---
+description: Docker Container support was added in version 0.10.0
+---
+
 # Controller in a Web Browser
 
 For users comfortable running Linux Containers the controller can be under Docker, which is then access via a browser or VNC client. This enables you to run the controller on a remote machine and access it from a web browser from multiple locations, and thus overcome the single-network-connection at a time limitation.

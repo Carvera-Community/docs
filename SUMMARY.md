@@ -14,7 +14,7 @@
 * [Supported OS](controller/supported-os.md)
 * [Features](controller/features/README.md)
   * [Pendant Support](controller/features/pendant-support.md)
-  * [Multiple Workspaces](controller/features/multiple-workspaces.md)
+  * [Workspace Management](controller/features/workspace-management.md)
   * [Rotated WCS](controller/features/rotated-wcs.md)
   * [Controller in a Web Browser](controller/features/controller-in-a-web-browser.md)
 

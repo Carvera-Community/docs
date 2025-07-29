@@ -55,3 +55,11 @@ Please note that the below screenshots may be from previous versions.
 <figure><img src="../.gitbook/assets/rotated_wcs_support.png" alt=""><figcaption><p>Rotated WCS Support in Config and Run preview</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/unlock_w_safez_move (1).png" alt=""><figcaption><p>Unlock and Move to Safe Z</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/workspace_management_topbar.png" alt=""><figcaption><p>Workspace Management Top Bar</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/workspace_settings.png" alt=""><figcaption><p>Workspace Settings</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/pendant_config.png" alt=""><figcaption><p>Pendant Config</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/controller_in_web_browser.png" alt=""><figcaption><p>Carvera Controller in a Web Browser (via Container)</p></figcaption></figure>
