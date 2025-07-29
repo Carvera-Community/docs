@@ -1,9 +1,11 @@
 # About
 
-The Community developed version of the Carvera Controller has a number of benefits and fixes above and beyond the Makera software. See the [CHANGELOG](https://github.com/Carvera-Community/Carvera_Controller/blob/develop/CHANGELOG.md) and [screenshots](https://github.com/Carvera-Community/Carvera_Controller/blob/develop/docs/screenshots) for more details.
+The Community developed version of the Carvera Controller has a number of benefits and fixes above and beyond the Makera software. See the [CHANGELOG](https://github.com/Carvera-Community/Carvera_Controller/blob/develop/CHANGELOG.md) and [screenshots](about.md#screenshots) for more details.
 
 * **3-axis** and advanced **probing** UI screens for various geometries (**corners**, **axis**, **bore/pocket**, **angles**) for use with a [true 3D touch probe](https://www.instructables.com/Carvera-Touch-Probe-Modifications/) (not the included XYZ probe block)
 * [**Pendant** device support](features/pendant-support.md) of **WHB04** family of **MPG devices**. Such devices can be used to jog, run macros, and perform feed/speed overrides.
+* [**Workspace Management**](features/workspace-management.md) options supporting multiple Work Coordinate Systems (WCS) From G54 to G59.3
+* [WCS Rotation](features/wcs-rotation.md) capability meaning no more tramming of vises for alignment
 * Options to **reduce** the **autolevel** probe **area** to avoid probing obstacles
 * **Tooltip support** for user guidance with over 110 tips and counting
 * **Background images** for bolt hole positions in probe/start screens; users can add their own too
@@ -15,7 +17,7 @@ The Community developed version of the Carvera Controller has a number of benefi
 * **Multiple developers** with their own **Carvera** machines _"drinking their own \[software] champagne"_ daily and working to improve the machine's capabilities.
 * Various **Quality-of-life** improvements:
   * **Controller config settings** (UI Density, screensaver disable, Allow MDI while machine running, virtual keyboard)
-  * **Enclosure light** and **External Ouput** switch toggle in the center control panel
+  * **Enclosure light** and **External Output** switch toggle in the center control panel
   * Machine **reconnect** functionality with stored last used **machine network address**
   * **Set Origin** Screen pre-populated with **current** offset values
   * **Collet Clamp/Unclamp** buttons in Tool Changer menu for the original Carvera
@@ -26,7 +28,7 @@ The Community developed version of the Carvera Controller has a number of benefi
 
 ## **Screenshots**
 
-Please note that the below screenshots may be from previous versions.
+Please note that the below screenshots maybe from previous versions.
 
 <figure><img src="../.gitbook/assets/3d_probe_inside_corner.png" alt=""><figcaption><p>3D Probe Inside Corner</p></figcaption></figure>
 

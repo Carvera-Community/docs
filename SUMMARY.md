@@ -15,7 +15,7 @@
 * [Features](controller/features/README.md)
   * [Pendant Support](controller/features/pendant-support.md)
   * [Workspace Management](controller/features/workspace-management.md)
-  * [Rotated WCS](controller/features/rotated-wcs.md)
+  * [WCS Rotation](controller/features/wcs-rotation.md)
   * [Controller in a Web Browser](controller/features/controller-in-a-web-browser.md)
 
 ## Post Processors
