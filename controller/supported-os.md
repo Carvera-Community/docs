@@ -9,9 +9,9 @@ The Controller software works on the following systems:
 * Linux using aarch64 CPUs (eg Raspberyy Pi 3+) running a Linux distribution with Glibc 2.39 or above (eg. Ubuntu 24.04 or higher)
 * Apple iPad with iOS 17.6 or higher
 * Android devices with Android 11 or higher running ARM 32 and 64-bit processors (ARMv7a and ARMv8a) and x86\_64
-* Other systems might be work via the Python Package, see below for more details.
+* Other systems might be work via the Python Package, see [Python Package](where-to-get.md#python-package) for more details.
 
-### Additional Notes:
+## OS Specific Notes
 
 ### Android
 
@@ -28,3 +28,7 @@ To use it, first make it executable (`chmod +x carveracontroller-community-<vers
 Then you will be able to run it.
 
 If you want a shortcut, consider using [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher).
+
+### iOS
+
+The iOS build of the Carvera Community Controller is beta, and may lag behind other releases due to Apple App Store review. You can sign up for the beta access [here](https://testflight.apple.com/join/We3Qt8GD).

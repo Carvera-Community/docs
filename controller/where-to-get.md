@@ -1,6 +1,6 @@
 # Where to Get
 
-### Latest Release Version
+## Latest Release Version
 
 See the assets section of [latest release](https://github.com/carvera-community/carvera_controller/releases/latest) for installation packages for your system.
 
@@ -12,11 +12,11 @@ See the assets section of [latest release](https://github.com/carvera-community/
 * carveracontroller-community-\<version>.apk - Android installable package
 * carvera\_controller\_community-\<version>-py3-none-any.whl - Python wheel package
 
-### Latest Development Version
+## Latest Development Version
 
 Dev builds of Carvera Controller Community are automatically compiled after every new commit to the `develop` branch. This means that each build incorporates the most recent changes and improvements. While these builds offer a glimpse into the ongoing development of Carvera Controller, keep in mind that they are still works in progress and may contain bugs or unstable features. The latest dev build files can always be accessed [here](https://github.com/Carvera-Community/Carvera_Controller/releases/tag/dev). The release notes section on that page shows what new functionality has been added.
 
-### Python Package
+## Python Package
 
 It's best to use one of the pre-built packages as they they have frozen versions of tested dependencies and python interpreter, however if you prefer the software can be installed as a Python package. This might allow you to use a unsupported platform (eg raspi 1) provided that the dependencies can be met.
 
@@ -30,7 +30,7 @@ Once installed it can be run via the module
 python3 -m carveracontroller
 ```
 
-### Linux Container
+## Linux Container
 
 The container image is available on [GitHub Container Registry](https://ghcr.io/carvera-community/carvera-controller) with the following tag patterns:
 
