@@ -72,7 +72,7 @@ sudo udevadm trigger
 
 There are a number of known limitations to the WBH04 pendant/integration.
 
-#### Movement step is shown as % on LCD
+### Movement step is shown as % on LCD
 
 <figure><img src="../../.gitbook/assets/image.png" alt="" width="188"><figcaption></figcaption></figure>
 
@@ -80,14 +80,14 @@ The pendant LCD screen always shows the movement step (STP) as a %, however the 
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt="" width="188"><figcaption></figcaption></figure>
 
-#### Step/Continuous Buttons don't do anything
+### Step/Continuous Buttons don't do anything
 
 &#x20;Currently the machine firmware doesn't support continuous jogging mode, thus the jog movements are always done in steps based on the speed selected by the movement dial. The step/continuous buttons don't do anything when pushed
 
-#### Small movements appear to "cog"
+### Small movements appear to "cog"
 
 Due to a number of factors relating to command queue processing on the machine whenever the machine moves from standstill there are a few millisecond pauses between movement steps compared to when multiple jog steps are "enqueued". No steps are missed.
 
-#### Invalid Axis Values
+### Invalid Axis Values
 
 When the Axis selector is set to Off or the Controller has not yet connected to the machine, the axis position values on the Pendant screen can display incorrect values.&#x20;
