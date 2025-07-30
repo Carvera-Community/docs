@@ -20,7 +20,7 @@ The Community developed version of the post-processor has a number of benefits a
 
 {% stepper %}
 {% step %}
-### Add a Manual NC operation
+Add a Manual NC operation
 
 Add a Manual NC operations via Setup->Manual NC
 
@@ -28,13 +28,13 @@ Add a Manual NC operations via Setup->Manual NC
 {% endstep %}
 
 {% step %}
-### Set Manual NC type to Action
+Set Manual NC type to Action
 
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-### Input the Action command to perform
+Input the Action command to perform
 
 For example ShrinkA
 
