@@ -16,6 +16,8 @@
 ## Firmware
 
 * [About](<README (1).md>)
+* [Features](firmware/features/README.md)
+  * [3D Probe Support](firmware/features/3d-probe-support.md)
 * [Supported Commands](firmware/supported-commands/README.md)
   * [GCodes](firmware/supported-commands/gcodes.md)
   * [MCodes](firmware/supported-commands/mcodes.md)

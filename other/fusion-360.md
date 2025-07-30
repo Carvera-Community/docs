@@ -16,7 +16,35 @@ The Community developed version of the post-processor has a number of benefits a
 
 ## Post-Processor
 
-### Action Commands
+### How to use Action Commands
+
+{% stepper %}
+{% step %}
+### Add a Manual NC operation
+
+Add a Manual NC operations via Setup->Manual NC
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Set Manual NC type to Action
+
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+{% endstep %}
+
+{% step %}
+### Input the Action command to perform
+
+For example ShrinkA
+
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+
+{% endstep %}
+{% endstepper %}
+
+### Available Action Commands
 
 The following ACTION commands are supported by this post:\
 
