@@ -30,7 +30,7 @@ No need to tram it in!
 
 Use the Angle probing with the "Set WCS Rotation" option enabled to probe the fixed jaw of your vise
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -44,14 +44,14 @@ Now the WCS rotation correction has been set continue as normal probing your WCS
 
 If you know the rotation angle you can apply it directly via the `Set Rotation option` on the WCS Workspace Top Bar dropdown&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## How to know if WCS Rotation Correction is being Applied?
 
 You can quickly tell if a WCS Rotation Correction is being applied as the WCS WorkSpace Top Bar button text will be Blue and a rotation degree will be shown below it:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Clearing a WCS Rotation <a href="#clearing-a-rotation" id="clearing-a-rotation"></a>
 
-The WCS Rotation can be cleared by `Set Rotation option` to 0 degrees, or using the Advanced WCS Settings screen and pushing <img src="../../.gitbook/assets/image (3).png" alt="Clear Rotation" data-size="line"> on the workspace.
+The WCS Rotation can be cleared by `Set Rotation option` to 0 degrees, or using the Advanced WCS Settings screen and pushing <img src="../../.gitbook/assets/image (3) (1).png" alt="Clear Rotation" data-size="line"> on the workspace.

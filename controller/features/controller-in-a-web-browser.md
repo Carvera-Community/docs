@@ -6,7 +6,7 @@ description: Docker Container support was added in version 0.10.0
 
 For users comfortable running Linux Containers the controller can be under Docker, which is then access via a browser or VNC client. This enables you to run the controller on a remote machine and access it from a web browser from multiple locations, and thus overcome the single-network-connection at a time limitation.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Carvera Controller in a Web Browser</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Carvera Controller in a Web Browser</p></figcaption></figure>
 
 The docker image expects a volume `/config` which is used to store the configuration and log files. If not provided, the application will run, but will not persist any configuration or log files.
 

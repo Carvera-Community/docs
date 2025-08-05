@@ -15,8 +15,8 @@ Multiple WCS are useful for:
 * Managing multi-operation projects: For complex jobs requiring multiple machining operations or tool changes, you can assign each operation its own WCS, making it easier to maintain consistency.
 * Training and testing: Multiple users can each have their own WCS for testing and practice without interfering with each other’s offsets.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Workspace Top Bar Dropdown</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Workspace Top Bar Dropdown</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/workspace_settings.png" alt=""><figcaption><p>Advanced WCS Settings Screen</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Selected Workspace is displayed in Config and Run screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Selected Workspace is displayed in Config and Run screen</p></figcaption></figure>
