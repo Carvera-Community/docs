@@ -2,5 +2,5 @@
 hidden: true
 ---
 
-# 3D Probe Support
+# 3D Probing
 

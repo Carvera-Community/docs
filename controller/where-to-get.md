@@ -51,3 +51,7 @@ docker run -p 5900:5900 -p 8080:8080 -v /path/to/config:/config ghcr.io/carvera-
 ```
 
 The application can then be accessed via a web browser at `http://<host>:8080` or via a VNC client at `<host>:5900`. The VNC connection does not require a password. See [Controller in Web Browser](features/controller-in-a-web-browser.md) for more details on this functionality.
+
+## iOS
+
+The iOS build of the Carvera Community Controller is beta. You can sign up for the beta access [here](https://testflight.apple.com/join/We3Qt8GD).

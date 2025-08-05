@@ -2,7 +2,7 @@
 description: WCS Rotation was added in version 0.10.0
 ---
 
-# Rotated WCS
+# WCS Rotation
 
 If you are using a vise you will know that you need to tram the workholding to be parallel with the machine's X/Y axis, otherwise the workpiece will experience misalignment during machining, resulting in out-of-square parts, inaccurate features, and potential clamping issues that can compromise both dimensional accuracy and part quality.&#x20;
 
@@ -52,6 +52,6 @@ You can quickly tell if a WCS Rotation Correction is being applied as the WCS Wo
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-### Clearing a WCS Rotation <a href="#clearing-a-rotation" id="clearing-a-rotation"></a>
+## Clearing a WCS Rotation <a href="#clearing-a-rotation" id="clearing-a-rotation"></a>
 
 The WCS Rotation can be cleared by `Set Rotation option` to 0 degrees, or using the Advanced WCS Settings screen and pushing <img src="../../.gitbook/assets/image (3).png" alt="Clear Rotation" data-size="line"> on the workspace.
