@@ -42,7 +42,7 @@ After an M1 command pauses execution (when optional stop mode is enabled), you c
 
 {% tabs %}
 {% tab title=" Console Command" %}
-This is the primary way to resume from a suspended state, and what the Controller does when you push the resume button.
+This is the primary way to resume from a suspended state.
 
 ```
 resume
@@ -58,7 +58,7 @@ M601
 {% endtab %}
 
 {% tab title="Serial Console Character" %}
-Sending the tilde character (\~) via serial console will perform a "safe resume".
+Sending the tilde character (\~) via serial console will perform a "safe resume". This is what the [Carvera Controller](broken-reference) does when you use the resume button.
 
 ```
 ~
