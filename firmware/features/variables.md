@@ -21,28 +21,29 @@ The syntax for variable assignment is `#variable_number = expression`
 3. Probe Variables (#151-#156): Read-only, set by probe commands
 4. System Variables: Most are read-only, except #150
 
-| Variable Name | Function                                          | read only (n- never, c - currently y- always) |
-| ------------- | ------------------------------------------------- | --------------------------------------------- |
-| #101-120      | general purpose variables. not saved on power off | n                                             |
-| #501-520      | general purpose variables. saved on power off     | n                                             |
-| #150          | probe tip diameter                                | a                                             |
-| #151          | probed diameter X                                 | a                                             |
-| #152          | probed diameter y                                 | a                                             |
-| #153          | probed angle value                                | a                                             |
-| #154          | probed corner center X                            | a                                             |
-| #155          | probed corner center Y                            | a                                             |
-| #156          | probed z position (M466)                          | a                                             |
-| #2000         | current tool length offset                        | a                                             |
-| #3026         | tool in spindle                                   | c                                             |
-| #3027         | spindleRPM                                        | n                                             |
-| #5021         | machine position X Axis                           | n                                             |
-| #5022         | machine position Y Axis                           | n                                             |
-| #5023         | machine position Z Axis                           | n                                             |
-| #5024         | machine position A Axis                           | n                                             |
-| #5041         | Current WCS position X axis                       | n                                             |
-| #5042         | Current WCS position Y axis                       | n                                             |
-| #5043         | Current WCS position Z axis                       | n                                             |
-| #5044         | Current WCS position A axis                       | n                                             |
+| Variable Name | Function                                          | read only? |
+| ------------- | ------------------------------------------------- | ---------- |
+| #101-120      | general purpose variables. not saved on power off | n          |
+| #501-520      | general purpose variables. saved on power off     | n          |
+| #150          | probe tip diameter                                | y          |
+| #151          | probed diameter X                                 | y          |
+| #152          | probed diameter y                                 | y          |
+| #153          | probed angle value                                | y          |
+| #154          | probed corner center X                            | y          |
+| #155          | probed corner center Y                            | y          |
+| #156          | probed z position (M466)                          | y          |
+| #2000         | current tool length offset                        | y          |
+| #3026         | tool in spindle                                   | y          |
+| #3027         | spindleRPM                                        | y          |
+| #3033         | Is Optional Stop Mode Enabled?                    | y          |
+| #5021         | machine position X Axis                           | y          |
+| #5022         | machine position Y Axis                           | y          |
+| #5023         | machine position Z Axis                           | y          |
+| #5024         | machine position A Axis                           | y          |
+| #5041         | Current WCS position X axis                       | y          |
+| #5042         | Current WCS position Y axis                       | y          |
+| #5043         | Current WCS position Z axis                       | y          |
+| #5044         | Current WCS position A axis                       | y          |
 
 ## Examples
 
