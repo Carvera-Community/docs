@@ -51,14 +51,15 @@ This will save the value to variable #150. Use `config-set sd zprobe.probe_tip_d
 ```
 M460 X10 Y10         ; Calibrate probe using bore with 10mm diameter
 M460.2 X10           ; Calibrate probe using boss with 10mm diameter
-M460.3               ; Calibrate probe using anchor 2 bracket
+M460.3               ; Calibrate probe using anchor 2 bracket. Uses anchor_width 
+                       config variable
 ```
 
 ## M460.1 - Calibrate Probe with Bore
 
 ### Description
 
-M460.1 calibrates the probe tip diameter using a known bore diameter. The probe measures the bore multiple times and calculates the average to determine the probe tip diameter.
+M460.1 calibrates the probe tip diameter using a known bore diameter. The probe measures the bore multiple times and calculates the average to determine the probe tip diameter. Check MDI after running this command for console command to run.
 
 ### Parameters
 
