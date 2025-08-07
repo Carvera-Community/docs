@@ -14,4 +14,4 @@ The Community developed version of the Carvera Firmware has a number of benefits
 * [Line by line execution](firmware/supported-commands/mcodes/line-by-line-execution-mode.md) mode
 * [Tool Length Offset Management](firmware/supported-commands/mcodes/tool-offset-management.md) options such as setting tool length offset via a known offset (like a pin) and testing for tool breakage
 
-See [version.txt](https://github.com/Carvera-Community/Carvera_Community_Firmware/blob/Dev/version.txt) for more detailed change log of changes.
+See the [youtube page](https://www.youtube.com/@carvera-community) and [version.txt](https://github.com/Carvera-Community/Carvera_Community_Firmware/blob/Dev/version.txt) for more detailed change log of changes.
