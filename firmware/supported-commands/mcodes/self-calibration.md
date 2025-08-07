@@ -10,7 +10,7 @@ This functionality requires a 3D Touch Probe
 
 ### Description
 
-M469.1 performs calibration of Anchor 1 position using a 3-axis probe. This is part of the ATC (Automatic Tool Changer) calibration system.
+M469.1 performs calibration of Anchor 1 position using a 3-axis probe. This is part of the ATC (Automatic Tool Changer) calibration system. The probe will move to the anchor 1 position and automatically perform the probing operation. Once the operation is done, check the MDI for results and run the specified config command.
 
 ### Parameters
 
@@ -29,7 +29,7 @@ M469.1 I1           ; Calibrate Anchor 1 with inverted probe
 
 ### Description
 
-M469.2 performs calibration of Anchor 2 position using a 3-axis probe. This is part of the ATC calibration system.
+M469.2 performs calibration of Anchor 2 position using a 3-axis probe. This is part of the ATC calibration system. The probe will move to the anchor 2 position and automatically perform the probing operation. Once the operation is done, check the MDI for results and run the specified config command.
 
 ### Parameters
 
@@ -48,7 +48,7 @@ M469.2 I1           ; Calibrate Anchor 2 with inverted probe
 
 ### Description
 
-M469.4 calibrates the A-axis headstock center position using a 3-axis probe.
+M469.4 calibrates the A-axis headstock center position using a 3-axis probe. The probe will move to the rotation offset location for the existing 4th axis and automatically perform the probing operation. Once the operation is done, check the MDI for results and run the specified config command.
 
 ### Parameters
 
@@ -69,7 +69,7 @@ M469.4 I1 Y50 E10   ; Calibrate with custom parameters
 
 ### Description
 
-M469.5 calibrates the A-axis center height using a 3-axis probe.
+M469.5 calibrates the A-axis center height using a 3-axis probe. Full documentation in the works
 
 ### Parameters
 
