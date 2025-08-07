@@ -2,7 +2,7 @@
 
 The Community developed version of the Carvera Firmware has a number of benefits and fixes above and beyond the Makera software:
 
-* Support for 3D Touch Probe devices
+* Support for 3D Touch Probe devices [Commands](firmware/supported-commands/mcodes/probing.md)  [Probe Install](https://www.instructables.com/Carvera-Touch-Probe-Modifications/)
 * Ability to use LinuxCNC/Faunic style [math](firmware/features/math.md) and [variable](firmware/features/variables.md) storage
 * [File macros](firmware/supported-commands/mcodes/macros.md) to run one file inside another
 * Ability to use multiple workspaces not just G54
