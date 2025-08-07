@@ -9,3 +9,5 @@ The Carvera Community has developed versions of software that that has features 
 [Fusion 360 Post Processor](other/fusion-360.md)
 
 [HSM Tool Library](other/hsm-tool-library.md)
+
+[Youtube Page](https://www.youtube.com/@carvera-community)
