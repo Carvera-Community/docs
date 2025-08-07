@@ -8,6 +8,29 @@ This functionality requires a 3D Touch Probe
 
 {% embed url="https://youtu.be/wWnBR6jS3mM" %}
 
+## Probing Command Variables
+
+When probing surfaces, a few variables are always set if the probing feature supports them
+
+* \#153: the angle probed in degrees (if the angle is probed)
+* \#154: X coordinate (if X axis was probed)
+* \#155: Y coordinate (if Y axis was probed)
+* \#156: Z coordinate (if Z axis was probed)
+
+## Probing Image Breakdown
+
+<figure><img src="../../../.gitbook/assets/inX+Y+.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+When selecting a probing operation in the controller the graphics have a set up standards\
+
+
+* The probe start position is always denoted by a red dot, usually surrounded by a crosshair
+* The final desired probe position is denoted by a blue dot if it is different than the starting crosshair
+* Probing moves are denoted in bright blue with arrows
+* Colored green, red, or dark blue lines denote dimension lines
+
 ## M460 - Probe Calibration
 
 ### Description
@@ -55,7 +78,7 @@ M460.1 X10 Y10 R3    ; Calibrate with 3 repeat measurements
 
 ### Description
 
-M461 probes a bore or rectangular pocket to find its center and measure its diameter. The probe moves in both positive and negative directions along the specified axes to find the edges, then calculates the center point and diameter.
+M461 probes a bore or rectangular pocket to find its center and measure its diameter. The probe moves in both positive and negative directions along the specified axes to find the edges, then calculates the center point and diameter. The initial probe down move will touch off on any surface it hits and retract slightly before probing sideways. If no surface is hit it will continue without retracting.
 
 Ensure the probe is positioned at roughly the center of the bore before command execution.
 
@@ -64,6 +87,8 @@ When the macro completes the program will have saved the distance along the X ax
 All parameters are optional but you must have 1 of X or Y, if you supply only 1 of them it will only probe in that direction.
 
 <figure><img src="../../../.gitbook/assets/inside_center_circular_bore.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/inside_center_motion_overview.png" alt=""><figcaption></figcaption></figure>
 
 ### Parameters
 
@@ -91,7 +116,7 @@ M461 X10 Y10 S1        ; Probe and save position as WCS origin
 
 ### Description
 
-M462 probes a boss or rectangular block to find its center and measure its diameter. Unlike M461 (bore probing), this command probes the outside surfaces of a feature. The probe moves to the outside of the feature, then probes both sides to find the edges and calculate the center point and diameter.
+M462 probes a boss or rectangular block to find its center and measure its diameter. Unlike M461 (bore probing), this command probes the outside surfaces of a feature. The probe moves to the outside of the feature, then probes both sides to find the edges and calculate the center point and diameter. Any time the probe is moving downward during this function, if it hits a surface it will retract slightly
 
 Ensure the probe is positioned at roughly the center of the boss/block before command execution.
 
@@ -100,6 +125,8 @@ When the macro completes the program will have saved the distance along the X ax
 
 
 <figure><img src="../../../.gitbook/assets/outside_center_circular_boss.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/outside_center_motion_overview.png" alt=""><figcaption></figcaption></figure>
 
 ### Parameters
 
