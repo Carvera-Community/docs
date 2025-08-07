@@ -1,6 +1,6 @@
 # Math
 
-The firmware supports extensive mathematical operations in G-code using expressions enclosed in square brackets `[]`. These expressions can be used in G-code parameters and with the [M118.1 P#](../supported-commands/mcodes/printing-text.md#m118.1-p-print-parameter-value) command to evaluate and print results.
+The firmware supports extensive mathematical operations in G-code using expressions enclosed in square brackets `[]`. These expressions can be used in G-code parameters and with the [M118.1 P#](../supported-commands/mcodes/printing-text.md#m118.1-p-print-parameter-value) command to evaluate and print results. Note that all functions using letters are lowercase and are case sensitive.
 
 ## Basic Arithmetic Operations
 
@@ -22,6 +22,7 @@ M118.1 P[4*3]        ; Returns result = 12.000
 M118.1 P[10/2]       ; Returns result = 5.000
 M118.1 P[2^3]        ; Returns result = 8.000
 M118.1 P[7mod3]      ; Returns result = 1.000
+G01 X[#103+2*#107]
 ```
 
 ## Mathematical Functions
