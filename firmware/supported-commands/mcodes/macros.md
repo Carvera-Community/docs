@@ -4,6 +4,27 @@
 
 {% embed url="https://youtu.be/28P2BoFFpco?t=455" %}
 
+## M97 - Goto Line Number
+
+### Description
+
+M97 is a command that allows you to jump to a specific line number in the currently loaded G-code file. This is useful for debugging, testing specific sections of code, or resuming execution from a particular point in the program.The command will:
+
+* Seek to the beginning of the current file
+* Count through the lines until it reaches the specified line number
+* Resume execution from that line
+* Display a confirmation message showing which line it jumped to
+
+### Parameters
+
+* P (required): The line number to jump to. Must be a positive integer.
+
+### Example
+
+```
+M97 P50
+```
+
 ## M98 - Call Macro
 
 ### Description
