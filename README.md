@@ -11,3 +11,7 @@ The Carvera Community has developed versions of software that that has features 
 [HSM Tool Library](other/hsm-tool-library.md)
 
 [Youtube Page](https://www.youtube.com/@carvera-community)
+
+[Trello Page](https://trello.com/b/qKxPlEbk/carvera-community-firmware-controller-and-other-tech)
+
+[Github Pages](https://github.com/Carvera-Community)
