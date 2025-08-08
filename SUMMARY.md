@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Community Software Documentation](README.md)
+* [Outside Resources](outside-resources.md)
 
 ## Controller
 
@@ -34,6 +35,10 @@
     * [Tool Offset Management](firmware/supported-commands/mcodes/tool-offset-management.md)
   * [Console Commands](firmware/supported-commands/console-commands/README.md)
     * [WCS Management](firmware/supported-commands/console-commands/wcs-management.md)
+* [Community Guides](firmware/community-guides/README.md)
+  * [Using Ball Endmills and V bits](firmware/community-guides/using-ball-endmills-and-v-bits.md)
+  * [4th Axis Chuck Basics](firmware/community-guides/4th-axis-chuck-basics.md)
+  * [Aligning Square Stock on the 4th axis with the wireless probe](firmware/community-guides/aligning-square-stock-on-the-4th-axis-with-the-wireless-probe.md)
 
 ## Other
 
