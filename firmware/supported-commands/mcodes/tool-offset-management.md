@@ -1,5 +1,23 @@
 # Tool Offset Management
 
+## Tool Length Offset (TLO) System
+
+During normal usage, the Tool Length Offset (TLO) is measured using the tool setter on the Carvera bed. The machine doesn't actually know the absolute height of the tool setter - it only knows that the probe triggers consistently when tools touch it. In order to support the ability to change tools the machine maintains knowledge of two tool positions, the current tool and the reference tool. This is needed to maintain consistency in the workspace between different tool lengths.
+
+When the very first tool is probed, the Z height in Machine Coordinate Space (MCS) is recorded as the **reference tool position**. This tool becomes the "reference tool" that all other tools will be measured against.
+
+Any subsequent tools that are probed afterwards update the **current tool position**. The TLO is then calculated as the difference between these two positions:
+
+$$
+TLO = current\_tool\_position - reference\_tool\_position
+$$
+
+### Example
+
+1. First tool: Probed at machine Z position -72.300 → becomes reference tool
+2. Second tool: Probed at machine Z position -105.688 → current tool
+3. TLO calculation: -105.688 - (-72.300) = -33.388
+
 ## M491.1 - Tool Break Test
 
 ### Description
@@ -42,7 +60,7 @@ M493 manages tool length offset (TLO) settings for the current tool. It can set 
 ### Example
 
 ```
-M493                 ; Set tool offset from last probe
+M493                ; Set tool offset from last probe
 M493.2 T1           ; Set tool 1 as active
 M493.3 Z10.5        ; Set tool length to 10.5mm
 M493.3 H2.0         ; Set TLO from current position with 2mm offset
@@ -99,8 +117,14 @@ Demo of M493.3
 ### Example
 
 ```
-M493.3 Z15.2        ; Set tool length to 15.2mm
+M493.3 Z-15.2        ; Set tool length offset to 15.2mm
 M493.3 H3.0         ; Set TLO from current position with 3mm offset
+
+; Adding 2.9mm length to the current tool
+M493.4 ; returns current tool offset [-105.688], reference tool offset [-72.300]
+; tool offset is cur_tool_mz - ref_tool_mz or -105.688 - (-72.300) = -33.387
+; increasing it by  2.9mm  -33.387 + 2.9 = -30.488
+M493.3 Z-30.488
 ```
 
 ## M493.4 - Report Current TLO
