@@ -53,6 +53,10 @@ To jog with the pendant you must have the <img src="../../.gitbook/assets/image 
 
 <figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+## MacOS
+
+To use the pedant in Linux your system needs the `hidapi` package. This can be installed using the [brew package manager](https://brew.sh/) with `brew install hidapi`
+
 ## Linux&#x20;
 
 To use the pedant in Linux your system needs the `libhidapi-hidraw0` package.
