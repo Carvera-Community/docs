@@ -253,6 +253,78 @@ M465 Y15              ; Probe 15mm in Y direction to find angle
 M465 X20 V5           ; Probe with 5mm visualization path
 ```
 
+
+
+## M465.1 - Probe 4th Axis (A-Axis) Stock
+
+### Description
+
+Probes the 4th axis (A-axis) stock to determine its angular position relative to the machine coordinate system. This command performs two probe operations at specified distances along the Y-axis to calculate the angle of the stock surface.
+
+When the macro completes the program will have save the result to:
+
+* Calculated angle is stored in radians in variable #153
+
+### Parameters
+
+* Y: Total probing distance.  The machine will move to + Y/2 and -Y/2 from the current position (required)
+* H: Probe height - distance to probe down from current position (required)
+* F: Feed rate for probing operations (default: 300 mm/min)
+* K: Rapid feed rate for positioning moves (default: 800 mm/min)
+* L: Number of probe cycles to repeat (default: 1)
+* R: Retract distance from touched surface (default: 1.5mm)
+* V: Rotate A axis after probing if V1 is specified
+* S: Save the offset for the A axis after probing (with or without V1)
+
+### Example
+
+```
+M465.1 Y15 H30 V1 S1
+```
+
+This command will:
+
+* Probe the A-axis stock at Y1 = +7.5mm and Y2 = -7.5mm
+* Use a probe depth of 30mm below the surface
+* Rotate the stock after probing
+* Save the A axis offset
+
+## M465.2 - Probe 4th Axis (A-Axis) Stock with Machine Offset
+
+### Description
+
+Probes the 4th axis (A-axis) stock using the 4th axis offsets. This command automatically positions the probe using the given 4th axis offsets and then performs the same angular measurement as M465.1.
+
+When the macro completes the program will have save the result to:
+
+* Calculated angle is stored in radians in variable #153
+
+### Parameters
+
+* X: Distance offset from 4th axis origin (required)
+* Y: Total probing distance.  The machine will move to + Y/2 and -Y/2 from the specified position (required)
+* H: Probe height - distance to probe down from current position (required)
+* F: Feed rate for probing operations (default: 300 mm/min)
+* K: Rapid feed rate for positioning moves (default: 800 mm/min)
+* L: Number of probe cycles to repeat (default: 1)
+* R: Retract distance from touched surface (default: 1.5mm)
+* V: Rotate A axis after probing if V1 is specified
+* S: Save the offset for the A axis after probing (with or without V1)
+
+### Example
+
+```
+M465.2 X10 Y15 R1 F200 K600
+```
+
+This command will:
+
+* Use 4th axis offset coordinates
+* Automatically move to clearance height
+* Probe the A-axis stock using the calculated position
+* Use 200 mm/min feed rate for probing
+* Use 600 mm/min rapid rate for positioning
+
 ## M466 - Single Axis Probe Double Tap
 
 ### Description
@@ -293,4 +365,45 @@ M466 Y15              ; Probe 15mm in Y direction
 M466 Z5               ; Probe 5mm in Z direction
 M466 X10 Y10          ; Probe 10mm in both X and Y directions
 M466 X10 Y10 Z5 S1    ; Probe and save position as WCS origin
+```
+
+## M466.1 Rectangle Probe
+
+### Description
+
+M466.1 performs four [Z Probe Double Tap](probing.md#m466-single-axis-probe-double-tap) probing operations, each located at the corners of a rectangle, specified by the current position and the X and Y distances. After the probing is finished, the probing tool will return to its starting position and the machine prints the results both in machine coordinates and in work coordinates, specifying the highest and lowest Z value and the corresponding corner at which those values were found.
+
+### Parameters
+
+* X: Distance to probe in X direction (required)
+* Y: Distance to probe in Y direction (required)
+* H: Probe height above surface (reqquired)&#x20;
+* F: Feed rate (optional, defaults to 300mm/min)
+* K: Rapid feed rate (optional, defaults to 800mm/min)
+* L: Number of repeat measurements (optional, defaults to 1)
+* I: Invert probe for NC probe (optional, defaults to 0)
+
+### Example
+
+```
+M466.1 X94 Y146 H5     ; Probe a 94x146 rectangle starting at the current position     
+```
+
+#### Output
+
+```
+Probing Square
+--- Machine Coordinates ---
+Point 1: X: -193.653, Y: -174.410, Z: -57.450
+Point 2: X: -97.653, Y: -174.410, Z: -57.488
+Point 3: X: -97.653, Y: -28.410, Z: -57.495
+Point 4: X: -193.653, Y: -28.410, Z: -57.475
+Min Z: -57.495, Max Z: -57.450
+--- Work Coordinates ---
+Point 1: X: 1.999, Y: 2.000, WPos Z: 0.000
+Point 2: X: 97.999, Y: 2.000, WPos Z: -0.039
+Point 3: X: 97.999, Y: 148.000, WPos Z: -0.045
+Point 4: X: 1.999, Y: 148.000, WPos Z: -0.025
+Min Z: -0.045, Max Z: 0.000
+Min Z Point#: 3, Max Z Point#: 1
 ```

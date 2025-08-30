@@ -14,6 +14,10 @@
   * [Workspace Management](controller/features/workspace-management.md)
   * [WCS Rotation](controller/features/wcs-rotation.md)
   * [Controller in a Web Browser](controller/features/controller-in-a-web-browser.md)
+  * [Macros](controller/features/macros.md)
+  * [Logging](controller/features/logging.md)
+  * [Auto-Reconnect](controller/features/auto-reconnect.md)
+  * [Jogging Controls](controller/features/jogging-controls.md)
 
 ## Firmware
 
@@ -23,6 +27,8 @@
   * [3D Probe Support](firmware/features/3d-probe-support.md)
   * [Variables](firmware/features/variables.md)
   * [Math](firmware/features/math.md)
+  * [Flex Compensation System](firmware/features/flex-compensation-system.md)
+  * [Jog Modes](firmware/features/jog-modes.md)
 * [Supported Commands](firmware/supported-commands/README.md)
   * [GCodes](firmware/supported-commands/gcodes.md)
   * [MCodes](firmware/supported-commands/mcodes/README.md)

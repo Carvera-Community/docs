@@ -47,11 +47,17 @@ This will bring up the Macro edit screen:
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+### Step/Continuous Buttons
+
+As of machine firmware version 2.0.0[ continuous jogging mode](../../firmware/features/jog-modes.md) is supported. Pressing the Continuous <img src="../../.gitbook/assets/image (25).png" alt="" data-size="line"> or Step <img src="../../.gitbook/assets/image (26).png" alt="" data-size="line"> buttons switches the jogging mode. The current mode is shown on the pendant LCD as STP or CON, and is also reflected in the Controller UI.
+
+If the speed/step dial is set to Lead and Continuous mode is selected the movement speed will be variable based on the speed of jogging wheel and the selected Jog Speed in the [Jogging Controls](jogging-controls.md).
+
 ## Usage
 
-To jog with the pendant you must have the <img src="../../.gitbook/assets/image (5) (1) (1).png" alt="Enable Pendant" data-size="line"> enabled on the main control screen. The button is blue when pendant based jogging is enabled. The action/macro buttons will work irrespective if <img src="../../.gitbook/assets/image (5) (1) (1).png" alt="Enable Pendant" data-size="line"> is enabled or not.
+To jog with the pendant you must have the Pendant Jogging toggle <img src="../../.gitbook/assets/image (27).png" alt="" data-size="line"> enabled on the main control screen. The button is blue when pendant based jogging is enabled. The action/macro buttons will work irrespective if <img src="../../.gitbook/assets/image (27).png" alt="" data-size="line"> is enabled or not.
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 ## MacOS
 
@@ -89,14 +95,6 @@ There are a number of known limitations to the WBH04 pendant/integration.
 The pendant LCD screen always shows the movement step (STP) as a %, however the actual movement size per rotary dial "click" is defined by the white text in mm:
 
 <figure><img src="../../.gitbook/assets/image (7) (1).png" alt="" width="188"><figcaption></figcaption></figure>
-
-### Step/Continuous Buttons don't do anything
-
-&#x20;Currently the machine firmware doesn't support continuous jogging mode, thus the jog movements are always done in steps based on the speed selected by the movement dial. The step/continuous buttons don't do anything when pushed
-
-### Small movements appear to "cog"
-
-Due to a number of factors relating to command queue processing on the machine whenever the machine moves from standstill there are a few millisecond pauses between movement steps compared to when multiple jog steps are "enqueued". No steps are missed.
 
 ### Invalid Axis Values
 

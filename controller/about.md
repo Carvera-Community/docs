@@ -10,7 +10,7 @@ The Community developed version of the Carvera Controller has a number of benefi
 * **Tooltip support** for user guidance with over 110 tips and counting
 * **Background images** for bolt hole positions in probe/start screens; users can add their own too
 * Support for setting/changing to **custom tool numbers** beyond 1-6
-* Keyboard button based **jog movement** controls
+* [Keyboard button](features/jogging-controls.md#keyboard-jogging) based **jog movement** controls
 * **No dial-home** back to Makera
 * **Single portable binary** for Windows and Linux
 * **Laser Safety** prompt to **remind** operators to put on **safety glasses**
@@ -25,6 +25,9 @@ The Community developed version of the Carvera Controller has a number of benefi
   * **Previous** file browsing location is **reopened** and **previously** used locations stored to **quick access list**
   * **Greater speed/feed** override scaling range from **10%** and up to **300%**
   * **Improved** 3D gcode visualisations, including **correct rendering** of movements around the **A axis**
+  * [**Continuous Jogging**](features/jogging-controls.md#continuous-jogging) support
+  * [Auto-Reconnect capability](features/auto-reconnect.md)
+  * [Logging](features/logging.md)
 
 ## **Screenshots**
 
