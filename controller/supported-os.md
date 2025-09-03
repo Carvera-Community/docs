@@ -31,4 +31,4 @@ If you want a shortcut, consider using [AppImageLauncher](https://github.com/The
 
 ### iOS
 
-The iOS build of the Carvera Community Controller is beta, and may lag behind other releases due to Apple App Store review. You can sign up for the beta access [here](https://testflight.apple.com/join/We3Qt8GD).
+The iOS build of the Carvera Community Controller may lag behind other releases due to Apple App Store review and developer availability.
