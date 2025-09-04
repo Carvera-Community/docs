@@ -62,7 +62,7 @@ M469.4 calibrates the A-axis headstock center position using a 3-axis probe. The
 
 ```
 M469.4              ; Calibrate A-axis headstock with defaults
-M469.4 Y50 E30      ; Calibrate at Y offset of 50, allowing 30mm
+M469.4 Y50 E30      ; Calibrate at Y offset of 50, allowing the probe 30mm of downwards travel
 ```
 
 ## M469.5 - Calibrate A-Axis Height
@@ -84,6 +84,6 @@ M469.5 calibrates the A-axis center height using a 3-axis probe. Full documentat
 
 ```
 M469.5              ; Calibrate A-axis height with defaults
-M469.5 X60 E40 R4   ; Calibrate with a 4mm pin, allowing the probe to move 40mm down, at the x offset of 60mm
+M469.5 X60 E40 R4   ; Calibrate with a 4mm pin, allowing the probe 40mm of downwards travel, at the x offset of 60mm
 ```
 
