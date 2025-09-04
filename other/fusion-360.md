@@ -66,6 +66,9 @@ The following ACTION commands are supported by this post:\
 * LightOn - turns on the light
 * LightOff - turns off the light
 * ShrinkA - Shrinks the A axis with offset 0, so A365 will turn into A5
-
-
-
+* Dwell - pause for x seconds
+* Stop - pause and wait for input from the user
+* Comment - write a comment into the file
+* Measure Tool - run a tool length offset calibration on the current tool
+* Tool Break Control - run a tool break test. Requires the community firmware
+* Pass Through - send the contents of the input box directly to the machine
