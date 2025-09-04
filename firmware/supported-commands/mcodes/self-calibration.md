@@ -53,8 +53,8 @@ M469.4 calibrates the A-axis headstock center position using a 3-axis probe. The
 ### Parameters
 
 * I: Invert probe direction (optional)
-* 0: Normal probe direction (default)
-* 1: Inverted probe direction
+  * 0: Normal probe direction (default)
+  * 1: Inverted probe direction
 * Y: Headstock width (optional)
 * E: Probe height (optional)
 
@@ -62,7 +62,7 @@ M469.4 calibrates the A-axis headstock center position using a 3-axis probe. The
 
 ```
 M469.4              ; Calibrate A-axis headstock with defaults
-M469.4 I1 Y50 E10   ; Calibrate with custom parameters
+M469.4 Y50 E30      ; Calibrate at Y offset of 50, allowing 30mm
 ```
 
 ## M469.5 - Calibrate A-Axis Height
@@ -74,8 +74,8 @@ M469.5 calibrates the A-axis center height using a 3-axis probe. Full documentat
 ### Parameters
 
 * I: Invert probe direction (optional)
-* 0: Normal probe direction (default)
-* 1: Inverted probe direction
+  * 0: Normal probe direction (default)
+  * 1: Inverted probe direction
 * X: X-axis offset (optional)
 * E: Probe height (optional)
 * R: Pin diameter (optional)
@@ -84,6 +84,6 @@ M469.5 calibrates the A-axis center height using a 3-axis probe. Full documentat
 
 ```
 M469.5              ; Calibrate A-axis height with defaults
-M469.5 I1 X60 E10 R6 ; Calibrate with custom parameters
+M469.5 X60 E40 R4   ; Calibrate with a 4mm pin, allowing the probe to move 40mm down, at the x offset of 60mm
 ```
 
