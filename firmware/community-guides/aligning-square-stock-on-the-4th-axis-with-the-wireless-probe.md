@@ -1,5 +1,9 @@
 # Aligning Square Stock on the 4th axis with the wireless probe
 
+{% hint style="info" %}
+### If you have a 3D Probe you can instead use the [M465](../supported-commands/mcodes/probing.md#m465-probe-axis-angle) macro <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
+{% endhint %}
+
 ### Figure out what numbers you need to use <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
 
 Calculate the y axis offset for your stock by taking the width of the part in mm, dividing by 2 and then subtracting at least 3mm.\
