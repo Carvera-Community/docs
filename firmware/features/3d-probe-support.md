@@ -42,9 +42,9 @@ When you first receive the probe you should consult the manufacturer about how i
 {% endstep %}
 
 {% step %}
-**Probe tip diameter config**
+**Probe and save the tip diameter config**
 
-Inexpensive probes like the V6 3D Touch probe do not have a way to compensate for the probe tip tilt and activation distance. Thus probe tip diameter needs to be adjusted to reflect the distance before the probe registers contact. This value is best determined using one of the [M460 ](../supported-commands/mcodes/probing.md#m460-probe-calibration)macros and probing against geometry of known dimensions. This means the probe tip diameter is not just it's physical diameter but also adjusted by the activation distance. On probe tips of 2mm diameter and length 22mm the effective probe tip diameter is typically around 1.6-1.8mm.
+Inexpensive probes like the V6 3D Touch probe do not have a way to compensate for the probe tip tilt and activation distance. Thus probe tip diameter needs to be adjusted to reflect the distance before the probe registers contact. This value is best determined using one of the [M460 ](../supported-commands/mcodes/probing.md#m460-probe-calibration)macros and probing against geometry of known dimensions. This means the probe tip diameter is not just it's physical diameter but also adjusted by the activation distance. On probe tips of 2mm diameter and length 22mm the effective probe tip diameter is typically around 1.0-1.8mm.
 
 The text output of `M460` will provide the command to run which saves the probe tip diameter to the machine config eg. `config-set sd zprobe.probe_tip_diameter 1.700`  Once this is set the probe tip diameter does not need to be provided during usage.
 
