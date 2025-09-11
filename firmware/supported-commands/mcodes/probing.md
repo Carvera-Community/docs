@@ -133,6 +133,7 @@ When the macro completes the program will have saved the distance along the X ax
 
 * X: Distance to probe in X direction (required)
 * Y: Distance to probe in Y direction (required)
+* J: Probe Clearance. When Probing a boss, this is added to the X and Y values when moving outside the boss  (optional, defaults to 4mm)
 * D: Probe tip diameter (optional, defaults to configured value)
 * E: Depth to probe sides from (optional, defaults to 2mm)
 * H: Probe height above boss (optional, defaults to 0)
