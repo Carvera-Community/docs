@@ -1,5 +1,11 @@
 # Installation/Upgrade
 
+{% hint style="success" %}
+## Makera Support have stated that using the Community Firmware/Controller does not void the machine warranty
+
+Do note that the support they can provide maybe limited, and they may ask you to revert to Makera software to ensure that the issue is not specified to Community code. Reach out via the [bug report button](../controller/features/logging.md#viewing-logs) or in #mods in [Makera Discord](https://discord.gg/xwJMTD22) for Community support.
+{% endhint %}
+
 ## Installation
 
 {% stepper %}
