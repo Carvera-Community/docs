@@ -59,10 +59,6 @@ To jog with the pendant you must have the Pendant Jogging toggle <img src="../..
 
 <figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
-## MacOS
-
-To use the pendant in MacOS your system needs the `hidapi` package. This can be installed using the [brew package manager](https://brew.sh/) with `brew install hidapi` .
-
 ## Linux&#x20;
 
 To use the pendant in Linux your system needs the `libhidapi-hidraw0` package.
