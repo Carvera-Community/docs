@@ -38,6 +38,10 @@ Click the <img src="../.gitbook/assets/image (5).png" alt="Firmware" data-size="
 {% step %}
 ### Upload new firmware file
 
+{% hint style="info" %}
+If you are using Makera's Controller software it can only select firmware binary files if the file is called "firmware.bin". Rename the file if you are using Makera's Controller software. The Community Controller will allow you to select any .bin file.
+{% endhint %}
+
 Select the .bin firmware binary you downloaded in step #1 and click <img src="../.gitbook/assets/image (4).png" alt="Upload" data-size="line"> and wait for the uploading to finish, the machine will be reset automatically by default. Or you can manually reset the machine using the prompt.
 {% endstep %}
 
