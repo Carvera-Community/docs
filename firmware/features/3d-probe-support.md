@@ -108,6 +108,10 @@ One option to avoid this challenge is to modify the tail shaft from the probe tu
 
 ### Calibration
 
+{% embed url="https://www.youtube.com/watch?v=egbb5Q1fNXw" %}
+Fae goes  through the V6 Probe Calibration processes in this tutorial video
+{% endembed %}
+
 It is essential for the probe tip to be concentric to the tail shaft, otherwise the probe's accuracy and repeatability in different directions will be affected.
 
 The way the probe is calibrated is by turned the 4 set screws **(**&#x69;tem _**#14**_ in Figure 1). Two opposing set screws need to be adjusted together, one loosened while the other tightened. This will result in the probe's body moving in relation to the tail shaft.
