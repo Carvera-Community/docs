@@ -1,0 +1,103 @@
+name: Cascade Merge Main to Dev
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  cascade-merge:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+
+    - name: Switch to dev branch
+      run: |
+        git checkout dev
+        git pull origin dev
+
+    - name: Check for conflicts
+      id: check-conflicts
+      run: |
+        # Get the latest main branch
+        git fetch origin main
+        
+        # Check if there are any conflicts when merging main into dev
+        if git merge-tree $(git merge-base origin/main dev) origin/main dev > /dev/null 2>&1; then
+          echo "no-conflicts=true" >> $GITHUB_OUTPUT
+        else
+          echo "no-conflicts=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Merge main into dev (no conflicts)
+      if: steps.check-conflicts.outputs.no-conflicts == 'true'
+      run: |
+        git merge origin/main --no-ff -m "Cascade merge from main to dev (automated)"
+        git push origin dev
+
+    - name: Create conflict branch and PR (conflicts detected)
+      if: steps.check-conflicts.outputs.no-conflicts == 'false'
+      run: |
+        # Create a unique branch name with timestamp
+        TIMESTAMP=$(date +%Y%m%d-%H%M%S)
+        CONFLICT_BRANCH="conflict-merge-main-to-dev-$TIMESTAMP"
+        
+        # Create and checkout conflict branch
+        git checkout -b $CONFLICT_BRANCH
+        
+        # Attempt the merge to create conflict markers
+        git merge origin/main --no-ff -m "Attempted merge from main to dev (conflicts detected)" || true
+        
+        # Push the conflict branch
+        git push origin $CONFLICT_BRANCH
+        
+        # Create PR for manual resolution
+        gh pr create \
+          --title "🚨 Merge Conflict: Main to Dev - Manual Intervention Required" \
+          --body "## Merge Conflict Detected
+
+        This PR was automatically created because there are merge conflicts when trying to cascade changes from the \`main\` branch to the \`dev\` branch.
+
+        ### What happened:
+        - The automated cascade merge workflow detected conflicts
+        - A conflict branch \`$CONFLICT_BRANCH\` was created with the conflict markers
+        - This PR allows for manual resolution of the conflicts
+
+        ### Next steps:
+        1. Review the conflicts in the files below
+        2. Resolve the conflicts manually
+        3. Test the changes
+        4. Merge this PR to complete the cascade merge
+
+        ### Files with conflicts:
+        \`\`\`
+        $(git diff --name-only --diff-filter=U)
+        \`\`\`
+
+        ---
+        *This PR was created automatically by the cascade merge workflow*" \
+          --head $CONFLICT_BRANCH \
+          --base dev \
+          --label "conflict-resolution,automated"
+
+    - name: Summary
+      run: |
+        if [ "${{ steps.check-conflicts.outputs.no-conflicts }}" == "true" ]; then
+          echo "✅ Successfully cascaded merge from main to dev"
+        else
+          echo "⚠️ Conflicts detected - created conflict branch and PR for manual resolution"
+        fi
