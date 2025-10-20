@@ -41,12 +41,16 @@
     * [Tool Offset Management](firmware/supported-commands/mcodes/tool-offset-management.md)
   * [Console Commands](firmware/supported-commands/console-commands/README.md)
     * [WCS Management](firmware/supported-commands/console-commands/wcs-management.md)
-* [Community Guides](firmware/community-guides/README.md)
-  * [Using Ball Endmills and V bits](firmware/community-guides/using-ball-endmills-and-v-bits.md)
-  * [4th Axis Chuck Basics](firmware/community-guides/4th-axis-chuck-basics.md)
-  * [Aligning Square Stock on the 4th axis with the wireless probe](firmware/community-guides/aligning-square-stock-on-the-4th-axis-with-the-wireless-probe.md)
 
 ## Other
 
 * [Fusion 360](other/fusion-360.md)
 * [HSM Tool Library](other/hsm-tool-library.md)
+
+***
+
+* [Guides](guides/README.md)
+  * [Using Ball Endmills and V bits](guides/using-ball-endmills-and-v-bits.md)
+  * [4th Axis Chuck Basics](guides/4th-axis-chuck-basics.md)
+  * [Aligning Square Stock on the 4th axis with the wireless probe](guides/aligning-square-stock-on-the-4th-axis-with-the-wireless-probe.md)
+  * [Start from Middle of File](guides/start-from-middle-of-file.md)

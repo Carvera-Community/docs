@@ -1,7 +1,7 @@
 # Aligning Square Stock on the 4th axis with the wireless probe
 
 {% hint style="info" %}
-### If you have a 3D Probe you can instead use the [M465](../supported-commands/mcodes/probing.md#m465-probe-axis-angle) macro <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
+### If you have a 3D Probe you can instead use the [M465](../firmware/supported-commands/mcodes/probing.md#m465-probe-axis-angle) macro <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
 {% endhint %}
 
 ### Figure out what numbers you need to use <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
@@ -77,7 +77,7 @@ Open a scientific calculator and do the following math.&#x20;
 
 inverse tan( ( **{Z1}** - **{Z2} ) / (**&#x32;\* **{Y offset}** ))
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 In our example the values look like this:
 
