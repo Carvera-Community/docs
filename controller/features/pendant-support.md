@@ -51,7 +51,7 @@ This will bring up the Macro edit screen:
 
 As of machine firmware version 2.0.0[ continuous jogging mode](../../firmware/features/jog-modes.md) is supported. Pressing the Continuous <img src="../../.gitbook/assets/image (25).png" alt="" data-size="line"> or Step <img src="../../.gitbook/assets/image (26).png" alt="" data-size="line"> buttons switches the jogging mode. The current mode is shown on the pendant LCD as STP or CON, and is also reflected in the Controller UI.
 
-If the speed/step dial is set to Lead and Continuous mode is selected the movement speed will be variable based on the speed of jogging wheel and the selected Jog Speed in the [Jogging Controls](jogging-controls.md).
+If the speed/step dial is set to Lead <img src="../../.gitbook/assets/PXL_20251020_023753175.MP (1).jpg" alt="" data-size="line">and Continuous mode is selected the movement speed will be variable based on the speed of jogging wheel and the selected Jog Speed in the [Jogging Controls](jogging-controls.md).
 
 ## Usage
 
