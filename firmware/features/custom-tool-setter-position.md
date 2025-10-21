@@ -16,3 +16,16 @@ config-set sd coordinate.probe_mcs_y 123.123
 ```
 
 Reset the machine to apply the setting, and perform a tool calibration to check the location. Make small adjustments by eye as required.
+
+Details of the current tool setter position configuration can be viewed using the command [`M493.4`](../supported-commands/mcodes/tool-offset-management.md):
+
+```gcode
+M493.4
+current tool offset [-67.880] , reference tool offset [-67.880]
+no one-off tool setter position offsets configured
+Tool setter position (MCS): X[-3.300] Y[-14.900] Z[nan]
+```
+
+### Off Center measurement
+
+Tools with off-center cutters can be probed off-center by using the parameters **X/Y/Z** on the [M491 ](../supported-commands/mcodes/tool-offset-management.md#m491-tool-length-calibration)command.

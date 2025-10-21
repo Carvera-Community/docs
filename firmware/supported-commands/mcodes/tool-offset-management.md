@@ -18,6 +18,25 @@ $$
 2. Second tool: Probed at machine Z position -105.688 → current tool
 3. TLO calculation: -105.688 - (-72.300) = -33.388
 
+## M491 - Tool Length Calibration
+
+### Description
+
+Measures the length of the current tool.
+
+### Parameters
+
+* X: Offset the tool setter location by this amount (positive or negative) in X (optional)
+* Y: Offset the tool setter location by this amount (positive or negative) in Y (optional)
+* Z: Offset the tool setter location by this amount (positive or negative) in Z (optional)
+
+### Example
+
+```gcode
+M491  ;Regular TLO measurement
+M491 X-15  ;Measure the TLO offsettting the setter by 15mm to the left
+```
+
 ## M491.1 - Tool Break Test
 
 ### Description
@@ -141,5 +160,7 @@ None
 
 ```
 M493.4              ; Report current TLO values
+current tool offset [-67.880] , reference tool offset [-67.880]
+no one-off tool setter position offsets configured
+Tool setter position (MCS): X[-3.300] Y[-14.900] Z[nan]
 ```
-
