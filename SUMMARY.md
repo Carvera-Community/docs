@@ -29,6 +29,7 @@
   * [Math](firmware/features/math.md)
   * [Flex Compensation System](firmware/features/flex-compensation-system.md)
   * [Jog Modes](firmware/features/jog-modes.md)
+  * [Custom Tool Setter Position](firmware/features/custom-tool-setter-position.md)
 * [Supported Commands](firmware/supported-commands/README.md)
   * [GCodes](firmware/supported-commands/gcodes.md)
   * [MCodes](firmware/supported-commands/mcodes/README.md)

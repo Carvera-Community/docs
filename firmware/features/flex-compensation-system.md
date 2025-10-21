@@ -14,11 +14,11 @@ The linear rods of the **Carvera Air** are not rigid enough to precisely support
 
 <div align="center"><figure><img src="../../.gitbook/assets/ezgif-240d315787d0d1.gif" alt="Animation showing the Carvera Air spindle assembly flexing" width="375"><figcaption><p>Figure 1: Exaggerated simulation of the x axis sag</p></figcaption></figure></div>
 
-The **Flex Compensation System** compensates for this tilting motion with additional Y and Z movements similar to the bed leveling system. These movements are not reflected in either the machine or the work coordinate system, as they are compensation movements and therefore remain 'invisible'.&#x20;
+The **Flex Compensation System** compensates for this tilting motion with additional Y and Z movements similar to the bed leveling system. These movements are not reflected in either the machine or the work coordinate system, as they are compensation movements and therefore remain 'invisible'.
 
 To use this feature the user has to perform a one time probing routine, recording the machine-specific spindle tilting profile. Ideally this profile spans over the entire X axis length. Afterwards this profile can be saved to the SD card and - if desired- the compensation program loaded upon every boot of the machine.\
 \
-**This flex compensation works separately to the bed leveling function, and both can be used at the same time. When flex compensation is active, it also applies to** [**probing operations**](../supported-commands/mcodes/probing.md) **as well.**&#x20;
+**This flex compensation works separately to the bed leveling function, and both can be used at the same time. When flex compensation is active, it also applies to** [**probing operations**](../supported-commands/mcodes/probing.md) **as well.**
 
 With the flex compensation enabled every single move that the machine executes is compensated in order to have the **Tool Center Point** (TCP) follow straight lines. Therefore all probing moves, including the bed leveling is compensated. Figure 2 shows a comparison of a full bed level of a [Saunders Machine Works (SMW) tooling plate](https://saundersmachineworks.com/products/makera-carvera-air-fixture-tooling-plate) before and after the flex compensation. The SMW has been used for this comparison as it has less surface deviations than the stock Carvera Air MDF bed.
 
@@ -35,13 +35,13 @@ If you own the 4th axis you can unscrew the motor/chuck and the tailstock and us
 
 {% stepper %}
 {% step %}
-### Fix reference geometry on the bed
+#### Fix reference geometry on the bed
 
 Put the reference geometry on the bed. If using the 4th axis baseplate, the plate is already aligned with dowel pins. If using something else, make sure to properly align it. Ideally the reference geometry exceeds the length of the bed (as the 4th baseplate does).
 {% endstep %}
 
 {% step %}
-### Position the probe tip at the leftmost position
+#### Position the probe tip at the leftmost position
 
 Height should be right where you can confidently hit the reference geometry. Position the probe as far as it can go without running into hard or software endstops. The Y distance should be close to the reference geometry and < than the Y parameter specified in the G33 command. Fig 3. below shows and example of how the probe should be positioned
 
@@ -49,7 +49,7 @@ Height should be right where you can confidently hit the reference geometry. Pos
 {% endstep %}
 
 {% step %}
-### Run G33 command
+#### Run G33 command
 
 Run the G33 command and let the machine do the measurement
 
@@ -63,7 +63,7 @@ After the measurement has been finished the flex compensation is activated. Run 
 {% endstep %}
 
 {% step %}
-### (Optional) Activate the automatic loading of the compensation data
+#### (Optional) Activate the automatic loading of the compensation data
 
 After the compensation data has been saved to the SD card, it can automatically be loaded after a clean start. Simply set the configuration value by running in the MDI:
 
@@ -186,4 +186,3 @@ None
 ```
 M380.3
 ```
-
