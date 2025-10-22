@@ -26,6 +26,6 @@ no one-off tool setter position offsets configured
 Tool setter position (MCS): X[-3.300] Y[-14.900] Z[nan]
 ```
 
-### Off Center measurement
+### Off Center Tool Measurement
 
-Tools with off-center cutters can be probed off-center by using the parameters **X/Y/Z** on the [M491 ](../supported-commands/mcodes/tool-offset-management.md#m491-tool-length-calibration)command.
+Large tools such as face mills with cutters that are not in the center can be probed off-center by using the parameters **X/Y/Z** on the [M491 ](../supported-commands/mcodes/tool-offset-management.md#m491-tool-length-calibration)command.

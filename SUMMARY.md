@@ -30,6 +30,7 @@
   * [Flex Compensation System](firmware/features/flex-compensation-system.md)
   * [Jog Modes](firmware/features/jog-modes.md)
   * [Custom Tool Setter Position](firmware/features/custom-tool-setter-position.md)
+  * [Custom Tool Slots](firmware/features/custom-tool-slots.md)
 * [Supported Commands](firmware/supported-commands/README.md)
   * [GCodes](firmware/supported-commands/gcodes.md)
   * [MCodes](firmware/supported-commands/mcodes/README.md)
@@ -40,6 +41,7 @@
     * [Self-Calibration](firmware/supported-commands/mcodes/self-calibration.md)
     * [Probing](firmware/supported-commands/mcodes/probing.md)
     * [Tool Offset Management](firmware/supported-commands/mcodes/tool-offset-management.md)
+    * [Tool Slot Management](firmware/supported-commands/mcodes/tool-slot-management.md)
   * [Console Commands](firmware/supported-commands/console-commands/README.md)
     * [WCS Management](firmware/supported-commands/console-commands/wcs-management.md)
 
