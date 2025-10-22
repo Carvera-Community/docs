@@ -1,5 +1,7 @@
 # Custom Tool Setter Position
 
+{% include "../../.gitbook/includes/dev-feature-warning-banner.md" %}
+
 The location of the tool setter can be customized using the configuration elements `coordinate.probe_mcs_x` and `coordinate.probe_mcs_y`. Normally the location is set by way of reference to the toolrack but setting these two configuration keys you can use a specific MCS location.
 
 The easiest way to set the coordinates is have a tool in the collet, and jog the spindle down so that it's above but not touching the tool setter. In the Controller take note of the MCS X and Y locations. These are the positions in small grey text in the tool bar.
