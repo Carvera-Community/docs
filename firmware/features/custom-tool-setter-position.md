@@ -8,14 +8,14 @@ The easiest way to set the coordinates is have a tool in the collet, and jog the
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Highlighted is the MCS Position of the spindle as shown on the Controller in small grey text</p></figcaption></figure>
 
-To store the settings running the below commands substituting 123.123 with the actual x and y  position values. Do note that as these will be in the MCS coordinate space the values will be negative.
+Store the settings running the below commands substituting 123.123 with the actual x and y  position values. Do note that as these will be in the MCS coordinate space, so the values are expected to be negative.
 
 ```
 config-set sd coordinate.probe_mcs_x 123.123
 config-set sd coordinate.probe_mcs_y 123.123
 ```
 
-Reset the machine to apply the setting, and perform a tool calibration to check the location. Make small adjustments by eye as required.
+`reset` the machine to apply the setting, and perform a tool calibration to check the location. Make small adjustments by eye as required.
 
 Details of the current tool setter position configuration can be viewed using the command [`M493.4`](../supported-commands/mcodes/tool-offset-management.md):
 
