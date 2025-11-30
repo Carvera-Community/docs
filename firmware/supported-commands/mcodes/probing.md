@@ -23,8 +23,7 @@ When probing surfaces, a few variables are always set if the probing feature sup
 
 <figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-When selecting a probing operation in the controller the graphics have a set up standards\
-
+When selecting a probing operation in the controller the graphics have a set up standards<br>
 
 * The probe start position is always denoted by a red dot, usually surrounded by a crosshair
 * The final desired probe position is denoted by a blue dot if it is different than the starting crosshair
@@ -257,6 +256,10 @@ M465 X20 V5           ; Probe with 5mm visualization path
 
 
 ## M465.1 - Probe 4th Axis (A-Axis) Stock
+
+{% embed url="https://youtu.be/u6C3Do1d-4w" %}
+Example of M465.1 Y20 H30 V1
+{% endembed %}
 
 ### Description
 
