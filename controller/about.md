@@ -1,6 +1,6 @@
 # About
 
-The Community developed version of the Carvera Controller has a number of benefits and fixes above and beyond the Makera software. See the [CHANGELOG](https://github.com/Carvera-Community/Carvera_Controller/blob/develop/CHANGELOG.md) and [screenshots](about.md#screenshots) for more details.
+The Community Controller is a [fork ](https://en.wikipedia.org/wiki/Fork_\(software_development\))of the Makera Carvera Controller that has a number of benefits and fixes above and beyond the Makera software. See the [CHANGELOG](https://github.com/Carvera-Community/Carvera_Controller/blob/develop/CHANGELOG.md) and [screenshots](about.md#screenshots) for more details.
 
 * **3-axis** and advanced **probing** UI screens for various geometries (**corners**, **axis**, **bore/pocket**, **angles**) for use with a [true 3D touch probe](https://www.instructables.com/Carvera-Touch-Probe-Modifications/) (not the included XYZ probe block)
 * [**Pendant** device support](features/pendant-support.md) of **WHB04** family of **MPG devices**. Such devices can be used to jog, run macros, and perform feed/speed overrides.
