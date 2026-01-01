@@ -29,6 +29,33 @@ Then you will be able to run it.
 
 If you want a shortcut, consider using [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher).
 
+#### Arch Linux
+
+To setup Carvera controller on ArchLinux, a udev rule must be created granting the user permissions to the USB device when it is connected.
+
+1. Add a new udev file:
+
+```
+sudo vim /etc/udev/rules.d/99-carverausb.rules
+```
+
+2. Add the following contents:
+
+```
+# Carvera USB Serial Device
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", MODE="0666"
+
+# Optional Jog Pendant USB device
+SUBSYSTEM=="tty", ATTRS{idVendor}=="10ce", ATTRS{idProduct}=="eb93", MODE="0666"
+```
+
+3. After saving and closing the file, reload the rules:
+
+```
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+```
+
 ### iOS
 
 The iOS build of the Carvera Community Controller may lag behind other releases due to Apple App Store review and developer availability.
