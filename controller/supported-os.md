@@ -31,7 +31,7 @@ If you want a shortcut, consider using [AppImageLauncher](https://github.com/The
 
 #### Arch Linux
 
-For the Carvera controller to Connet to the machine over USB on ArchLinux, a udev rule must be created granting the user permissions to the USB device when it is connected.
+For the Carvera controller to connect to the machine over USB on ArchLinux, a udev rule must be created granting the user permissions to the USB device when it is connected.
 
 1. Add a new udev file:
 
