@@ -58,7 +58,7 @@ M601
 {% endtab %}
 
 {% tab title="Serial Console Character" %}
-Sending the tilde character (\~) via serial console will perform a "safe resume". This is what the [Carvera Controller](broken-reference) does when you use the resume button.
+Sending the tilde character (\~) via serial console will perform a "safe resume". This is what the [Carvera Controller](/broken/pages/EJaB3XrSwByn8d4SF21v) does when you use the resume button.
 
 ```
 ~

@@ -46,8 +46,7 @@ For example ShrinkA
 
 ### Available Action Commands
 
-The following ACTION commands are supported by this post:\
-
+The following ACTION commands are supported by this post:<br>
 
 * RapidA:# - rapids the a axis to degree position
 * SaferA:# - Moves the z axis up to its clearance position then moves the a axis

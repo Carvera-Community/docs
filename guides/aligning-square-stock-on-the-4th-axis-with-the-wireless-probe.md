@@ -35,8 +35,7 @@ G90 G01 X0 Y0
 and then hit the send button. This will move the carvera to be above the centerline of the 4th axis on X and above the headstock on Y
 
 \
-\
-
+<br>
 
 <figure><img src="https://wiki.makera.com/knowledge-sharing/align-stock-to4-th-axis-with--probe/align4thaxismoveto00.png" alt=""><figcaption></figcaption></figure>
 

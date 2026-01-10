@@ -16,8 +16,7 @@ The auto-reconnection settings are found in **Settings** <img src="../../.gitboo
 
 ## Usage
 
-When disconnected and auto-reconnect is not enabled this error prompt is given:\
-
+When disconnected and auto-reconnect is not enabled this error prompt is given:<br>
 
 <figure><img src="../../.gitbook/assets/477768490-44b5e9db-3031-42f9-9484-1b8daf661d85.png" alt="" width="375"><figcaption></figcaption></figure>
 

@@ -13,6 +13,14 @@ The Controller software works on the following systems:
 
 ## OS Specific Notes
 
+### MacOS
+
+You may get the error "Apple could not verify “Carvera Controller Community” is free of malware that may harm your Mac or compromise your privacy." as we do not currently sign our MacOS releases.
+
+You can overcome this issue by opening System Settings, then click Privacy & Security in the sidebar.  Scroll to the bottom and click "Open Anyway". After doing this once the App can be opened normally.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-01-10 at 2.05.06 pm.png" alt=""><figcaption></figcaption></figure>
+
 ### Android
 
 When using the file browser in the Controller, the app will guide you to a permission page of android where you have to grant the app full access to your android devices files. Without this you will not see any files.
