@@ -88,12 +88,12 @@ With this setting the compensation data will be loaded on every reboot (recommen
 **Default**: false
 
 ```
-leveling-strategy.rectangular-grid.flex_x_points 60
+leveling-strategy.rectangular-grid.flex_x_points 30
 ```
 
 This value specifies the maximum number of points that can be probed along the X axis. Fewer points may be measured, but it is not possible to probe more than the configured amount.
 
-**Default**: 60
+**Default**: 30
 
 ## Commands
 
