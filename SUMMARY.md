@@ -54,4 +54,5 @@
   * [4th Axis Chuck Basics](guides/4th-axis-chuck-basics.md)
   * [Aligning Square Stock on the 4th axis with the wireless probe](guides/aligning-square-stock-on-the-4th-axis-with-the-wireless-probe.md)
   * [Start from Middle of File](guides/start-from-middle-of-file.md)
+  * [Measuring Bed Flatness](guides/measuring-bed-flatness.md)
 * [Anatomy of a Carvera](anatomy-of-a-carvera.md)
