@@ -14,7 +14,7 @@ With your dominant hand, find the red emergency stop button. Become well acquain
 You and only you are responsible for the safe operation of your machine. E-stop the machine if you are ever in doubt. We not liable for damage to your machine.
 {% endhint %}
 
-### Carvera Air ⓘ[^1]
+### Carvera Air ℹ️[^1]
 
 1. Home the machine
 2. Install and calibrate the Probe
