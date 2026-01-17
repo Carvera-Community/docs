@@ -8,13 +8,9 @@ You can easily measure the bed's flatness using the autolevel feature (`G32`). T
 
 The trick to this technique is for the autolevel probe points to avoid the mounting holes. To achieve this users have determined the right number of probe points and starting locations for the different model machines. Follow the below instructions to measure the bed flatness.
 
-{% hint style="warning" %}
-With your dominant hand, find the red emergency stop button. Become well acquainted.&#x20;
+{% include "../.gitbook/includes/we-are-not-liable-for-damage-disclaimer.md" %}
 
-You and only you are responsible for the safe operation of your machine. E-stop the machine if you are ever in doubt. We not liable for damage to your machine.
-{% endhint %}
-
-### Carvera Air ℹ️[^1]
+### [Carvera Air](#user-content-fn-1)[^1]
 
 1. Home the machine
 2. Install and calibrate the Probe
