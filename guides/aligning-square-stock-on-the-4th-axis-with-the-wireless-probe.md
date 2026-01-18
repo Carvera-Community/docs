@@ -1,7 +1,7 @@
 # Aligning Square Stock on the 4th axis with the wireless probe
 
 {% hint style="info" %}
-### This article is kept for archival purposes, the entire procedure has been added a scripted [M465.1](../firmware/supported-commands/mcodes/probing.md#m465.1-probe-4th-axis-a-axis-stock) command. <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
+### This article is kept for archival purposes, the entire procedure has been added as a single scripted [M465.1](../firmware/supported-commands/mcodes/probing.md#m465.1-probe-4th-axis-a-axis-stock) command. <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
 {% endhint %}
 
 ### Figure out what numbers you need to use <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
