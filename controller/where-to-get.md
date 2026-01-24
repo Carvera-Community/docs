@@ -1,8 +1,8 @@
 # Where to Get
 
-## Latest Release Version
+## Latest Version
 
-See the assets section of [latest release](https://github.com/carvera-community/carvera_controller/releases/latest) for installation packages for your system.
+See the assets section of [latest dev release](https://github.com/Carvera-Community/Carvera_Controller/releases/tag/dev) for installation packages for your system.
 
 * carveracontroller-community-\<version>-windows-x64.exe - Standalone Windows binary, without a installer
 * carveracontroller-community-\<version>-Intel.dmg - MacOS with Intel CPU
@@ -54,4 +54,4 @@ The application can then be accessed via a web browser at `http://<host>:8080` o
 
 ## iOS
 
-The iOS build of the Carvera Community Controller is available on  the [Apple App store](https://apps.apple.com/us/app/carvera-community-controller/id6743028299).
+The iOS build of the Carvera Community Controller is available on the [Apple App store](https://apps.apple.com/us/app/carvera-community-controller/id6743028299).
