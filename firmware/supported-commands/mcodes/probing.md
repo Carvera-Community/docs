@@ -32,6 +32,8 @@ When selecting a probing operation in the controller the graphics have a set up 
 
 ## M460 - Probe Calibration
 
+{% embed url="https://www.youtube.com/watch?v=egbb5Q1fNXw" %}
+
 ### Description
 
 M460 performs probe calibration using different methods depending on the subcode. It can calibrate the probe using a bore (default), boss (subcode 2), or anchor (subcode 3).
@@ -75,6 +77,10 @@ M460.1 X10 Y10 R3    ; Calibrate with 3 repeat measurements
 ```
 
 ## M461 - Probe Bore/Rectangular Pocket
+
+###
+
+{% embed url="https://www.youtube.com/watch?v=kcf5v0oKhDI" %}
 
 ### Description
 
