@@ -54,7 +54,7 @@ sudo vim /etc/udev/rules.d/99-carverausb.rules
 SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", MODE="0666"
 
 # Optional Jog Pendant USB device
-SUBSYSTEM=="tty", ATTRS{idVendor}=="10ce", ATTRS{idProduct}=="eb93", MODE="0666"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="10ce", ATTRS{idProduct}=="eb93", MODE="0666"
 ```
 
 3. After saving and closing the file, reload the rules:
