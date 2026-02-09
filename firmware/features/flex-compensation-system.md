@@ -45,6 +45,15 @@ Put the reference geometry on the bed. If using the 4th axis baseplate, the plat
 
 Height should be right where you can confidently hit the reference geometry. Position the probe as far as it can go without running into hard or software endstops. The Y distance should be close to the reference geometry and < than the Y parameter specified in the G33 command. Fig 3. below shows and example of how the probe should be positioned
 
+This can be achieved with the following gcode:
+
+```
+G90
+G53 G0 Z-2
+G53 G0 X-305 Y-176 
+G53 G1 Z-85 F800
+```
+
 <figure><img src="../../.gitbook/assets/2025-08-26 22.00.19.jpg" alt="" width="375"><figcaption><p>Figure 3: Starting position for the G33 flex measurement command</p></figcaption></figure>
 {% endstep %}
 
