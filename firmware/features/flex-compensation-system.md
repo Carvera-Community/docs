@@ -48,10 +48,12 @@ Height should be right where you can confidently hit the reference geometry. Pos
 This can be achieved with the following gcode:
 
 ```
+M493.2T999990  ;Set 3DProbe as current tool
+M491  ; Calibrate TLO
 G90
-G53 G0 Z-2
+G53 G0 Z-2 F400
 G53 G0 X-305 Y-176 
-G53 G1 Z-85 F800
+G53 G1 Z-85 F400
 ```
 
 <figure><img src="../../.gitbook/assets/2025-08-26 22.00.19.jpg" alt="" width="375"><figcaption><p>Figure 3: Starting position for the G33 flex measurement command</p></figcaption></figure>
