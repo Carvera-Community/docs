@@ -52,7 +52,7 @@ M493.2T999990  ;Set 3DProbe as current tool
 M491  ; Calibrate TLO
 G90
 G53 G0 Z-2 F400
-G53 G0 X-305 Y-176 
+G53 G0 X-302 Y-176 
 G53 G1 Z-85 F400
 ```
 
@@ -67,7 +67,7 @@ Run the G33 command and let the machine do the measurement
 Example:
 
 ```
-G33 X303 Y10 I30
+G33 X300 Y10 I30
 ```
 
 After the measurement has been finished the flex compensation is activated. Run M380.2 in order to save the data to the SD card.
