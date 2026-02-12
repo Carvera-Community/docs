@@ -45,6 +45,17 @@ Put the reference geometry on the bed. If using the 4th axis baseplate, the plat
 
 Height should be right where you can confidently hit the reference geometry. Position the probe as far as it can go without running into hard or software endstops. The Y distance should be close to the reference geometry and < than the Y parameter specified in the G33 command. Fig 3. below shows and example of how the probe should be positioned
 
+This can be achieved with the following gcode:
+
+```
+M493.2T999990  ;Set 3DProbe as current tool
+M491  ; Calibrate TLO
+G90
+G53 G0 Z-2 F400
+G53 G0 X-302 Y-176 
+G53 G1 Z-85 F400
+```
+
 <figure><img src="../../.gitbook/assets/2025-08-26 22.00.19.jpg" alt="" width="375"><figcaption><p>Figure 3: Starting position for the G33 flex measurement command</p></figcaption></figure>
 {% endstep %}
 
@@ -56,7 +67,7 @@ Run the G33 command and let the machine do the measurement
 Example:
 
 ```
-G33 X303 Y10 I30
+G33 X300 Y10 I30
 ```
 
 After the measurement has been finished the flex compensation is activated. Run M380.2 in order to save the data to the SD card.
@@ -88,12 +99,12 @@ With this setting the compensation data will be loaded on every reboot (recommen
 **Default**: false
 
 ```
-leveling-strategy.rectangular-grid.flex_x_points 60
+leveling-strategy.rectangular-grid.flex_x_points 30
 ```
 
 This value specifies the maximum number of points that can be probed along the X axis. Fewer points may be measured, but it is not possible to probe more than the configured amount.
 
-**Default**: 60
+**Default**: 30
 
 ## Commands
 

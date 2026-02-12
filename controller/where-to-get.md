@@ -3,6 +3,13 @@
 ## Latest Version
 
 See the assets section of [latest dev release](https://github.com/Carvera-Community/Carvera_Controller/releases/tag/dev) for installation packages for your system.
+{% hint style="warning" %}
+While the Community Controller has been developed with compatibility with Makera Firmware in mind, the latest stable release 2.0.0 is not compatible with Makera Firmware >= 1.0.4.
+
+Work is under way to return compatibility: [PR #341](https://github.com/Carvera-Community/Carvera_Controller/pull/341)
+{% endhint %}
+
+See the assets section of [latest release](https://github.com/carvera-community/carvera_controller/releases/latest) for installation packages for your system.
 
 * carveracontroller-community-\<version>-windows-x64.exe - Standalone Windows binary, without a installer
 * carveracontroller-community-\<version>-Intel.dmg - MacOS with Intel CPU

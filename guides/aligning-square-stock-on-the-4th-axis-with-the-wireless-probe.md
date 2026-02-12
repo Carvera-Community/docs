@@ -2,20 +2,16 @@
 
 {% hint style="info" %}
 #### If you have a 3D Probe you can instead use the [M465](../firmware/supported-commands/mcodes/probing.md#m465-probe-axis-angle) macro <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
+### This article is kept for archival purposes, the entire procedure has been added as a single scripted [M465.1](../firmware/supported-commands/mcodes/probing.md#m465.1-probe-4th-axis-a-axis-stock) command. <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
 {% endhint %}
 
 ### Figure out what numbers you need to use <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
 
 Calculate the y axis offset for your stock by taking the width of the part in mm, dividing by 2 and then subtracting at least 3mm.\
 So for a 25mm wide part you would get 25mm/2 = 12.5 ; 12.5 - 2 = 9.5mm which for simplicity I will round down to 9.\
-In the future I will refer to this value as **{Y offset}** and use the example of 9mm\
-\
-\
-\
-\
+In the future I will refer to this value as **{Y offset}** and use the example of 9mm
 
-
-### Set up your origin <a href="#set-up-your-origin" id="set-up-your-origin"></a>
+### Set up your origin
 
 <figure><img src="https://wiki.makera.com/knowledge-sharing/align-stock-to4-th-axis-with--probe/4thaxisoriginsetting.png" alt=""><figcaption></figcaption></figure>
 
@@ -35,7 +31,7 @@ G90 G01 X0 Y0
 and then hit the send button. This will move the carvera to be above the centerline of the 4th axis on X and above the headstock on Y
 
 \
-\\
+<br>
 
 <figure><img src="https://wiki.makera.com/knowledge-sharing/align-stock-to4-th-axis-with--probe/align4thaxismoveto00.png" alt=""><figcaption></figcaption></figure>
 
@@ -47,8 +43,7 @@ Using the manual move tab, roughly align the stock in the a axis so that the top
 
 <figure><img src="https://wiki.makera.com/knowledge-sharing/align-stock-to4-th-axis-with--probe/align4thaxisstocksetorigin2.png" alt=""><figcaption></figcaption></figure>
 
-\
-Probing Commands
+### Probing Commands
 
 Back into the MDI again type in:\
 \
@@ -82,9 +77,8 @@ In our example the values look like this:
 
 inverse tan( (2\*9) / (2-1) ) = inverse tan(18) = 3.18 degrees.
 
-### Move the A Axis and zero <a href="#move-the-a-axis-and-zero" id="move-the-a-axis-and-zero"></a>
+### Move the A Axis and zero
 
-\
 Start by moving your probe to a safe location. The easiest way to do this is to use the goto - clearance command in the manual control tab.
 
 Make sure the A axis is clear to spin and then type the following into the MDI\

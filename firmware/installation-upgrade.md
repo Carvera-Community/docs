@@ -51,3 +51,13 @@ After resetting, you will need to reconnect the Controller. You can check if the
 <figure><img src="../.gitbook/assets/image (10).png" alt="" width="360"><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
+
+## Alternative Install Method
+
+If it's not possible to transfer the firmware using the Controller software it is always possible to change the firmware (even back to the Makera firmware) by:
+
+1. Removing the SD card from the machine control board
+2. Insert the SD card to a computer
+3. Delete the `FIRMWARE.CUR` file
+4. Copy the new firmware file to the root of the card with the filename `firmware.bin`
+5. Next time the control board powers on, it will flash this firmware file to itself

@@ -2,8 +2,8 @@
 
 Using the 3D Touch probe you can calibrate a number of machine specific offsets increasing the accuracy of key locations in the machine.
 
-{% hint style="warning" %}
-This functionality requires a 3D Touch Probe
+{% hint style="info" %}
+This functionality requires a [3D Touch Probe](../../features/3d-probe-support.md)
 {% endhint %}
 
 ## M469.1 - Calibrate Anchor 1
@@ -11,6 +11,10 @@ This functionality requires a 3D Touch Probe
 ### Description
 
 M469.1 performs calibration of Anchor 1 position using a 3-axis probe. This is part of the ATC (Automatic Tool Changer) calibration system. The probe will move to the anchor 1 position and automatically perform the probing operation. Once the operation is done, check the MDI for results and run the specified config command.
+
+{% hint style="warning" %}
+The Anchor 1 position is used as part of the configuration for Anchor 2, the Tool rack (C1 only), and the tool length setter. If you adjust the anchor 1 position, you must also adjust the others.&#x20;
+{% endhint %}
 
 ### Parameters
 
@@ -43,6 +47,10 @@ M469.2 performs calibration of Anchor 2 position using a 3-axis probe. This is p
 M469.2              ; Calibrate Anchor 2 with normal probe
 M469.2 I1           ; Calibrate Anchor 2 with inverted probe
 ```
+
+{% hint style="info" %}
+## Before you get too far into calibrating your 4th axis module. Ensure that you don't have any chips or burrs between the module and bed, or between the module and the track that it is bolted.
+{% endhint %}
 
 ## M469.4 - Calibrate A-Axis Headstock
 

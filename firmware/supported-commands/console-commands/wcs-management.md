@@ -4,8 +4,7 @@
 
 ### Description
 
-The get wcs command is a console command that displays comprehensive information about all Work Coordinate Systems (WCS) and related coordinate system data. This command provides detailed status information about coordinate system offsets, rotations, and current positions.\
-
+The get wcs command is a console command that displays comprehensive information about all Work Coordinate Systems (WCS) and related coordinate system data. This command provides detailed status information about coordinate system offsets, rotations, and current positions.<br>
 
 ### Parameters
 

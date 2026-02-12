@@ -16,7 +16,11 @@ The Community developed version of the post-processor has a number of benefits a
 
 ## Post-Processor
 
-### How to use Action Commands
+### Action Commands
+
+Action commands are a type of [Manual NC operation](https://help.autodesk.com/view/fusion360/ENU/?guid=GUID895129FD-6548-414D-8B31-EDBCC5EF4439) that insert g-code to the NC output. These have been added with useful functions specific to the Carvera firmware.&#x20;
+
+#### How to use Action Commands
 
 {% stepper %}
 {% step %}
@@ -44,10 +48,9 @@ For example ShrinkA
 {% endstep %}
 {% endstepper %}
 
-### Available Action Commands
+#### Available Action Commands
 
-The following ACTION commands are supported by this post:\
-
+The following ACTION commands are supported by this post:<br>
 
 * RapidA:# - rapids the a axis to degree position
 * SaferA:# - Moves the z axis up to its clearance position then moves the a axis

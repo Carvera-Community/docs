@@ -4,7 +4,7 @@ description: WiXHC WBH04 Pendant support was added in version 0.10.0
 
 # Pendant Support
 
-The Community Controller supports the [WiXHC WBH04](https://www.wixhc.cn/product/4-axis-usb-cnc-controller-whb04b-4) family of pendants to control the machine. They can be purchased from [AliExpress](https://www.aliexpress.com/item/1005006270475983.html) or from other online retailers. There are a number of variations within this family of devices, including 4/6 axis models, and wired/wireless. All them are expected to work with the Community Controller.&#x20;
+The Community Controller supports the [WiXHC HB](https://www.wixhc.cn/product/4-axis-usb-cnc-controller-whb04b-4) family of pendants to control the machine. They can be purchased from [AliExpress](https://www.aliexpress.com/item/1005006270475983.html) or from other online retailers. There are a number of variations within this family of devices, including 4/6 axis models (WHB04/WHB06), and wired/wireless (LHB04/LHB06). All them are expected to work with the Community Controller.&#x20;
 
 {% hint style="warning" %}
 This functionality is supported on Windows, MacOS and Linux. It is not available for iOS or Android.
