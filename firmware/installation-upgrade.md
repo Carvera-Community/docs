@@ -22,7 +22,7 @@ The .bin file you want is in assets of [latest release](https://github.com/Carve
 
 Click the top-right drop down menu <img src="../.gitbook/assets/image (8).png" alt="" data-size="line"> and select the software update option <img src="../.gitbook/assets/image (9).png" alt="" data-size="line">.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
