@@ -8,6 +8,7 @@
   * [Controller v0.9.0](updates/controller-v0.9.0.md)
   * [Firmware v1.0.10c](updates/firmware-v1.0.10c.md)
 * [Outside Resources](outside-resources.md)
+* [Compatibility](compatibility.md)
 
 ## Controller
 
