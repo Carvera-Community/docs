@@ -18,9 +18,9 @@ The Anchor 1 position is used as part of the configuration for Anchor 2, the Too
 
 ### Parameters
 
-* I: Invert probe direction (optional)
-* 0: Normal probe direction (default)
-* 1: Inverted probe direction (NC)
+* I: Invert probe direction (optional, default: 0)
+  * 0: Normal probe direction
+  * 1: Inverted probe direction (NC)
 
 ### Example
 
@@ -37,9 +37,9 @@ M469.2 performs calibration of Anchor 2 position using a 3-axis probe. This is p
 
 ### Parameters
 
-* I: Invert probe direction (optional)
-* 0: Normal probe direction (default)
-* 1: Inverted probe direction
+* I: Invert probe direction (optional, default: 0)
+  * 0: Normal probe direction
+  * 1: Inverted probe direction
 
 ### Example
 
@@ -60,11 +60,11 @@ M469.4 calibrates the A-axis headstock center position using a 3-axis probe. The
 
 ### Parameters
 
-* I: Invert probe direction (optional)
-  * 0: Normal probe direction (default)
+* I: Invert probe direction (optional, default: 0)
+  * 0: Normal probe direction
   * 1: Inverted probe direction
-* Y: Headstock width (optional)
-* E: Probe height (optional)
+* Y: Headstock width (optional, default: from config rotation_width/2 + 5)
+* E: Probe height (optional, default: from config rotation_offset_z - 6)
 
 ### Example
 
@@ -81,12 +81,12 @@ M469.5 calibrates the A-axis center height using a 3-axis probe. Full documentat
 
 ### Parameters
 
-* I: Invert probe direction (optional)
-  * 0: Normal probe direction (default)
+* I: Invert probe direction (optional, default: 0)
+  * 0: Normal probe direction
   * 1: Inverted probe direction
-* X: X-axis offset (optional)
-* E: Probe height (optional)
-* R: Pin diameter (optional)
+* X: X-axis offset (optional, default: 60mm)
+* E: Probe height (optional, default: from config rotation_offset_z)
+* R: Pin diameter (optional, default: 6mm)
 
 ### Example
 

@@ -26,9 +26,7 @@ M491.1 performs a tool break check by calibrating the current tool and comparing
 
 ### Parameters
 
-* H: Tolerance value for break detection (optional, defaults to 0.1mm)
-  * Must be >= 0.02mm
-  * If set too small, the command will halt with an error
+* H: Tolerance value for break detection (optional, default: 0.1mm, minimum: 0.02mm)
 
 {% embed url="https://youtu.be/28P2BoFFpco?t=174" %}
 Demo of M491.1
