@@ -18,7 +18,7 @@ This functionality is supported on Windows, MacOS and Linux. It is not available
 
 The following is a screenshot of the Pendant configuration screen, showing all the possible options:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Enable Integration
 
@@ -33,9 +33,9 @@ To enable the WBH04 pendant support in the Controller:
 
 The WBH04 pendant devices have action buttons which can also be set to run Macros. In the Pendant configuration screen is the setting _**`Primary button action is`**_ which defines what happens when the button is pressed. This can be _**Key-specific Action**_ or _**Macro**_. The opposite of this setting is what will occur when the button is pressed at the same time as the _**FN**_ key.
 
-For example if the _**`Primary button action is` setting is set to Key-specific Action**_, pressing the key<img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" data-size="line">will increase the Feed override by 10%. Pushing the <img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" data-size="line">+<img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" data-size="line"> will run Macro #1.
+For example if the _**`Primary button action is` setting is set to Key-specific Action**_, pressing the key<img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" data-size="line">will increase the Feed override by 10%. Pushing the <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" data-size="line">+<img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" data-size="line"> will run Macro #1.
 
-For example if the _**`Primary button action is` setting is set to Macro**_, pressing the key<img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" data-size="line">will run Macro #1. Pushing the <img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" data-size="line">+<img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" data-size="line"> will run increase the Feed override by 10%
+For example if the _**`Primary button action is` setting is set to Macro**_, pressing the key<img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" data-size="line">will run Macro #1. Pushing the <img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" data-size="line">+<img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" data-size="line"> will run increase the Feed override by 10%
 
 ### Setting Macros
 

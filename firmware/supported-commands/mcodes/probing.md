@@ -65,8 +65,8 @@ M460.1 calibrates the probe tip diameter using a known bore diameter. The probe 
 ### Parameters
 
 * X: Known bore diameter in X direction (required)
-* Y: Known bore diameter in Y direction (optional, defaults to X)
-* R: Number of repeat measurements (optional, defaults to 1)
+* Y: Known bore diameter in Y direction (optional, default: same as X)
+* R: Number of repeat measurements (optional, default: 1)
 * S: Save position flag (optional)
 
 ### Example
@@ -100,16 +100,16 @@ All parameters are optional but you must have 1 of X or Y, if you supply only 1 
 
 * X: Distance to probe in X direction (required)
 * Y: Distance to probe in Y direction (required)
-* D: Probe tip diameter (optional, defaults to configured value)
-* E: Depth to probe sides from (optional, defaults to 2mm)
-* H: Probe height above bore (optional, defaults to 0)
-* C: Clearance height (optional, defaults to 2mm)
-* F: Feed rate (optional, defaults to 300mm/min)
-* K: Rapid feed rate (optional, defaults to 800mm/min)
-* L: Number of repeat measurements (optional, defaults to 1)
-* R: Retract distance (optional, defaults to 1.5mm)
-* S: Save probed position (optional, defaults to 0)
-* I: Invert probe for NC probe (optional, defaults to 0)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* E: Depth to probe sides from (optional, default: 2mm)
+* H: Probe height above bore (optional, default: 0)
+* C: Clearance height (optional, default: 2mm)
+* F: Feed rate (optional, default: 300 mm/min)
+* K: Rapid feed rate (optional, default: 800 mm/min)
+* L: Number of repeat measurements (optional, default: 1)
+* R: Retract distance (optional, default: 1.5mm)
+* S: Save probed position (optional, default: 0)
+* I: Invert probe for NC probe (optional, default: 0)
 
 ### Example
 
@@ -138,17 +138,17 @@ When the macro completes the program will have saved the distance along the X ax
 
 * X: Distance to probe in X direction (required)
 * Y: Distance to probe in Y direction (required)
-* J: Probe Clearance. When Probing a boss, this is added to the X and Y values when moving outside the boss  (optional, defaults to 4mm)
-* D: Probe tip diameter (optional, defaults to configured value)
-* E: Depth to probe sides from (optional, defaults to 2mm)
-* H: Probe height above boss (optional, defaults to 0)
-* C: Clearance height (optional, defaults to 2mm)
-* F: Feed rate (optional, defaults to 300mm/min)
-* K: Rapid feed rate (optional, defaults to 800mm/min)
-* L: Number of repeat measurements (optional, defaults to 1)
-* R: Retract distance (optional, defaults to 1.5mm)
-* S: Save probed position (optional, defaults to 0). If S1 is set the center of the boss will be the new xy origin. If S2 is set and a probing height (H) was given, the z origin is set to the probed surface
-* I: Invert probe for NC probe (optional, defaults to 0)
+* J: Probe clearance when moving outside the boss (optional, default: 4mm)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* E: Depth to probe sides from (optional, default: 2mm)
+* H: Probe height above boss (optional, default: 0)
+* C: Clearance height (optional, default: 2mm)
+* F: Feed rate (optional, default: 300 mm/min)
+* K: Rapid feed rate (optional, default: 800 mm/min)
+* L: Number of repeat measurements (optional, default: 1)
+* R: Retract distance (optional, default: 1.5mm)
+* S: Save probed position (optional, default: 0). If S1 is set the center of the boss will be the new xy origin. If S2 is set and a probing height (H) was given, the z origin is set to the probed surface
+* I: Invert probe for NC probe (optional, default: 0)
 
 ### Example
 
@@ -173,16 +173,16 @@ When the macro completes the program will have saved the center position to #151
 
 * X: Distance to probe in X direction (required)
 * Y: Distance to probe in Y direction (required)
-* D: Probe tip diameter (optional, defaults to configured value)
-* E: Depth to probe sides from (optional, defaults to 2mm)
-* H: Probe height above corner (optional, defaults to 0)
-* C: Clearance height (optional, defaults to 2mm)
-* F: Feed rate (optional, defaults to 300mm/min)
-* K: Rapid feed rate (optional, defaults to 800mm/min)
-* L: Number of repeat measurements (optional, defaults to 1)
-* R: Retract distance (optional, defaults to 1.5mm)
-* S: Save probed position (optional, defaults to 0). If S1 is set the corner will be the new xy origin. If S2 is set and a probing height (H) was given, the z origin is set to the probed surface
-* I: Invert probe for NC probe (optional, defaults to 0)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* E: Depth to probe sides from (optional, default: 2mm)
+* H: Probe height above corner (optional, default: 0)
+* C: Clearance height (optional, default: 2mm)
+* F: Feed rate (optional, default: 300 mm/min)
+* K: Rapid feed rate (optional, default: 800 mm/min)
+* L: Number of repeat measurements (optional, default: 1)
+* R: Retract distance (optional, default: 1.5mm)
+* S: Save probed position (optional, default: 0). If S1 is set the corner will be the new xy origin. If S2 is set and a probing height (H) was given, the z origin is set to the probed surface
+* I: Invert probe for NC probe (optional, default: 0)
 
 Example
 
@@ -207,16 +207,16 @@ When the macro completes the program will have saved the center position to #151
 
 * X: Distance to probe in X direction (required)
 * Y: Distance to probe in Y direction (required)
-* D: Probe tip diameter (optional, defaults to configured value)
-* E: Depth to probe sides from (optional, defaults to 2mm)
-* H: Probe height above corner (optional, defaults to 0)
-* C: Clearance height (optional, defaults to 2mm)
-* F: Feed rate (optional, defaults to 300mm/min)
-* K: Rapid feed rate (optional, defaults to 800mm/min)
-* L: Number of repeat measurements (optional, defaults to 1)
-* R: Retract distance (optional, defaults to 1.5mm)
-* S: Save probed position (optional, defaults to 0). If S1 is set the corner will be the new xy origin. If S2 is set and a probing height (H) was given, the z origin is set to the probed surface
-* I: Invert probe for NC probe (optional, defaults to 0)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* E: Depth to probe sides from (optional, default: 2mm)
+* H: Probe height above corner (optional, default: 0)
+* C: Clearance height (optional, default: 2mm)
+* F: Feed rate (optional, default: 300 mm/min)
+* K: Rapid feed rate (optional, default: 800 mm/min)
+* L: Number of repeat measurements (optional, default: 1)
+* R: Retract distance (optional, default: 1.5mm)
+* S: Save probed position (optional, default: 0). If S1 is set the corner will be the new xy origin. If S2 is set and a probing height (H) was given, the z origin is set to the probed surface
+* I: Invert probe for NC probe (optional, default: 0)
 
 ### Examples
 
@@ -239,17 +239,17 @@ When the macro completes the program will have saved angle as degrees to #153
 
 * X: Distance to probe in X direction (optional, only one of X or Y should be specified)
 * Y: Distance to probe in Y direction (optional, only one of X or Y should be specified)
-* D: Probe tip diameter (optional, defaults to configured value)
-* E: Depth to probe sides from (optional, defaults to 2mm)
-* H: Probe height above surface (optional, defaults to 0)
-* C: Clearance height (optional, defaults to 2mm)
-* F: Feed rate (optional, defaults to 300mm/min)
-* K: Rapid feed rate (optional, defaults to 800mm/min)
-* L: Number of repeat measurements (optional, defaults to 1)
-* R: Retract distance (optional, defaults to 1.5mm)
-* S: Save probed position as WCS Rotation (optional, defaults to 0)
-* I: Invert probe for NC probe (optional, defaults to 0)
-* V: Visualize path distance (optional, defaults to 0)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* E: Depth to probe sides from (optional, default: 2mm)
+* H: Probe height above surface (optional, default: 0)
+* C: Clearance height (optional, default: 2mm)
+* F: Feed rate (optional, default: 300 mm/min)
+* K: Rapid feed rate (optional, default: 800 mm/min)
+* L: Number of repeat measurements (optional, default: 1)
+* R: Retract distance (optional, default: 1.5mm)
+* S: Save probed position as WCS Rotation (optional, default: 0)
+* I: Invert probe for NC probe (optional, default: 0)
+* V: Visualize path distance (optional, default: 0)
 
 #### Examples
 
@@ -279,12 +279,12 @@ When the macro completes the program will have save the result to:
 
 * Y: Total probing distance.  The machine will move to + Y/2 and -Y/2 from the current position (required)
 * H: Probe height - distance to probe down from current position (required)
-* F: Feed rate for probing operations (default: 300 mm/min)
-* K: Rapid feed rate for positioning moves (default: 800 mm/min)
-* L: Number of probe cycles to repeat (default: 1)
-* R: Retract distance from touched surface (default: 1.5mm)
-* V: Rotate A axis after probing if V1 is specified
-* S: Save the offset for the A axis after probing (with or without V1)
+* F: Feed rate for probing operations (optional, default: 300 mm/min)
+* K: Rapid feed rate for positioning moves (optional, default: 800 mm/min)
+* L: Number of probe cycles to repeat (optional, default: 1)
+* R: Retract distance from touched surface (optional, default: 1.5mm)
+* V: Rotate A axis after probing if V1 is specified (optional, default: 0)
+* S: Save the offset for the A axis after probing (optional, with or without V1)
 
 ### Example
 
@@ -314,12 +314,12 @@ When the macro completes the program will have save the result to:
 * X: Distance offset from 4th axis origin (required)
 * Y: Total probing distance.  The machine will move to + Y/2 and -Y/2 from the specified position (required)
 * H: Probe height - distance to probe down from current position (required)
-* F: Feed rate for probing operations (default: 300 mm/min)
-* K: Rapid feed rate for positioning moves (default: 800 mm/min)
-* L: Number of probe cycles to repeat (default: 1)
-* R: Retract distance from touched surface (default: 1.5mm)
-* V: Rotate A axis after probing if V1 is specified
-* S: Save the offset for the A axis after probing (with or without V1)
+* F: Feed rate for probing operations (optional, default: 300 mm/min)
+* K: Rapid feed rate for positioning moves (optional, default: 800 mm/min)
+* L: Number of probe cycles to repeat (optional, default: 1)
+* R: Retract distance from touched surface (optional, default: 1.5mm)
+* V: Rotate A axis after probing if V1 is specified (optional)
+* S: Save the offset for the A axis after probing (optional, with or without V1)
 
 ### Example
 
@@ -356,16 +356,16 @@ When the macro completes the program will have save the result to:
 * X: Distance to probe in X direction (optional)
 * Y: Distance to probe in Y direction (optional)
 * Z: Distance to probe in Z direction (optional)
-* D: Probe tip diameter (optional, defaults to configured value)
-* E: Depth to probe sides from (optional, defaults to 2mm)
-* H: Probe height above surface (optional, defaults to 0)
-* C: Clearance height (optional, defaults to 2mm)
-* F: Feed rate (optional, defaults to 300mm/min)
-* K: Rapid feed rate (optional, defaults to 800mm/min)
-* L: Number of repeat measurements (optional, defaults to 1)
-* R: Retract distance (optional, defaults to 1.5mm)
-* S: Save probed position (optional, defaults to 0). If S1 is set the single probed x or y axis will be set as the WCS origin. If S2 is set the z origin is set to the probed surface
-* I: Invert probe for NC probe (optional, defaults to 0)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* E: Depth to probe sides from (optional, default: 2mm)
+* H: Probe height above surface (optional, default: 0)
+* C: Clearance height (optional, default: 2mm)
+* F: Feed rate (optional, default: 300 mm/min)
+* K: Rapid feed rate (optional, default: 800 mm/min)
+* L: Number of repeat measurements (optional, default: 1)
+* R: Retract distance (optional, default: 1.5mm)
+* S: Save probed position (optional, default: 0). If S1 is set the single probed x or y axis will be set as the WCS origin. If S2 is set the z origin is set to the probed surface
+* I: Invert probe for NC probe (optional, default: 0)
 
 ### Example
 
@@ -387,11 +387,11 @@ M466.1 performs four [Z Probe Double Tap](probing.md#m466-single-axis-probe-doub
 
 * X: Distance to probe in X direction (required)
 * Y: Distance to probe in Y direction (required)
-* H: Probe height above surface (reqquired)&#x20;
-* F: Feed rate (optional, defaults to 300mm/min)
-* K: Rapid feed rate (optional, defaults to 800mm/min)
-* L: Number of repeat measurements (optional, defaults to 1)
-* I: Invert probe for NC probe (optional, defaults to 0)
+* H: Probe height above surface (required)
+* F: Feed rate (optional, default: 300 mm/min)
+* K: Rapid feed rate (optional, default: 800 mm/min)
+* L: Number of repeat measurements (optional, default: 1)
+* I: Invert probe for NC probe (optional, default: 0)
 
 ### Example
 
