@@ -34,7 +34,7 @@ M98 calls a macro (subroutine) from the current program. The macro is loaded fro
 ### Parameters
 
 * P: Macro number (required) - specifies which macro file to load
-* L: Number of repetitions (optional) - defaults to 1
+* L: Number of repetitions (optional, default: 1)
 * Subcode 1: Use quoted filename instead of macro number
 
 ### Example
@@ -56,9 +56,7 @@ M98.1 opens a subprogram by path and returns to the main program when done. It c
 * Quoted filename: The macro filename in quotes (required)
   * Can be a relative path or full path
   * If not starting with /sd/gcodes/, it will be automatically prefixed
-* L: Number of repetitions (optional) - must come before the path
-  * Defaults to 1 if not specified
-  * Must be a positive integer
+* L: Number of repetitions (optional, default: 1) - must come before the path; must be a positive integer
 
 ### Example
 
