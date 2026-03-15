@@ -49,6 +49,7 @@
     * [Probing](firmware/supported-commands/mcodes/probing.md)
     * [Tool Offset Management](firmware/supported-commands/mcodes/tool-offset-management.md)
     * [Tool Slot Management](firmware/supported-commands/mcodes/tool-slot-management.md)
+    * [Tool Change](firmware/supported-commands/mcodes/tool-change.md)
   * [Console Commands](firmware/supported-commands/console-commands/README.md)
     * [WCS Management](firmware/supported-commands/console-commands/wcs-management.md)
 
