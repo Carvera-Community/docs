@@ -28,7 +28,7 @@
 
 ## Firmware
 
-* [About](<README (1).md>)
+* [About](firmware/about.md)
 * [Installation/Upgrade](firmware/installation-upgrade.md)
 * [Features](firmware/features/README.md)
   * [3D Probe Support](firmware/features/3d-probe-support.md)

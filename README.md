@@ -9,7 +9,7 @@ The Carvera Community has developed versions of software that has features and f
 See our projects:
 
 * [Community Carvera Controller](controller/about.md)
-* [Community Carvera Firmware](<README (1).md>)
+* [Community Carvera Firmware](firmware/about.md)
 * [Fusion 360 Post Processor](other/fusion-360.md)
 * [HSM Tool Library](other/hsm-tool-library.md)
 * [Youtube Page](https://www.youtube.com/@carvera-community)
