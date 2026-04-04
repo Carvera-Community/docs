@@ -38,8 +38,11 @@
   * [Jog Modes](firmware/features/jog-modes.md)
   * [Custom Tool Setter Position](firmware/features/custom-tool-setter-position.md)
   * [Custom Tool Slots](firmware/features/custom-tool-slots.md)
+  * [LED Behaviour](firmware/features/led-behavior.md)
 * [Supported Commands](firmware/supported-commands/README.md)
   * [GCodes](firmware/supported-commands/gcodes.md)
+    * [Inverse time feed (G93 / G94)](firmware/supported-commands/gcodes/inverse-time-feed-g93-g94.md)
+    * [G0 default rapid feed](firmware/supported-commands/gcodes/g0-default-rapid-feed.md)
   * [MCodes](firmware/supported-commands/mcodes/README.md)
     * [Optional Stop Mode](firmware/supported-commands/mcodes/optional-stop-mode.md)
     * [Line-by-Line Execution Mode](firmware/supported-commands/mcodes/line-by-line-execution-mode.md)
@@ -50,8 +53,10 @@
     * [Tool Offset Management](firmware/supported-commands/mcodes/tool-offset-management.md)
     * [Tool Slot Management](firmware/supported-commands/mcodes/tool-slot-management.md)
     * [Tool Change](firmware/supported-commands/mcodes/tool-change.md)
+    * [M400 — wait for moves](firmware/supported-commands/mcodes/m400-wait-for-moves.md)
   * [Console Commands](firmware/supported-commands/console-commands/README.md)
     * [WCS Management](firmware/supported-commands/console-commands/wcs-management.md)
+    * [config-delete](firmware/supported-commands/console-commands/config-delete.md)
 
 ## Other
 

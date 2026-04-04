@@ -74,7 +74,7 @@ description: The below table shows the supported MCodes
 | [M380.1](../../features/flex-compensation-system.md#print-flex-compensation-m380.1) | Print flex compensation |  |  | false |
 | [M380.2](../../features/flex-compensation-system.md#save-compensation-data-m380.2) | Save flex compensation data to SD |  |  | false |
 | [M380.3](../../features/flex-compensation-system.md#load-compensation-data-m380.3) | Load compensation data from SD |  |  | false |
-| M400 | wait for all moves are done up until this point |  |  | false |
+| [M400](m400-wait-for-moves.md) | Wait until all queued moves have finished (planner idle); sync point before following commands | M400 | ok | false |
 | [M460 / M460.1](probing.md#m460-probe-calibration) | calibrate probe tip using round bore of known size | M460 X25 L3 | start centered inside bore. Will calibrate based off a 25mm bore, averaging the value over 3 tests. This will save the value to variable #150. Use config-set sd zprobe.probe_tip_diameter # to store this value for resets. All parameters from M461 except T,S are implemented | true |
 | [M460.2](probing.md#m460-probe-calibration) | calibrate probe tip using boss of known size | M460.2 X15 L3 | start centered over boss . Requires X or Y but not both. The value for X or Y is the measured dimention of the boss. L is the number of times to probe and average over. All paremeters from M462 except T,S are implemented | true |
 | [M460.3](probing.md#m460-probe-calibration) | calibrate probe tip using anchor 2 | M460.3 | will move to the correct position by clearance Z, move xy, probe down in z. Position is based on config position for anchor 2 and the saved anchor width. Measure and set the anchor width first. | true |
