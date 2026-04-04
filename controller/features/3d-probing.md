@@ -15,3 +15,9 @@ A number of [Probing routines](../../firmware/supported-commands/mcodes/probing.
 The option to set the current tool to 3D Probe is available under the set menu. Remember that this doesn't automatically Calibrate the Tool Length Offset, so  you should run the Calibrate routine from the dropdown after setting the probe.
 
 <figure><img src="../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+
+## Usage Video
+
+Below is a video from Fae showing how to use the 3 axis probe to probe the centre of an existing bore.
+
+{% embed url="https://youtu.be/kcf5v0oKhDI" %}

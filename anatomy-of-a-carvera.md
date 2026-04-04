@@ -39,9 +39,9 @@ The Z1 is similar in that it primarily uses a LPC1768 for motion control and a S
 |                          | Carvera                           | Carvera Air                       | Z1                                |
 | ------------------------ | --------------------------------- | --------------------------------- | --------------------------------- |
 | Supported Mains Input    | 100-120VAC / 200-240VAC @ 50/60Hz | 100-120VAC / 200-240VAC @ 50/60Hz | 100-120VAC / 200-240VAC @ 50/60Hz |
-| System PSU               | 200w w/ 12v output                | 450w w/ 12v output                | Unknown                           |
+| System PSU               | 200w w/ 24v output                | 450w w/ 24v output                | Unknown                           |
 | Spindle PSU              | 200w w/ 48v output                | shared with system PSU            | shared with system PSU            |
-| System PSU Model         | Mean Well EPP-200-12              | Mean Well LRS-450-24              | Unknown                           |
+| System PSU Model         | Mean Well EPP-200-24              | Mean Well LRS-450-24              | Unknown                           |
 | Spindle PSU Model        | Mean Well EPP-200-48              | N/A                               | N/A                               |
 | Max AC Current (Typical) | 3.6A/115VAC 2A/230VAC             | 10A/115VAC 6A/230VAC              | Unknown                           |
 
