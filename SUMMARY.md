@@ -17,6 +17,11 @@
 * [Supported OS](controller/supported-os.md)
 * [Features](controller/features/README.md)
   * [3D Probing](controller/features/3d-probing.md)
+  * [Resume playback and start at line](controller/features/resume-playback-start-at-line.md)
+  * [MDI terminal](controller/features/mdi-terminal.md)
+  * [Wi-Fi auto-connect and hidden networks](controller/features/wifi-auto-connect-and-hidden-networks.md)
+  * [Machine configuration backup](controller/features/machine-config-backup.md)
+  * [USB serial speed](controller/features/usb-serial-speed.md)
   * [Pendant Support](controller/features/pendant-support.md)
   * [Workspace Management](controller/features/workspace-management.md)
   * [WCS Rotation](controller/features/wcs-rotation.md)
@@ -39,6 +44,8 @@
   * [Custom Tool Setter Position](firmware/features/custom-tool-setter-position.md)
   * [Custom Tool Slots](firmware/features/custom-tool-slots.md)
   * [LED Behaviour](firmware/features/led-behavior.md)
+  * [Spindle maximum RPM](firmware/features/spindle-max-rpm.md)
+  * [USB serial baud rate](firmware/features/usb-serial-baud-rate.md)
 * [Supported Commands](firmware/supported-commands/README.md)
   * [GCodes](firmware/supported-commands/gcodes.md)
     * [Inverse time feed (G93 / G94)](firmware/supported-commands/gcodes/inverse-time-feed-g93-g94.md)
@@ -57,6 +64,7 @@
   * [Console Commands](firmware/supported-commands/console-commands/README.md)
     * [WCS Management](firmware/supported-commands/console-commands/wcs-management.md)
     * [config-delete](firmware/supported-commands/console-commands/config-delete.md)
+    * [baud](firmware/supported-commands/console-commands/baud.md)
 
 ## Other
 
