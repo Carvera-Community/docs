@@ -6,9 +6,9 @@ The location of the tool setter can be customized using the configuration elemen
 
 The easiest way to set the coordinates is have a tool in the collet, and jog the spindle down so that it's above but not touching the tool setter. In the Controller take note of the MCS X and Y locations. These are the positions in small grey text in the tool bar.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Highlighted is the MCS Position of the spindle as shown on the Controller in small grey text</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Highlighted is the MCS Position of the spindle as shown on the Controller in small grey text</p></figcaption></figure>
 
-Store the settings running the below commands substituting 123.123 with the actual x and y  position values. Do note that as these will be in the MCS coordinate space, so the values are expected to be negative.
+Store the settings running the below commands substituting 123.123 with the actual x and y position values. Do note that as these will be in the MCS coordinate space, so the values are expected to be negative.
 
 ```
 config-set sd coordinate.probe_mcs_x 123.123

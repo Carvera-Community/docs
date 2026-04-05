@@ -1,7 +1,7 @@
 # Installation/Upgrade
 
 {% hint style="success" %}
-#### Makera Support have stated that using the Community Firmware/Controller does not void the machine warranty
+**Makera Support have stated that using the Community Firmware/Controller does not void the machine warranty**
 
 Do note that the support they can provide maybe limited, and they may ask you to revert to Makera software to ensure that the issue is not specified to Community code. Reach out via the [bug report button](../controller/features/logging.md#viewing-logs) or in #mods in [Makera Discord](https://discord.gg/xwJMTD22) for Community support.
 {% endhint %}
@@ -14,7 +14,7 @@ Do note that the support they can provide maybe limited, and they may ask you to
 
 The .bin file you want is in assets of [latest dev release](https://github.com/Carvera-Community/Carvera_Community_Firmware/releases/tag/dev)
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

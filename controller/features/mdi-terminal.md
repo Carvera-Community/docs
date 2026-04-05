@@ -1,6 +1,10 @@
 # MDI Terminal
 
-The **MDI** (Manual Data Input) area is where you send individual G-code lines or short programs to the machine without loading a full file.
+The **MDI** (Manual Data Input) area is where you send individual G-code lines or short programs to the machine without loading a full file.\
+\
+To access the MDI, click the button that says MDI in the bottom left corner of the first control screen. It will swap to saying File and show a terminal instead of the file contents
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## Sending commands
 
@@ -12,6 +16,7 @@ The **MDI** (Manual Data Input) area is where you send individual G-code lines o
 
 * Press the **up arrow** in the MDI field to recall the **last sent** command.
 * You can step through **multiple** previous commands with the **up** and **down** arrow keys.
+* Double click a previous command in the terminal history to copy it to the current MDI input box
 
 ## Keyboard shortcuts
 
@@ -25,3 +30,5 @@ When the **MDI text box has focus**, **keyboard jogging** is disabled so typed k
 ## MDI while the program is running
 
 Whether you can send MDI during playback depends on Controller setting **allow MDI while running**.
+
+This setting is for advanced users and can lead to some machine problems if the wrong code is sent at the wrong time.
