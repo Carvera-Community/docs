@@ -1,8 +1,9 @@
 # Aligning Square Stock on the 4th axis with the wireless probe
 
 {% hint style="info" %}
-#### If you have a 3D Probe you can instead use the [M465](../firmware/supported-commands/mcodes/probing.md#m465-probe-axis-angle) macro <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
-### This article is kept for archival purposes, the entire procedure has been added as a single scripted [M465.1](../firmware/supported-commands/mcodes/probing.md#m465.1-probe-4th-axis-a-axis-stock) command. <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
+**If you have a 3D Probe you can instead use the** [**M465**](../firmware/supported-commands/mcodes/probing.md#m465-probe-axis-angle) **macro**
+
+#### This article is kept for archival purposes, the entire procedure has been added as a single scripted [M465.1](../firmware/supported-commands/mcodes/probing.md#m465.1-probe-4th-axis-a-axis-stock) command. <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
 {% endhint %}
 
 ### Figure out what numbers you need to use <a href="#figure-out-what-numbers-you-need-to-use" id="figure-out-what-numbers-you-need-to-use"></a>
@@ -38,8 +39,7 @@ and then hit the send button. This will move the carvera to be above the centerl
 \
 \
 \
-Using the manual move tab, roughly align the stock in the a axis so that the top flat face is horizontal. Then move along Z and X until the probe is about 30mm over the center of the stock and clear of the chuck like in the image below. The exact distance above the stock is not important.\
-
+Using the manual move tab, roughly align the stock in the a axis so that the top flat face is horizontal. Then move along Z and X until the probe is about 30mm over the center of the stock and clear of the chuck like in the image below. The exact distance above the stock is not important.\\
 
 <figure><img src="https://wiki.makera.com/knowledge-sharing/align-stock-to4-th-axis-with--probe/align4thaxisstocksetorigin2.png" alt=""><figcaption></figcaption></figure>
 

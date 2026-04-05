@@ -1,13 +1,11 @@
-# Wi-Fi auto-connect and hidden networks
+# Hidden Wifi networks
 
-## Connect automatically on startup
+For access points that do **not** broadcast their SSID, the Controller includes a way to **enter the SSID manually** through a dialog.
 
-If the Controller already has a **saved Wi-Fi address** (or equivalent network configuration) for the machine, it can **connect automatically** when the application starts, so you spend less time opening the connection panel manually.
+1. First scan for wifi networks as normal via the wifi menu button
+2. Select Other in the list
+3. Input the hidden wireless network details on the prompt
 
-Connection still requires a reachable machine and valid credentials; failures are logged like other connection errors.
+<figure><img src="../../.gitbook/assets/Screenshot 2026-04-05 at 9.58.43 am.png" alt=""><figcaption></figcaption></figure>
 
-## Hidden Wi-Fi networks (no broadcast SSID)
-
-For access points that do **not** broadcast their SSID, the Controller includes a way to **enter the SSID manually**  through a dialog.
-
-Use the exact SSID and password your router expects.
+<figure><img src="../../.gitbook/assets/Screenshot 2026-04-05 at 10.01.18 am.png" alt=""><figcaption></figcaption></figure>

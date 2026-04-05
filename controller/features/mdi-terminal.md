@@ -1,4 +1,4 @@
-# MDI terminal
+# MDI Terminal
 
 The **MDI** (Manual Data Input) area is where you send individual G-code lines or short programs to the machine without loading a full file.
 
@@ -7,7 +7,6 @@ The **MDI** (Manual Data Input) area is where you send individual G-code lines o
 * **Ctrl+Enter** sends the contents of the MDI box to the machine.
 * **Enter** alone adds a **new line** in the input (you can compose **multi-line** snippets before sending).
 * You can send **several commands at once**; output shows **multi-line** responses in a readable way.
-* If you combine **`clear`** with other commands in one send, the Controller may show a **warning**—use care, as `clear` resets machine state.
 
 ## History
 
