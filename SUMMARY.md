@@ -48,7 +48,7 @@
   * [USB serial baud rate](firmware/features/usb-serial-baud-rate.md)
 * [Supported Commands](firmware/supported-commands/README.md)
   * [GCodes](firmware/supported-commands/gcodes.md)
-    * [Inverse time feed (G93 / G94)](firmware/supported-commands/gcodes/inverse-time-feed-g93-g94.md)
+    * [Inverse time feed](firmware/supported-commands/gcodes/inverse-time-feed-g93-g94.md)
     * [G0 default rapid feed](firmware/supported-commands/gcodes/g0-default-rapid-feed.md)
   * [MCodes](firmware/supported-commands/mcodes/README.md)
     * [Optional Stop Mode](firmware/supported-commands/mcodes/optional-stop-mode.md)
