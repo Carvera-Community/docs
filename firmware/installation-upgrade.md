@@ -12,7 +12,7 @@ Do note that the support they can provide maybe limited, and they may ask you to
 {% step %}
 **Download the latest firmware binary file**
 
-The .bin file you want is in assets of [latest dev release](https://github.com/Carvera-Community/Carvera_Community_Firmware/releases/tag/dev)
+The .bin file you want is in assets of [latest release](https://github.com/Carvera-Community/Carvera_Community_Firmware/releases/latest)
 
 <figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
