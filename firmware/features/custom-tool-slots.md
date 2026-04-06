@@ -1,10 +1,7 @@
 # Custom Tool Slots
 
-{% include "../../.gitbook/includes/dev-feature-warning-banner.md" %}
-
 This functionality enables the capability to configure up to 255 custom tool slots. If any custom tool slots are defined, the machine default slots are ignored. It's expected that you are either have defined all the slots via the Custom Tool Slot functionality, or are using the stock tool slots. Custom tool slots are defined by the individual slot's X/Y/Z MCS location, and is not affected by changes in other machine position offsets.
 
-\
 It is possible to migrate the stock tool slots definition to the custom tool slot config if desired. This might be useful for a few reasons:
 
 * To fine tune the individual tool slot or anchor 1 locations. Since the stock tool slot locations are configured as as group based on an offset from anchor 1, adjusting anchor 1 has the effect of also adjusting the tool rack location. This is not desirable if the stock tool slot locations is correct but the anchor 1 position is not.

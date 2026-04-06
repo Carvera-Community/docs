@@ -1,7 +1,5 @@
 # Spindle maximum RPM
 
-{% include "../../.gitbook/includes/dev-feature-warning-banner.md" %}
-
 Community firmware enforces a **maximum spindle speed** so commanded RPM (for example from **M3** / **S**) is **clamped** to a safe upper limit for your machine and spindle.
 
 ## Configuration
