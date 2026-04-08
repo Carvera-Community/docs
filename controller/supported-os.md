@@ -3,7 +3,7 @@
 The Controller software works on the following systems:
 
 * Windows 7 x64 or newer
-* MacOS using Intel CPUs running Ventura (13) or above
+* MacOS using Intel CPUs running Sonoma (14) or above
 * MacOS using Apple Silicon CPUs running Sonoma (14) or above
 * Linux using x64 CPUs running a Linux distribution with Glibc 2.35 or above (eg. Ubuntu 22.04 or higher)
 * Linux using aarch64 CPUs (eg Raspberyy Pi 3+) running a Linux distribution with Glibc 2.39 or above (eg. Ubuntu 24.04 or higher)

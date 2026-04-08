@@ -17,6 +17,11 @@
 * [Supported OS](controller/supported-os.md)
 * [Features](controller/features/README.md)
   * [3D Probing](controller/features/3d-probing.md)
+  * [Resume playback at line number](controller/features/resume-playback-start-at-line.md)
+  * [MDI Terminal](controller/features/mdi-terminal.md)
+  * [Hidden Wifi networks](controller/features/wifi-auto-connect-and-hidden-networks.md)
+  * [Machine Configuration Backup](controller/features/machine-config-backup.md)
+  * [USB serial speed](controller/features/usb-serial-speed.md)
   * [Pendant Support](controller/features/pendant-support.md)
   * [Workspace Management](controller/features/workspace-management.md)
   * [WCS Rotation](controller/features/wcs-rotation.md)
@@ -28,7 +33,7 @@
 
 ## Firmware
 
-* [About](<README (1).md>)
+* [About](firmware/about.md)
 * [Installation/Upgrade](firmware/installation-upgrade.md)
 * [Features](firmware/features/README.md)
   * [3D Probe Support](firmware/features/3d-probe-support.md)
@@ -36,8 +41,15 @@
   * [Math](firmware/features/math.md)
   * [Flex Compensation System](firmware/features/flex-compensation-system.md)
   * [Jog Modes](firmware/features/jog-modes.md)
+  * [Custom Tool Setter Position](firmware/features/custom-tool-setter-position.md)
+  * [Custom Tool Slots](firmware/features/custom-tool-slots.md)
+  * [LED Behaviour](firmware/features/led-behavior.md)
+  * [Spindle maximum RPM](firmware/features/spindle-max-rpm.md)
+  * [USB serial baud rate](firmware/features/usb-serial-baud-rate.md)
 * [Supported Commands](firmware/supported-commands/README.md)
   * [GCodes](firmware/supported-commands/gcodes.md)
+    * [Inverse time feed](firmware/supported-commands/gcodes/inverse-time-feed-g93-g94.md)
+    * [G0 default rapid feed](firmware/supported-commands/gcodes/g0-default-rapid-feed.md)
   * [MCodes](firmware/supported-commands/mcodes/README.md)
     * [Optional Stop Mode](firmware/supported-commands/mcodes/optional-stop-mode.md)
     * [Line-by-Line Execution Mode](firmware/supported-commands/mcodes/line-by-line-execution-mode.md)
@@ -46,8 +58,13 @@
     * [Self-Calibration](firmware/supported-commands/mcodes/self-calibration.md)
     * [Probing](firmware/supported-commands/mcodes/probing.md)
     * [Tool Offset Management](firmware/supported-commands/mcodes/tool-offset-management.md)
+    * [Tool Slot Management](firmware/supported-commands/mcodes/tool-slot-management.md)
+    * [Tool Change](firmware/supported-commands/mcodes/tool-change.md)
+    * [Advanced Motion Control](firmware/supported-commands/mcodes/m400-wait-for-moves.md)
   * [Console Commands](firmware/supported-commands/console-commands/README.md)
     * [WCS Management](firmware/supported-commands/console-commands/wcs-management.md)
+    * [config-delete](firmware/supported-commands/console-commands/config-delete.md)
+    * [baud](firmware/supported-commands/console-commands/baud.md)
 
 ## Other
 

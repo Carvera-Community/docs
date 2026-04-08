@@ -13,7 +13,7 @@ This functionality requires a [3D Touch Probe](../../features/3d-probe-support.m
 M469.1 performs calibration of Anchor 1 position using a 3-axis probe. This is part of the ATC (Automatic Tool Changer) calibration system. The probe will move to the anchor 1 position and automatically perform the probing operation. Once the operation is done, check the MDI for results and run the specified config command.
 
 {% hint style="warning" %}
-The Anchor 1 position is used as part of the configuration for Anchor 2, the Tool rack (C1 only), and the tool length setter. If you adjust the anchor 1 position, you must also adjust the others.&#x20;
+The Anchor 1 position is used as part of the configuration for Anchor 2, the Tool rack (C1 only), and the tool length setter. If you adjust the anchor 1 position, you must also adjust the others.
 {% endhint %}
 
 ### Parameters
@@ -49,7 +49,7 @@ M469.2 I1           ; Calibrate Anchor 2 with inverted probe
 ```
 
 {% hint style="info" %}
-## Before you get too far into calibrating your 4th axis module. Ensure that you don't have any chips or burrs between the module and bed, or between the module and the track that it is bolted.
+### Before you get too far into calibrating your 4th axis module. Ensure that you don't have any chips or burrs between the module and bed, or between the module and the track that it is bolted.
 {% endhint %}
 
 ## M469.4 - Calibrate A-Axis Headstock
@@ -63,8 +63,8 @@ M469.4 calibrates the A-axis headstock center position using a 3-axis probe. The
 * I: Invert probe direction (optional, default: 0)
   * 0: Normal probe direction
   * 1: Inverted probe direction
-* Y: Headstock width (optional, default: from config rotation_width/2 + 5)
-* E: Probe height (optional, default: from config rotation_offset_z - 6)
+* Y: Headstock width (optional, default: from config rotation\_width/2 + 5)
+* E: Probe height (optional, default: from config rotation\_offset\_z - 6)
 
 ### Example
 
@@ -85,7 +85,7 @@ M469.5 calibrates the A-axis center height using a 3-axis probe. Full documentat
   * 0: Normal probe direction
   * 1: Inverted probe direction
 * X: X-axis offset (optional, default: 60mm)
-* E: Probe height (optional, default: from config rotation_offset_z)
+* E: Probe height (optional, default: from config rotation\_offset\_z)
 * R: Pin diameter (optional, default: 6mm)
 
 ### Example
@@ -94,4 +94,3 @@ M469.5 calibrates the A-axis center height using a 3-axis probe. Full documentat
 M469.5              ; Calibrate A-axis height with defaults
 M469.5 X60 E40 R4   ; Calibrate with a 4mm pin, allowing the probe 40mm of downwards travel, at the x offset of 60mm
 ```
-

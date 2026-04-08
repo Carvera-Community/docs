@@ -1,9 +1,9 @@
 # Where to Get
 
-## Latest Release Version
+## Latest Version
 
 {% hint style="warning" %}
-While the Community Controller has been developed with compatibility with Makera Firmware in mind, the latest stable release 2.0.0 is not compatible with Makera Firmware >= 1.0.4.
+While the Community Controller has been developed with compatibility with Makera Firmware in mind, the latest stable release 2.1.0 is not compatible with Makera Firmware >= 1.0.4.
 
 Work is under way to return compatibility: [PR #341](https://github.com/Carvera-Community/Carvera_Controller/pull/341)
 {% endhint %}
@@ -60,4 +60,4 @@ The application can then be accessed via a web browser at `http://<host>:8080` o
 
 ## iOS
 
-The iOS build of the Carvera Community Controller is available on  the [Apple App store](https://apps.apple.com/us/app/carvera-community-controller/id6743028299).
+The iOS build of the Carvera Community Controller is available on the [Apple App store](https://apps.apple.com/us/app/carvera-community-controller/id6743028299).

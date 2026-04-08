@@ -18,6 +18,27 @@ $$
 2. Second tool: Probed at machine Z position -105.688 → current tool
 3. TLO calculation: -105.688 - (-72.300) = -33.388
 
+## M491 - Tool Length Calibration
+
+### Description
+
+Measures the length of the current tool. With the **R** parameter you can repeat the measurement multiple times (e.g. for facemills): the machine probes once per cycle; rotate the face mill between cycles to find the lowest cutting edge, and the TLO is taken from that measurement.
+
+### Parameters
+
+* X: Offset the tool setter location by this amount (positive or negative) in X (optional)
+* Y: Offset the tool setter location by this amount (positive or negative) in Y (optional)
+* Z: Offset the tool setter location by this amount (positive or negative) in Z (optional)
+* R: Number of TLO measurement repeats (optional, default: 1). For facemills: probe once per cycle, rotate the face mill between cycles; the TLO uses the lowest cutting edge
+
+### Example
+
+```gcode
+M491  ;Regular TLO measurement
+M491 X-15  ;Measure the TLO offsettting the setter by 15mm to the left
+M491 R3   ;Repeat TLO measurement 3 times (e.g. for a facemill — rotate tool between cycles)
+```
+
 ## M491.1 - Tool Break Test
 
 ### Description
@@ -139,5 +160,7 @@ None
 
 ```
 M493.4              ; Report current TLO values
+current tool offset [-67.880] , reference tool offset [-67.880]
+no one-off tool setter position offsets configured
+Tool setter position (MCS): X[-3.300] Y[-14.900] Z[nan]
 ```
-
