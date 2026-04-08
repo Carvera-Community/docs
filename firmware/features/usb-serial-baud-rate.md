@@ -1,7 +1,5 @@
 # USB serial baud rate
 
-{% include "../../.gitbook/includes/dev-feature-warning-banner.md" %}
-
 Community firmware lets you run the **main USB serial console** faster than default when the host supports it. Higher rates improve transfer speeds when streaming large gcode programs.
 
 ## Default

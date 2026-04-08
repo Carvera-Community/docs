@@ -1,7 +1,5 @@
 # LED Behaviour
 
-{% include "../../.gitbook/includes/dev-feature-warning-banner.md" %}
-
 The Community firmware drives the **RGB LEDs** on the **Carvera (C1)** and **Carvera Air**. Colours and patterns reflect **machine state** (idle, running, homing, held, tool change, and so on).
 
 ***
