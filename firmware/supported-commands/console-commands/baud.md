@@ -1,7 +1,5 @@
 # baud
 
-{% include "../../../.gitbook/includes/dev-feature-warning-banner.md" %}
-
 Query or change the **USB serial** baud rate on the USB serial interface.
 
 The rate set with **`baud <rate>`** is **temporary** intentionally to not leave the machine in a potentially broken and unreachable state. After **15 seconds** with **no** incoming serial activity, firmware restores the **default** baud of 113200.
