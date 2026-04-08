@@ -1,7 +1,5 @@
 # config-delete
 
-{% include "../../../.gitbook/includes/dev-feature-warning-banner.md" %}
-
 Removes a single configuration key from a config file. This is complementary to **`config-set`** (which adds or overwrites a key).
 
 ### Usage

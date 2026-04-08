@@ -2,8 +2,6 @@
 
 These are the commands relating to the [Custom Tool Slot functionality](../../features/custom-tool-slots.md)
 
-{% include "../../../.gitbook/includes/dev-feature-warning-banner.md" %}
-
 ### M889 - View Tool Slot Configuration
 
 ### Description

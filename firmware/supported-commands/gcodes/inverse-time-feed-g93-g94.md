@@ -1,7 +1,5 @@
 # Inverse time feed (G93) and feed per minute (G94)
 
-{% include "../../../.gitbook/includes/dev-feature-warning-banner.md" %}
-
 Community firmware supports **G93** (inverse time feed) and **G94** (feed per minute), similar in spirit to [LinuxCNC G93 / G94](http://linuxcnc.org/docs/html/gcode/g-code.html#gcode:g93-g94). They are **modal**: once set, the mode stays in effect until the other command is programmed or the program ends with **M2** / **M30**.
 
 ---
