@@ -4,7 +4,7 @@ description: Posted 2026/04/08
 
 # Fusion Plugin v0.9.0 Beta
 
-This is the first **beta** release of the [Carvera Community Fusion 360 plugin](fusion/plugin.md). This plugin helps users of personal edition Fusion 360 generate G-code files with features similar to those found in the Professional Fusion 360 edition.
+This is the first **beta** release of the [Carvera Community Fusion 360 plugin](fusion/plugin.md). This plugin helps users of personal edition Fusion 360 generate G-code files with features similar to those found in the Professional Fusion 360 edition. It adds features such as gcode file consolidation, automatic 4th axis rotation for indexed milling, and rapid non-cutting movement.
 
 Download the v0.9.0 Beta release from [GitHub](https://github.com/Carvera-Community/Carvera_Community_FusionPlugin/releases/tag/v0.9.0-beta.1)
 
@@ -22,4 +22,4 @@ Download the v0.9.0 Beta release from [GitHub](https://github.com/Carvera-Commun
 
 ## Beta note / feedback
 
-Please note that this is the first release of this plugin and there may be bugs. Please report issues via [GitHub issues](https://github.com/Carvera-Community/Carvera_Community_FusionPlugin/issues) or the community Discord channels linked in the full docs: `fusion/plugin.md`.
+Please note that this is the first release of this plugin and there may be bugs. Please report issues via [GitHub issues](https://github.com/Carvera-Community/Carvera_Community_FusionPlugin/issues) or the community Discord channels linked in the [plugin docs](fusion/plugin.md).
