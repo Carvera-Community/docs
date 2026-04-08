@@ -4,7 +4,9 @@ The **MDI** (Manual Data Input) area is where you send individual G-code lines o
 \
 To access the MDI, click the button that says MDI in the bottom left corner of the first control screen. It will swap to saying File and show a terminal instead of the file contents
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-04-08 at 10.52.08 pm.png" alt="" width="375"><figcaption><p>File View with arrow highlight MDI button</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-04-08 at 10.53.40 pm.png" alt="" width="375"><figcaption><p>MDI Terminal open</p></figcaption></figure>
 
 ## Sending commands
 
