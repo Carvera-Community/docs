@@ -49,7 +49,7 @@ M469.2 I1           ; Calibrate Anchor 2 with inverted probe
 ```
 
 {% hint style="info" %}
-### Before you get too far into calibrating your 4th axis module. Ensure that you don't have any chips or burrs between the module and bed, or between the module and the track that it is bolted.
+#### Before you get too far into calibrating your 4th axis module. Ensure that you don't have any chips or burrs between the module and bed, or between the module and the track that it is bolted.
 {% endhint %}
 
 ## M469.4 - Calibrate A-Axis Headstock
