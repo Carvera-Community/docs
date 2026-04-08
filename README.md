@@ -6,7 +6,8 @@ See our projects:
 
 * [Community Carvera Controller](controller/about.md)
 * [Community Carvera Firmware](firmware/about.md)
-* [Fusion 360 Post Processor](other/fusion-360.md)
+* [Fusion 360 Post Processor](fusion/post-processor.md)
+* [Fusion 360 Plugin](fusion/plugin.md)
 * [HSM Tool Library](other/hsm-tool-library.md)
 * [Youtube Page](https://www.youtube.com/@carvera-community)
 * [Trello Page](https://trello.com/b/qKxPlEbk/carvera-community-firmware-controller-and-other-tech)

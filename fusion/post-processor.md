@@ -1,4 +1,4 @@
-# Fusion 360
+# Fusion 360 Post Processor
 
 The Carvera Community Fusion 360 profiles can be downloaded from [here](https://github.com/Carvera-Community/Carvera_Community_Profiles/releases).
 
