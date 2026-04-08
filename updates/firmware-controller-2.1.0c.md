@@ -9,7 +9,7 @@ The v2.1.0 release of the Carvera Community Firmware/Controller is our biggest r
 You can download the releases and see the full changelog on GitHub:
 
 * [Carvera Community Firmware 2.1.0c](https://github.com/Carvera-Community/Carvera_Community_Firmware/releases/tag/v2.1.0c)
-* [Carvera Community Controller 2.1.0](https://github.com/Carvera-Community/Carvera_Controller/releases/tag/v2.1.0-RC1)
+* [Carvera Community Controller 2.1.0](https://github.com/Carvera-Community/Carvera_Controller/releases/tag/v2.1.0)
 
 ## Release highlights
 
