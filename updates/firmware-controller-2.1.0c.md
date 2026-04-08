@@ -1,3 +1,7 @@
+---
+description: Posted 2026/04/08
+---
+
 # Firmware/Controller 2.1.0c
 
 The v2.1.0 release of the Carvera Community Firmware/Controller is our biggest release to date with over 70 feature enhancements alone. It also contains a large number of bugfixes and changes to improve the stability and reliability of the machine.

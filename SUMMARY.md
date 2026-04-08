@@ -67,9 +67,11 @@
     * [config-delete](firmware/supported-commands/console-commands/config-delete.md)
     * [baud](firmware/supported-commands/console-commands/baud.md)
 
-## Other
+## Fusion 360
+* [Post Processor](fusion/post-processor.md)
+* [Plugin](fusion/plugin.md)
 
-* [Fusion 360](other/fusion-360.md)
+## Other
 * [HSM Tool Library](other/hsm-tool-library.md)
 
 ***
