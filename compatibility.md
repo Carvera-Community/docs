@@ -16,7 +16,7 @@ The following matrix tables shows the tested cross compatibility status.
 
 ### Makera Firmware with Community Controller
 
-|                             | Community Controller 2.0.0                              |
+|                             | Community Controller 2.1.0                              |
 | --------------------------- | ------------------------------------------------------- |
 | **Makera Firmware** >=1.0.4 | Non functioning                                         |
 | **Makera Firmware** 1.0.3   | Functions correctly                                     |
@@ -31,7 +31,7 @@ It is expected that if you are using the Community Firmware, that you are also u
 
 ## How to install Community Firmware if running **Makera Firmware** >=1.0.4
 
-As Makera Firmware >=1.0.4 is not functioning with the Community Controller 2.0.0 if you want to install Community firmware, you need to follow this sequence:
+As Makera Firmware >=1.0.4 is not functioning with the Community Controller 2.1.0 if you want to install Community firmware, you need to follow this sequence:
 
 1. Using [Makera Controller ≥ v0.9.13](https://github.com/MakeraInc/CarveraController/releases) follow the [Firmware Installation procedure ](firmware/installation-upgrade.md#installation)
 2. After the machine resets it will be running the Community Firmware and you can now use the Community Controller
