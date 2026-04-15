@@ -2,21 +2,24 @@
 
 ## Tool Length Offset (TLO) System
 
-During normal usage, the Tool Length Offset (TLO) is measured using the tool setter on the Carvera bed. The machine doesn't actually know the absolute height of the tool setter - it only knows that the probe triggers consistently when tools touch it. In order to support the ability to change tools the machine maintains knowledge of two tool positions, the current tool and the reference tool. This is needed to maintain consistency in the workspace between different tool lengths.
+During normal usage, the Tool Length Offset (TLO) is measured using the tool setter on the Carvera bed. The machine does not need the absolute height of the setter in world coordinates; it only needs a **repeatable datum** so that each tool’s length can be expressed consistently when changing tools.
 
-When the very first tool is probed, the Z height in Machine Coordinate Space (MCS) is recorded as the **reference tool position**. This tool becomes the "reference tool" that all other tools will be measured against.
+The firmware uses a fixed reference position in Machine Coordinate Space (MCS) that corresponds to the tool setter contact point with an empty collet (no cutter installed). That value is given by the configuration key **`coordinate.reference_tool_mz`** (default **−115.34** mm on Carvera C1 and Carvera Air; adjust only if your machine or calibration differs). The config key is named this for legacy reasons.
 
-Any subsequent tools that are probed afterwards update the **current tool position**. The TLO is then calculated as the difference between these two positions:
+When you probe a tool, the machine records the MCS **Z** coordinate where the tool tip touches the setter (current tool contact position). Thus the TLO value is the length that the **cutter stickout**: how far the installed tool extends beyond that empty-collet reference.
 
 $$
-TLO = current\_tool\_position - reference\_tool\_position
+TLO = current\_tool\_contact\_mz - reference\_tool\_mz
 $$
+
+Here `reference_tool_mz` is the configured empty-collet reference (`coordinate.reference_tool_mz`). The stored TLO is therefore the **length** (stickout).
 
 ### Example
 
-1. First tool: Probed at machine Z position -72.300 → becomes reference tool
-2. Second tool: Probed at machine Z position -105.688 → current tool
-3. TLO calculation: -105.688 - (-72.300) = -33.388
+Assume `coordinate.reference_tool_mz` is **−115.340** (empty collet touching the setter).
+
+1. A tool is probed; the tip touches the setter at machine Z **−105.340**.
+2. TLO (stickout): −105.340 − (−115.340) = **10.000** mm.
 
 ## M491 - Tool Length Calibration
 
@@ -150,7 +153,7 @@ M493.3 Z-30.488
 
 ### Description
 
-M493.4 reports the current tool length offset values to the console.
+M493.4 reports the current tool length offset values to the console. The first line prints the **current tool’s MCS Z contact position** and the configured **`reference_tool_mz`** (empty collet datum). Subtract reference from current to get the active **TLO (stickout)**. It may also list one-off setter offsets and the configured tool setter position in MCS.
 
 ### Parameters
 
@@ -160,7 +163,7 @@ None
 
 ```
 M493.4              ; Report current TLO values
-current tool offset [-67.880] , reference tool offset [-67.880]
+current tool offset [-105.340] , reference tool offset [-115.340]
 no one-off tool setter position offsets configured
 Tool setter position (MCS): X[-3.300] Y[-14.900] Z[nan]
 ```

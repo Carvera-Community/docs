@@ -64,7 +64,7 @@ Additionally [custom tool slot definitions](../firmware/features/custom-tool-slo
 * Better halt reason details when encountered during gcode file playback now output to the MDI making it clearer why a machine has stopped and what line caused the issue.
 * File explorer got a number of bug fixes and quality of life improvements
 * 3D toolpath visualisation now synchronised with file viewer line selection
-* The TLO value is now the tool stickout instead of the length difference from a reference tool
+* The [TLO value](../firmware/mcodes/tool-offset-management.md) is now the tool stickout instead of the length difference from a reference tool
 * [LEDs on the machine are now more informative](../firmware/features/led-behavior.md) with a number of changes including long pressing the machine button now flashing the led when it’s been held long enough
 * Laser and Spindle Status is now combined to save Window space. Which is shown is dependant on if Laser mode is active or not. Laser mode can be activated via the Tool dropdown.
 * Manual tool changes on the Carvera now use the same Controller UI prompts/workflow as the Air
