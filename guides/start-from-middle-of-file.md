@@ -1,5 +1,9 @@
 # Start from Middle of File
 
+{% hint style="info" %}
+Functionality in 2.1.0 of the Community Controller now [automates this resume process](../controller/features/resume-playback-start-at-line.md). This article is retained for those running Makera Controller
+{% endhint %}
+
 This guide goes over how to start a program from the middle of a gcode file. This is a more advanced process and is best accomplished if you can read and understand a gcode file as it can lead to crashing your machine.
 
 1. Find which line in your gcode you want to start from. If you hit the estop button, the gcode reader will have the last line highlighted. Otherwise you can open the file in notepad and search for the tool or operation, highlight that particular line and notepad will display the line number across the bottom. Once you have the rough location you want to start from, it is best to move backward to the last operation (often denoted by parenthesis) or tool change (the line will start with T) to avoid crashing your machine.\
