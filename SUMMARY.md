@@ -69,10 +69,12 @@
     * [baud](firmware/supported-commands/console-commands/baud.md)
 
 ## Fusion 360
+
 * [Post Processor](fusion/post-processor.md)
 * [Plugin](fusion/plugin.md)
 
 ## Other
+
 * [HSM Tool Library](other/hsm-tool-library.md)
 
 ***
@@ -90,4 +92,4 @@
   * [Air](mods/air.md)
   * [Z1](mods/z1.md)
   * [Universal](mods/universal.md)
-    * [E-stop normally-closed mod](mods/universal/e-stop-normally-closed-mod.md)
+    * [Normally-Closed E-stop](mods/universal/e-stop-normally-closed-mod.md)
