@@ -90,3 +90,4 @@
   * [Air](mods/air.md)
   * [Z1](mods/z1.md)
   * [Universal](mods/universal.md)
+    * [E-stop normally-closed mod](mods/universal/e-stop-normally-closed-mod.md)
