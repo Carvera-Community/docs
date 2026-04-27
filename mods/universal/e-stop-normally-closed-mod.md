@@ -1,4 +1,8 @@
-## E-stop button normally-closed mod
+---
+description: Guide originally contributed by Discord user F355
+---
+
+# Normally-Closed E-stop
 
 The stock e-stop button shipped with Carvera and Carvera Air is wired as normally-open (NO). This means the machine will run with no button attached at all, and pressing a faulty button that fails to close the contact has no effect — a serious safety hazard.
 
