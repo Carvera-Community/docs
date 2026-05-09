@@ -7,13 +7,13 @@ This section provides details of the specifications and components inside the Ca
 | Basic Info             | Carvera                                           | Carvera Air                                   | Z1                                            |
 | ---------------------- | ------------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
 | Work Area (3 Axis)     | 36cm (X) \* 24cm (Y) \* 14cm (Z)                  | 30cm (X) \* 20cm (Y) \* 13cm (Z)              | 20cm(X) \* 20cm(Y) \* 10cm                    |
-| Work Area (4 axis)     | 9.2cm (Diameter) \* 24cm (Length)                 | 9.2cm (Diameter) \* 20cm (Length)             | 8cm(Diameter)  \* 15cm (Length)               |
+| Work Area (4 axis)     | 9.2cm (Diameter) \* 24cm (Length)                 | 9.2cm (Diameter) \* 20cm (Length)             | 8cm(Diameter) \* 15cm (Length)                |
 | Gantry Clearance       | 12cm                                              | 12cm                                          | 12cm                                          |
 | Max Height (Lid Open)  | 84cm                                              | 84cm                                          | 84cm                                          |
 | Footprint (Lid Closed) | 57.9cm (Width) \* 52cm (Depth) \* 54.1cm (Height) | 50cm (Width) \* 45cm (Depth) \* 45cm (Height) | 35cm (Width) \* 48cm (Depth) \* 45cm (Height) |
 | Weight (Approx)        | 50kg                                              | 30kg                                          | 20kg                                          |
 
-### Work Area Limitations&#x20;
+### Work Area Limitations
 
 #### Carvera
 
@@ -42,14 +42,14 @@ The Z1 is similar in that it primarily uses a LPC1768 for motion control and a S
 
 #### Power Supply <a href="#power-supply" id="power-supply"></a>
 
-|                          | Carvera                           | Carvera Air                       | Z1                                |
-| ------------------------ | --------------------------------- | --------------------------------- | --------------------------------- |
-| Supported Mains Input    | 100-120VAC / 200-240VAC @ 50/60Hz | 100-120VAC / 200-240VAC @ 50/60Hz | 100-120VAC / 200-240VAC @ 50/60Hz |
-| System PSU               | 200w w/ 24v output                | 450w w/ 24v output                | Unknown                           |
-| Spindle PSU              | 200w w/ 48v output                | shared with system PSU            | shared with system PSU            |
-| System PSU Model         | Mean Well EPP-200-24              | Mean Well LRS-450-24              | Unknown                           |
-| Spindle PSU Model        | Mean Well EPP-200-48              | N/A                               | N/A                               |
-| Max AC Current (Typical) | 3.6A/115VAC 2A/230VAC             | 10A/115VAC 6A/230VAC              | Unknown                           |
+|                          | Carvera                           | Carvera Air                                                                                | Z1                                |
+| ------------------------ | --------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------- |
+| Supported Mains Input    | 100-120VAC / 200-240VAC @ 50/60Hz | 100-120VAC / 200-240VAC @ 50/60Hz                                                          | 100-120VAC / 200-240VAC @ 50/60Hz |
+| System PSU               | 200w w/ 24v output                | 450w w/ 24v output                                                                         | Unknown                           |
+| Spindle PSU              | 200w w/ 48v output                | shared with system PSU                                                                     | shared with system PSU            |
+| System PSU Model         | Mean Well EPP-200-24              | <p>Older revisions use: Mean Well LRS-450-24<br><br>Newer revisions use:<br>UHP-500-24</p> | Unknown                           |
+| Spindle PSU Model        | Mean Well EPP-200-48              | N/A                                                                                        | N/A                               |
+| Max AC Current (Typical) | 3.6A/115VAC 2A/230VAC             | 10A/115VAC 6A/230VAC                                                                       | Unknown                           |
 
 ### Spindle <a href="#spindle" id="spindle"></a>
 
