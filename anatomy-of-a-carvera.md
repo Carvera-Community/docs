@@ -24,9 +24,15 @@ Some implications of the design may not be immediately apparent:
 * Due to the proximity of the tool holder to the bed, part of the bed is in difficult to use due to risks of crashing tools into the raised tool holder bar
 * Due to the black plastic used by the tool proximity sensor approximately 15mm of the bed is lost in the X direction.
 
-#### Carvera Air and Z1
+#### Carvera Air
 
-Note that part of the bed is taken up by the tool setter. This prevents the complete use of the bed
+Note that part of the bed is taken up by the tool setter. This prevents the complete use of the bed.
+
+The Air has a cutting area that is smaller than the bed area. This is approximately 2.5mm smaller on the left, 4mm smaller on the right, 5mm smaller on the back, and 5.5mm on the front.
+
+#### Z1
+
+Note that part of the bed is taken up by the tool setter. This prevents the complete use of the bed.
 
 ### Electronics <a href="#electronics" id="electronics"></a>
 
