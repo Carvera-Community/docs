@@ -36,7 +36,7 @@ As Makera Firmware >=1.0.4 is not functioning with the Community Controller 2.1.
 
 Alternatively if you have issues using the Makera Controller to upload the firmware, you can use the [SD Card method](firmware/installation-upgrade.md#alternative-install-method).
 
-### Community Firmware with Community Controller
+## Community Firmware with Community Controller
 
 The best experience will be running matching versions of the Community Firmware and Controller, as both are tested and released in lockstep.
 
