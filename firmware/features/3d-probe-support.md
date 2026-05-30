@@ -128,7 +128,7 @@ Probes manufactured from **2026** onward may use a revised spring in the mechani
 
 First determine if your probe is affected. This is easy to do. Run a TLO calibration by selecting the  option from the TOOL status-bar dropdown. If this probe is affected, the TLO probing will raise an alarm with the error message:
 
-<figure><img src="../../.gitbook/assets/probe_fail.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/probe_fail.png" alt="" width="375"><figcaption></figcaption></figure>
 
 If you don't get this error, you don't need to worry.&#x20;
 
