@@ -20,13 +20,13 @@ There are a few ways the WCS rotation can be set.
 
 {% stepper %}
 {% step %}
-#### Secure your stock to the bed
+**Secure your stock to the bed**
 
 No need to tram it in!
 {% endstep %}
 
 {% step %}
-#### Use a 3D probe to determine the rotation
+**Use a 3D probe to determine the rotation**
 
 Use the Angle probing with the "Set WCS Rotation" option enabled to probe the fixed jaw of your vise
 
@@ -34,7 +34,7 @@ Use the Angle probing with the "Set WCS Rotation" option enabled to probe the fi
 {% endstep %}
 
 {% step %}
-#### Probe the WCS origin
+**Probe the WCS origin**
 
 Now the WCS rotation correction has been set continue as normal probing your WCS origin
 {% endstep %}

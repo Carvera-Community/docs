@@ -35,13 +35,13 @@ If you own the 4th axis you can unscrew the motor/chuck and the tailstock and us
 
 {% stepper %}
 {% step %}
-#### Fix reference geometry on the bed
+**Fix reference geometry on the bed**
 
 Put the reference geometry on the bed. If using the 4th axis baseplate, the plate is already aligned with dowel pins. If using something else, make sure to properly align it. Ideally the reference geometry exceeds the length of the bed (as the 4th baseplate does).
 {% endstep %}
 
 {% step %}
-#### Position the probe tip at the leftmost position
+**Position the probe tip at the leftmost position**
 
 Height should be right where you can confidently hit the reference geometry. Position the probe as far as it can go without running into hard or software endstops. The Y distance should be close to the reference geometry and < than the Y parameter specified in the G33 command. Fig 3. below shows and example of how the probe should be positioned
 
@@ -60,7 +60,7 @@ G53 G1 Z-85 F400
 {% endstep %}
 
 {% step %}
-#### Run G33 command
+**Run G33 command**
 
 Run the G33 command and let the machine do the measurement
 
@@ -74,7 +74,7 @@ After the measurement has been finished the flex compensation is activated. Run 
 {% endstep %}
 
 {% step %}
-#### (Optional) Activate the automatic loading of the compensation data
+**(Optional) Activate the automatic loading of the compensation data**
 
 After the compensation data has been saved to the SD card, it can automatically be loaded after a clean start. Simply set the configuration value by running in the MDI:
 
