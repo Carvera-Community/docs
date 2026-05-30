@@ -46,7 +46,7 @@ When you first receive the probe you should consult the manufacturer about how i
 
 Inexpensive probes like the V6 3D Touch probe do not have a way to compensate for the probe tip tilt and activation distance. Thus probe tip diameter needs to be adjusted to reflect the distance before the probe registers contact. This value is best determined using one of the [M460 ](../supported-commands/mcodes/probing.md#m460-probe-calibration)macros and probing against geometry of known dimensions. This means the probe tip diameter is not just it's physical diameter but also adjusted by the activation distance. On probe tips of 2mm diameter and length 22mm the effective probe tip diameter is typically around 1.0-1.8mm.
 
-The text output of `M460` will provide the command to run which saves the probe tip diameter to the machine config eg. `config-set sd zprobe.probe_tip_diameter 1.700`  Once this is set the probe tip diameter does not need to be provided during usage.
+The text output of `M460` will provide the command to run which saves the probe tip diameter to the machine config eg. `config-set sd zprobe.probe_tip_diameter 1.700` Once this is set the probe tip diameter does not need to be provided during usage.
 
 You are now ready to use the probe!
 {% endstep %}
@@ -62,7 +62,7 @@ Regular usage of the probe involves the following steps:
 
 Users of the CA1 will be familiar for how to manually load tools.
 
-Users of the C1 will need to drop other tools and Unclamp/Clamp the collet to manually load a tool not in the tool rack. This can be done using the Controller buttons <img src="../../.gitbook/assets/image (33).png" alt="" data-size="line"> and <img src="../../.gitbook/assets/image (34).png" alt="" data-size="line"> (found in the ATC Topbar drop down) or using the MDI commands `M490.1` /`M490.2`&#x20;
+Users of the C1 will need to drop other tools and Unclamp/Clamp the collet to manually load a tool not in the tool rack. This can be done using the Controller buttons <img src="../../.gitbook/assets/image (33).png" alt="" data-size="line"> and <img src="../../.gitbook/assets/image (34).png" alt="" data-size="line"> (found in the ATC Topbar drop down) or using the MDI commands `M490.1` /`M490.2`
 
 Hold the probe in the collet until the machine has clamped it.
 {% endstep %}
@@ -102,14 +102,14 @@ On the **C1** it is much easier to power and connect the 3D Probe when the addit
 
 ### Shank Size
 
-Another consideration which applies to both the CA1 and C1 is the probe shank diameter. These probes are only available in 4 and 6mm shanks. The collet system used by the Carvera has collets of these sizes but they are additional purchases. The only collet that comes with the machine is 1/8" and thus too small to use unmodified.&#x20;
+Another consideration which applies to both the CA1 and C1 is the probe shank diameter. These probes are only available in 4 and 6mm shanks. The collet system used by the Carvera has collets of these sizes but they are additional purchases. The only collet that comes with the machine is 1/8" and thus too small to use unmodified.
 
 One option to avoid this challenge is to modify the tail shaft from the probe turning it down to 1/8" diameter on a lathe or mill using the Carvera 4th Axis. The tail shaft is removed by loosening the calibration set screws **(**&#x69;tem _**#14**_ in Fig 1).
 
 ### Calibration
 
 {% embed url="https://www.youtube.com/watch?v=egbb5Q1fNXw" %}
-Fae goes  through the V6 Probe Calibration processes in this tutorial video
+Fae goes through the V6 Probe Calibration processes in this tutorial video
 {% endembed %}
 
 It is essential for the probe tip to be concentric to the tail shaft, otherwise the probe's accuracy and repeatability in different directions will be affected.
@@ -121,3 +121,26 @@ The most accurate way to calibrate the probe is to use a dial test indicator to 
 It's recommended to first align two opposing sides, then the other two, then repeat for the first set, before reviewing all 4. This is required because the stylus holder (part #8 in Figure 1) of the probe is connected to the body via 3 points, and adjustments to the second set of faces results in slight movement of the initial set.
 
 The probe should be calibrated any time the probe stylus (**item #10**) is replaced.
+
+## TLO correction value
+
+Probes manufactured from **2026** onward may use a revised spring in the mechanism. Probing accuracy is unchanged, but the new spring’s force is close to that of the Tool Length Offset (TLO) sensor, so TLO readings may be off by a fraction of a millimetre. You can correct for this in firmware.
+
+First determine if your probe is affected. This is easy to do. Run a TLO calibration by selecting the  option from the TOOL status-bar dropdown. If this probe is affected, the TLO probing will raise an alarm with the error message:
+
+<figure><img src="../../.gitbook/assets/probe_fail.png" alt=""><figcaption></figcaption></figure>
+
+If you don't get this error, you don't need to worry.&#x20;
+
+If you get this error open the MDI terminal, you will see more detail include the text: `ALARM: Probe failed to trigger within safety margin (0.1mm)`.
+
+What this is referring to is the distance the machine had to move once after triggering the TLO sensor until it also triggered the probe. The machine firmware captures both values so that it can automatically compensates for the distance required to trigger the probe in the downwards direction. However if this difference is above 0.1mm the compensation isn't as effective, and additional TLO correction should be used. The config key for additional correction is `zprobe.three_axis_probe_tlo_correction`.
+
+Follow this procedure to determine what value to use for this setting:
+
+1. First Open the MDI and execute the following command: `config-set sd zprobe.calibration_safety_margin 1` , then the `reset` command to apply it. This will increase the safety margin to 1mm.
+2. Change back to the original probe included with the machine. Perform a TLO&#x20;
+3. Jog the spindle to a flat part of the bed (for example anchor2 using the command `M496.4` ), and run `M466 Z-200 S0` to probe the Z location of the spot.
+4. Switch to the 3D Probe, perform a TLO calibrate, and probe the same spot (use the same command)
+5. Compare the difference between the two Work Coordinates in the MDI. Set this as the correction via `config-set sd zprobe.three_axis_probe_tlo_correction <value>` and run `reset` to apply the setting.
+6. To test re-run the TLO calibration on the 3D probe, and re-probe the same spot. The Work Coordinates should now be within 0.05mm of the stock probe.
