@@ -48,6 +48,7 @@
   * [LED Behaviour](firmware/features/led-behavior.md)
   * [Spindle maximum RPM](firmware/features/spindle-max-rpm.md)
   * [USB serial baud rate](firmware/features/usb-serial-baud-rate.md)
+  * [C1 Improved PID Spindle Control](firmware/features/c1-improved-pid-spindle-control.md)
 * [Supported Commands](firmware/supported-commands/README.md)
   * [GCodes](firmware/supported-commands/gcodes.md)
     * [Inverse time feed](firmware/supported-commands/gcodes/inverse-time-feed-g93-g94.md)
