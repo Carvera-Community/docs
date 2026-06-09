@@ -147,6 +147,8 @@ description: The below table shows the supported MCodes
 | M842 | Turn off the wireless probe charging power | M842 |  | false |
 | M851 | Turn on the extended port power. The S parameter sets the PWM output of the port | M851 |  | false |
 | M852 | Turn off the extended port power | M852 |  | false |
+| M861 | Beep on the Carvera Air. This is to create an alert sound, not turn on/off the beep entirely | M861 |  | false |
+| M862 | Turn off the Carvera Air Beep. This is to create an alert sound, not turn on/off the beep entirely | M862 |  | false |
 | M881 | Set 2.4G Channel to: the S parameter and start transmitting | M881 SwifiNetworkName |  | false |
 | M882 | turn off wifi network | M882 |  | false |
 | M885 | turn off hard endstops (reverts to on on power cycle, ignored when homing) |  |  | true |
