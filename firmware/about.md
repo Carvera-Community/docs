@@ -1,6 +1,10 @@
 # About
 
-The Community developed version of the Carvera Firmware has a number of benefits and fixes above and beyond the Makera software:
+The Community forked version of the Carvera Firmware that has a number of benefits and fixes above and beyond the Makera software.\
+\
+**Makera Support have stated that using the Community Firmware/Controller does not void the machine warranty.** If you need support you may be asked to reinstall Makera firmware to facilitate that support.
+
+The following are some of the features added in the Community Firmware:
 
 * Support for **3D Touch Probe** devices [Commands](supported-commands/mcodes/probing.md) [Probe Install](https://www.instructables.com/Carvera-Touch-Probe-Modifications/), including macros to calibrate anchor 1 & 2 positions and automatically probe corners, bores, bosses, angles and 4th axis stock for high precision **wcs origin** settings (especially useful for **two sided operations**)
 * 3D Probe crash protection
