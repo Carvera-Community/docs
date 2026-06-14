@@ -8,10 +8,10 @@ This section provides details of the specifications and components inside the Ca
 | ---------------------- | ------------------------------------------------- | --------------------------------------------- | --------------------------------------------- |
 | Work Area (3 Axis)     | 36cm (X) \* 24cm (Y) \* 14cm (Z)                  | 30cm (X) \* 20cm (Y) \* 13cm (Z)              | 20cm(X) \* 20cm(Y) \* 10cm                    |
 | Work Area (4 axis)     | 9.2cm (Diameter) \* 24cm (Length)                 | 9.2cm (Diameter) \* 20cm (Length)             | 8cm(Diameter) \* 15cm (Length)                |
-| Gantry Clearance       | 12cm                                              | 12cm                                          | 12cm                                          |
+| Gantry Clearance       | 120mm                                             | 120mm                                         | 115mm                                         |
 | Max Height (Lid Open)  | 84cm                                              | 84cm                                          | 84cm                                          |
-| Footprint (Lid Closed) | 57.9cm (Width) \* 52cm (Depth) \* 54.1cm (Height) | 50cm (Width) \* 45cm (Depth) \* 45cm (Height) | 35cm (Width) \* 48cm (Depth) \* 45cm (Height) |
-| Weight (Approx)        | 50kg                                              | 30kg                                          | 20kg                                          |
+| Footprint (Lid Closed) | 57.9cm (Width) \* 52cm (Depth) \* 54.1cm (Height) | 50cm (Width) \* 45cm (Depth) \* 45cm (Height) | 35cm (Width) \* 47cm (Depth) \* 45cm (Height) |
+| Weight (Approx)        | 50kg                                              | 30kg                                          | 17kg                                          |
 
 ### Work Area Limitations
 
