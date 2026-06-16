@@ -9,7 +9,7 @@ It is possible to migrate the stock tool slots definition to the custom tool slo
 
 Of course this functionality can be used to completely replace the Carvera tool rack with a higher slot count one.
 
-<figure><img src="../../.gitbook/assets/PXL_20251014_053932230.MP.jpg" alt="" width="375"><figcaption><p>19 Slot Carvera Tool Rack made by <a href="https://serge.industries/shop">Serge Industries</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/16_slot_rack.jpg" alt=""><figcaption><p>16 Slot Carvera Tool Rack made by <a href="https://serge.industries/products/carvera-high-capacity-tool-rack">Serge Industries</a></p></figcaption></figure>
 
 ### Viewing the Tool Slot Config
 

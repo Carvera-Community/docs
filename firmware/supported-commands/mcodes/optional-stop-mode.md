@@ -58,7 +58,7 @@ M601
 {% endtab %}
 
 {% tab title="Serial Console Character" %}
-Sending the tilde character (\~) via serial console will perform a "safe resume". This is what the [Carvera Controller](/broken/pages/EJaB3XrSwByn8d4SF21v) does when you use the resume button.
+Sending the tilde character (\~) via serial console will perform a "safe resume". This is what the [Carvera Controller](https://app.gitbook.com/s/hIcl2yLv4r2ehdkJpmlK/controller) does when you use the resume button.
 
 ```
 ~
@@ -80,8 +80,6 @@ You can configure custom G-code to run before resuming by setting:
 ```
 before_resume_gcode M3                 ; Turn the Spindle back on
 ```
-
-
 
 ## M333 - Disable Optional Stop Mode
 
