@@ -1,4 +1,4 @@
-# C1 Improved PID Spindle Control
+# C1 PID Spindle Control
 
 There is an optional configuration setting for the carvera C1 machines that provides better performance and torque from the spindle. This feature should not be used on the Air or Z1 as those machines have closed loop control in the motor controller.
 
