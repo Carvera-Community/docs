@@ -2,7 +2,8 @@
 
 There is an optional configuration setting for the carvera C1 machines that provides better performance and torque from the spindle. This feature should not be used on the Air or Z1 as those machines have closed loop control in the motor controller.
 
-## tl;dr
+## Basic Configuration
+The feature can be turned on by running the following commands in the [MDI console](controller/features/mdi-terminal.md):
 ```
 config-set sd spindle.type pid_pwm
 config-set sd spindle.control_P 0.0002
