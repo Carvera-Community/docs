@@ -42,14 +42,14 @@ The Z1 is similar in that it primarily uses a LPC1768 for motion control and a S
 
 #### Power Supply <a href="#power-supply" id="power-supply"></a>
 
-|                          | Carvera                           | Carvera Air                                                                                | Z1                                |
-| ------------------------ | --------------------------------- | ------------------------------------------------------------------------------------------ | --------------------------------- |
-| Supported Mains Input    | 100-120VAC / 200-240VAC @ 50/60Hz | 100-120VAC / 200-240VAC @ 50/60Hz                                                          | 100-120VAC / 200-240VAC @ 50/60Hz |
-| System PSU               | 200w w/ 24v output                | 450w w/ 24v output                                                                         | Unknown                           |
-| Spindle PSU              | 200w w/ 48v output                | shared with system PSU                                                                     | shared with system PSU            |
-| System PSU Model         | Mean Well EPP-200-24              | <p>Older revisions use: Mean Well LRS-450-24<br><br>Newer revisions use:<br>UHP-500-24</p> | Unknown                           |
-| Spindle PSU Model        | Mean Well EPP-200-48              | N/A                                                                                        | N/A                               |
-| Max AC Current (Typical) | 3.6A/115VAC 2A/230VAC             | 10A/115VAC 6A/230VAC                                                                       | Unknown                           |
+|                          | Carvera                                                                                                     | Carvera Air                                                                                             | Z1                                |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| Supported Mains Input    | 100-120VAC / 200-240VAC @ 50/60Hz                                                                           | 100-120VAC / 200-240VAC @ 50/60Hz                                                                       | 100-120VAC / 200-240VAC @ 50/60Hz |
+| System PSU               | 200w w/ 24v output                                                                                          | 450w w/ 24v output                                                                                      | Unknown                           |
+| Spindle PSU              | 200w w/ 48v output                                                                                          | shared with system PSU                                                                                  | shared with system PSU            |
+| System PSU Model         | <p>Older revisions use: Mean Well EPP-200-24<br><br>Newer revisions use:<br>Mean Well<br>LOP-200-24</p>     | <p>Older revisions use: Mean Well LRS-450-24<br><br>Newer revisions use:<br>Mean Well<br>UHP-500-24</p> | Unknown                           |
+| Spindle PSU Model        | <p>Older revisions use: <br>Mean Well EPP-200-48<br><br>Newer revisions use:<br>Mean Well<br>LOP-200-48</p> | N/A                                                                                                     | N/A                               |
+| Max AC Current (Typical) | 3.6A/115VAC 2A/230VAC                                                                                       | 10A/115VAC 6A/230VAC                                                                                    | Unknown                           |
 
 ### Spindle <a href="#spindle" id="spindle"></a>
 
