@@ -19,6 +19,7 @@
 * [Supported OS](controller/supported-os.md)
 * [Features](controller/features/README.md)
   * [3D Probing](controller/features/3d-probing.md)
+  * [Probe Scan](controller/features/3d-probing-1.md)
   * [Resume playback at line number](controller/features/resume-playback-start-at-line.md)
   * [MDI Terminal](controller/features/mdi-terminal.md)
   * [Hidden Wifi networks](controller/features/wifi-auto-connect-and-hidden-networks.md)
