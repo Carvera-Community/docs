@@ -1,12 +1,40 @@
 # Probing
 
 {% hint style="warning" %}
-This functionality requires a 3D Touch Probe
+This functionality requires a 3D Touch Probe. See [3d-probe-support.md](3d-probe-support.md "mention")for more info
 {% endhint %}
 
 ## Demonstration
 
 {% embed url="https://youtu.be/wWnBR6jS3mM" %}
+
+## Probing types in the Controller
+
+Open the probing flows from the **Probing** button <img src="../../../../.gitbook/assets/image (37).png" alt="Probing" data-size="line"> in the center control panel. Geometry routines use **M** codes documented in [**Probing**](./). **Calibration** options in the UI use the **M469.x** machine calibration commands in [**Self-calibration**](../self-calibration.md).
+
+| Probing type              | Firmware reference                                                                                                                                                                                                                                          | Notes                                                                                                                           |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Outside corner            | [M464](./#m464-probe-outside-corner)                                                                                                                                                                                                                        | Finds outside corner locations                                                                                                  |
+| Inside corner             | [M463](./#m463-probe-inside-corner)                                                                                                                                                                                                                         | Inside corner location                                                                                                          |
+| Single axis               | [M466](./#m466-single-axis-probe-double-tap)                                                                                                                                                                                                                | X, Y, and/or Z touch-off                                                                                                        |
+| Bore / pocket             | [M461](./#m461-probe-bore-rectangular-pocket)                                                                                                                                                                                                               | Inside circular or rectangular features                                                                                         |
+| Boss / Block              | [M462](./#m462-probe-boss-rectangular-block)                                                                                                                                                                                                                | Outside bosses and blocks                                                                                                       |
+| Axis angle                | [M465](./#m465-probe-axis-angle)                                                                                                                                                                                                                            | Angle for **WCS rotation** when used with that option                                                                           |
+| Calibration               | [M469.1](../self-calibration.md#m469.1-calibrate-anchor-1), [M469.2](../self-calibration.md#m469.2-calibrate-anchor-2), [M469.4](../self-calibration.md#m469.4-calibrate-a-axis-headstock), [M469.5](../self-calibration.md#m469.5-calibrate-a-axis-height) | Measures and suggests machine calibration changes to offsets for anchor 1, anchor 2, A-axis headstock, A-axis height (4th axis) |
+| Probe tip                 | [M460.1](./#m460.1-calibrate-probe-with-bore)                                                                                                                                                                                                               | Measures the effective tip diameter on the probe                                                                                |
+| 4th axis — stock leveling | [M465.1](./#m465.1-probe-4th-axis-a-axis-stock)                                                                                                                                                                                                             | Angular alignment of **A-axis** stock (Controller **4th axis** probing section)                                                 |
+
+## 3D Probing Screens
+
+A number of [Probing routines](./) have been added to the firmware; the Controller provides graphical setup for many of them via the probing button above.
+
+## Setting 3D Probe Tool
+
+The option to set the current tool to 3D Probe is available under the set menu. Remember that this doesn't automatically Calibrate the Tool Length Offset, so you should run the Calibrate routine from the dropdown after setting the probe.
+
+<figure><img src="../../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+
+If you start probing without a probe tool selected, the Controller may show a **popup** with suggestions to pick the correct tool.
 
 ## Probing Command Variables
 
@@ -19,9 +47,9 @@ When probing surfaces, a few variables are always set if the probing feature sup
 
 ## Probing Image Breakdown
 
-<figure><img src="../../../.gitbook/assets/inX+Y+.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inX+Y+.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 When selecting a probing operation in the controller the graphics have a set up standards<br>
 
@@ -92,15 +120,15 @@ When the macro completes the program will have saved the distance along the X ax
 
 All parameters are optional but you must have 1 of X or Y, if you supply only 1 of them it will only probe in that direction.
 
-<figure><img src="../../../.gitbook/assets/inside_center_circular_bore.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inside_center_circular_bore.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/inside_center_motion_overview.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inside_center_motion_overview.png" alt=""><figcaption></figcaption></figure>
 
 ### Parameters
 
 * X: Distance to probe in X direction (required)
 * Y: Distance to probe in Y direction (required)
-* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe\_tip\_diameter)
 * E: Depth to probe sides from (optional, default: 2mm)
 * H: Probe height above bore (optional, default: 0)
 * C: Clearance height (optional, default: 2mm)
@@ -128,18 +156,16 @@ Ensure the probe is positioned at roughly the center of the boss/block before co
 
 When the macro completes the program will have saved the distance along the X axis as #151, the distance along the Y axis as #152, the center point in MCS as #154, #155.
 
+<figure><img src="../../../../.gitbook/assets/outside_center_circular_boss.png" alt=""><figcaption></figcaption></figure>
 
-
-<figure><img src="../../../.gitbook/assets/outside_center_circular_boss.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/outside_center_motion_overview.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/outside_center_motion_overview.png" alt=""><figcaption></figcaption></figure>
 
 ### Parameters
 
 * X: Distance to probe in X direction (required)
 * Y: Distance to probe in Y direction (required)
 * J: Probe clearance when moving outside the boss (optional, default: 4mm)
-* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe\_tip\_diameter)
 * E: Depth to probe sides from (optional, default: 2mm)
 * H: Probe height above boss (optional, default: 0)
 * C: Clearance height (optional, default: 2mm)
@@ -167,13 +193,13 @@ Ensure the probe is positioned roughly diagonally inward from the corner before 
 
 When the macro completes the program will have saved the center position to #151 (X) and #152 (Y).
 
-<figure><img src="../../../.gitbook/assets/inX+Y+.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/inX+Y+.png" alt=""><figcaption></figcaption></figure>
 
 ### Parameters
 
 * X: Distance to probe in X direction (required)
 * Y: Distance to probe in Y direction (required)
-* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe\_tip\_diameter)
 * E: Depth to probe sides from (optional, default: 2mm)
 * H: Probe height above corner (optional, default: 0)
 * C: Clearance height (optional, default: 2mm)
@@ -197,17 +223,17 @@ M463 X10 Y10 S1        ; Probe and save position as WCS origin
 
 M464 probes an outside corner to find its position. The probe moves to the outside of the corner, then probes in both positive X and Y directions to find the corner edges. This is useful for finding the exact position of outside corners in workpieces.
 
-Ensure the probe is positioned roughly diagonally outward from the corner  before command execution.
+Ensure the probe is positioned roughly diagonally outward from the corner before command execution.
 
 When the macro completes the program will have saved the center position to #151 (X) and #152 (Y).
 
-<figure><img src="../../../.gitbook/assets/X+Y+.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/X+Y+.png" alt=""><figcaption></figcaption></figure>
 
 ### Parameters
 
 * X: Distance to probe in X direction (required)
 * Y: Distance to probe in Y direction (required)
-* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe\_tip\_diameter)
 * E: Depth to probe sides from (optional, default: 2mm)
 * H: Probe height above corner (optional, default: 0)
 * C: Clearance height (optional, default: 2mm)
@@ -233,13 +259,13 @@ M465 probes two points to find an angle relative to the X or Y axis. The probe m
 
 When the macro completes the program will have saved angle as degrees to #153
 
-<figure><img src="../../../.gitbook/assets/probe_angle_x_below.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/probe_angle_x_below.png" alt=""><figcaption></figcaption></figure>
 
 ### Parameters
 
 * X: Distance to probe in X direction (optional, only one of X or Y should be specified)
 * Y: Distance to probe in Y direction (optional, only one of X or Y should be specified)
-* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe\_tip\_diameter)
 * E: Depth to probe sides from (optional, default: 2mm)
 * H: Probe height above surface (optional, default: 0)
 * C: Clearance height (optional, default: 2mm)
@@ -259,8 +285,6 @@ M465 Y15              ; Probe 15mm in Y direction to find angle
 M465 X20 V5           ; Probe with 5mm visualization path
 ```
 
-
-
 ## M465.1 - Probe 4th Axis (A-Axis) Stock
 
 {% embed url="https://youtu.be/u6C3Do1d-4w" %}
@@ -277,7 +301,7 @@ When the macro completes the program will have save the result to:
 
 ### Parameters
 
-* Y: Total probing distance.  The machine will move to + Y/2 and -Y/2 from the current position (required)
+* Y: Total probing distance. The machine will move to + Y/2 and -Y/2 from the current position (required)
 * H: Probe height - distance to probe down from current position (required)
 * F: Feed rate for probing operations (optional, default: 300 mm/min)
 * K: Rapid feed rate for positioning moves (optional, default: 800 mm/min)
@@ -312,7 +336,7 @@ When the macro completes the program will have save the result to:
 ### Parameters
 
 * X: Distance offset from 4th axis origin (required)
-* Y: Total probing distance.  The machine will move to + Y/2 and -Y/2 from the specified position (required)
+* Y: Total probing distance. The machine will move to + Y/2 and -Y/2 from the specified position (required)
 * H: Probe height - distance to probe down from current position (required)
 * F: Feed rate for probing operations (optional, default: 300 mm/min)
 * K: Rapid feed rate for positioning moves (optional, default: 800 mm/min)
@@ -347,16 +371,14 @@ When the macro completes the program will have save the result to:
 * \#155: Y coordinate (if Y axis was probed)
 * \#156: Z coordinate (if Z axis was probed)
 
-
-
-<figure><img src="../../../.gitbook/assets/X+.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/X+.png" alt=""><figcaption></figcaption></figure>
 
 ### Parameters
 
 * X: Distance to probe in X direction (optional)
 * Y: Distance to probe in Y direction (optional)
 * Z: Distance to probe in Z direction (optional)
-* D: Probe tip diameter (optional, default: configured value from zprobe.probe_tip_diameter)
+* D: Probe tip diameter (optional, default: configured value from zprobe.probe\_tip\_diameter)
 * E: Depth to probe sides from (optional, default: 2mm)
 * H: Probe height above surface (optional, default: 0)
 * C: Clearance height (optional, default: 2mm)
@@ -381,7 +403,7 @@ M466 X10 Y10 Z5 S1    ; Probe and save position as WCS origin
 
 ### Description
 
-M466.1 performs four [Z Probe Double Tap](probing.md#m466-single-axis-probe-double-tap) probing operations, each located at the corners of a rectangle, specified by the current position and the X and Y distances. After the probing is finished, the probing tool will return to its starting position and the machine prints the results both in machine coordinates and in work coordinates, specifying the highest and lowest Z value and the corresponding corner at which those values were found.
+M466.1 performs four [Z Probe Double Tap](./#m466-single-axis-probe-double-tap) probing operations, each located at the corners of a rectangle, specified by the current position and the X and Y distances. After the probing is finished, the probing tool will return to its starting position and the machine prints the results both in machine coordinates and in work coordinates, specifying the highest and lowest Z value and the corresponding corner at which those values were found.
 
 ### Parameters
 

@@ -3,7 +3,7 @@
 Using the 3D Touch probe you can calibrate a number of machine specific offsets increasing the accuracy of key locations in the machine.
 
 {% hint style="info" %}
-This functionality requires a [3D Touch Probe](../../features/3d-probe-support.md)
+This functionality requires a [3D Touch Probe](probing/3d-probe-support.md)
 {% endhint %}
 
 ## M469.1 - Calibrate Anchor 1

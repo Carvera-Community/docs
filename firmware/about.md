@@ -6,7 +6,7 @@ The Community forked version of the Carvera Firmware that has a number of benefi
 
 The following are some of the features added in the Community Firmware:
 
-* Support for **3D Touch Probe** devices [Commands](supported-commands/mcodes/probing.md) [Probe Install](https://www.instructables.com/Carvera-Touch-Probe-Modifications/), including macros to calibrate anchor 1 & 2 positions and automatically probe corners, bores, bosses, angles and 4th axis stock for high precision **wcs origin** settings (especially useful for **two sided operations**)
+* Support for **3D Touch Probe** devices [Commands](supported-commands/mcodes/probing/) [Probe Install](https://www.instructables.com/Carvera-Touch-Probe-Modifications/), including macros to calibrate anchor 1 & 2 positions and automatically probe corners, bores, bosses, angles and 4th axis stock for high precision **wcs origin** settings (especially useful for **two sided operations**)
 * 3D Probe crash protection
 * Ability to use LinuxCNC/Faunic style [math](features/math.md) and [variable](features/variables.md) storage
 * [File macros](supported-commands/mcodes/macros.md) to run one file inside another

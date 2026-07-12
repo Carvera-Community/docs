@@ -44,7 +44,7 @@ In the config each tool slot has a separate position value for it's X/Y/Z Machin
 \
 Use the parameters `T` `X` `Y`and optionally `Z` to define the tool slot position, where `T` is the slot number. For example to configure a slot 7 would run `M890 T7 X-20 Y-30` . If no `Z` value is provided the last tool slot's Z value is used.
 
-The best way to determine the MCS location of each tool slot is by using the [3D Probe](3d-probe-support.md) and performing a [bore probe (M461)](../supported-commands/mcodes/probing.md#m461-probe-bore-rectangular-pocket) inside the tool holder.
+The best way to determine the MCS location of each tool slot is by using the [3D Probe](../supported-commands/mcodes/probing/3d-probe-support.md) and performing a [bore probe (M461)](../supported-commands/mcodes/probing/#m461-probe-bore-rectangular-pocket) inside the tool holder.
 
 Note that the Z height configuration is the depth that the machine will lower the spindle before releasing the tool. It is recommended that at this height the tool holder is depressed into the spring mechanism by 1-2mm to ensure the tool is fully seated into the slot. The easiest way to get the right height is to use the original tool rack height as a baseline, and adjust up/down from there based on visual observation. Probing the inside lip of the slot is also possible however as the lip is very thin this can be challenging.
 

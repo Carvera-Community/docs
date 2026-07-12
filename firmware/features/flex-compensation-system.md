@@ -18,7 +18,7 @@ The **Flex Compensation System** compensates for this tilting motion with additi
 
 To use this feature the user has to perform a one time probing routine, recording the machine-specific spindle tilting profile. Ideally this profile spans over the entire X axis length. Afterwards this profile can be saved to the SD card and - if desired- the compensation program loaded upon every boot of the machine.\
 \
-**This flex compensation works separately to the bed leveling function, and both can be used at the same time. When flex compensation is active, it also applies to** [**probing operations**](../supported-commands/mcodes/probing.md) **as well.**
+**This flex compensation works separately to the bed leveling function, and both can be used at the same time. When flex compensation is active, it also applies to** [**probing operations**](../supported-commands/mcodes/probing/) **as well.**
 
 With the flex compensation enabled every single move that the machine executes is compensated in order to have the **Tool Center Point** (TCP) follow straight lines. Therefore all probing moves, including the bed leveling is compensated. Figure 2 shows a comparison of a full bed level of a [Saunders Machine Works (SMW) tooling plate](https://saundersmachineworks.com/products/makera-carvera-air-fixture-tooling-plate) before and after the flex compensation. The SMW has been used for this comparison as it has less surface deviations than the stock Carvera Air MDF bed.
 
