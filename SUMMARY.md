@@ -33,6 +33,7 @@
   * [Logging](controller/features/logging.md)
   * [Auto-Reconnect](controller/features/auto-reconnect.md)
   * [Jogging Controls](controller/features/jogging-controls.md)
+  * [Facing Widget](controller/features/facing-widget.md)
 
 ## Firmware
 
