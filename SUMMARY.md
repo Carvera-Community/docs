@@ -73,6 +73,9 @@
     * [WCS Management](firmware/supported-commands/console-commands/wcs-management.md)
     * [config-delete](firmware/supported-commands/console-commands/config-delete.md)
     * [baud](firmware/supported-commands/console-commands/baud.md)
+  * [Variables (link)](firmware/features/variables.md)
+  * [Math (link)](firmware/features/math.md)
+  * [O Codes](firmware/supported-commands/o-codes.md)
 
 ## Fusion 360
 
