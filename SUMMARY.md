@@ -35,6 +35,7 @@
   * [Jogging Controls](controller/features/jogging-controls.md)
   * [Facing Widget](controller/features/facing-widget.md)
   * [Auto-Leveling](controller/features/auto-leveling.md)
+* [Common Error Messages](controller/common-error-messages.md)
 
 ## Firmware
 
