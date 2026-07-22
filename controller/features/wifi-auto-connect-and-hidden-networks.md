@@ -1,3 +1,7 @@
+---
+description: Hidden WiFi network support was added in version 2.1.0
+---
+
 # Hidden Wifi networks
 
 For access points that do **not** broadcast their SSID, the Controller includes a way to **enter the SSID manually** through a dialog.

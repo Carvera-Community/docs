@@ -1,3 +1,7 @@
+---
+description: C1 PID Spindle Control was added in version 2.2.0c
+---
+
 # C1 PID Spindle Control
 
 This feature implements a PID feedback control loop to the spindle motor control. This is beneficial to original Carvera (C1) as it uses the control as part of the motor speed control loop. The stock implementation is basic and does not make use of the industry standard [PID controller](https://en.wikipedia.org/wiki/PID_controller) feedback loop.
@@ -5,7 +9,7 @@ This feature implements a PID feedback control loop to the spindle motor control
 Using this spindle control type requires no rewiring or hardware modification, by changing to this the spindle type configuration to the `pid_pwm` type motor performance and torque is increased by up to 2x from standard. This feature should not be used on the Air or Z1 as those machines have closed loop control in the motor controller.
 
 ## Basic Configuration
-The feature can be turned on by running the following commands in the [MDI console](controller/features/mdi-terminal.md):
+The feature can be turned on by running the following commands in the [MDI console](../../../controller/features/mdi-terminal.md):
 ```
 config-set sd spindle.type pid_pwm
 config-set sd spindle.control_P 0.0002
@@ -30,7 +34,7 @@ There are a number of options available for tuning this spindle control method f
 * `config-set sd spindle.control_smoothing 0.001`
   * This change is critical. The default value is 0.1, or 100ms of smoothing. At 0.01 and smaller, there is no smoothing with the 100hz update loop, but setting it to 0.001 can be safe in case the update loop is updated to 1000hz later on.
 * `config-set sd spindle.max_rpm 16000`
-  * Not strictly necessary, but with better control the spindle can run a bit faster to better handle small diameter endmills without rpm drop
+  * Not strictly necessary, but with better control the spindle can run a bit faster to better handle small diameter endmills without rpm drop. See [Spindle maximum RPM](../spindle-max-rpm.md).
  
 ### Motor Controllor Adjustment
 
