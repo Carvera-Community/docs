@@ -3,11 +3,12 @@
 The Community Controller is a [fork ](https://en.wikipedia.org/wiki/Fork_\(software_development\))of the Makera Carvera Controller that has a number of features and bug fixes added above and beyond the Makera software. See the [CHANGELOG](https://github.com/Carvera-Community/Carvera_Controller/blob/develop/CHANGELOG.md) and [screenshots](about.md#screenshots) for more details.
 
 * **3-axis** and advanced **probing** UI screens for various geometries (**corners**, **axis**, **bore/pocket**, **angles**) for use with a [true 3D touch probe](https://www.instructables.com/Carvera-Touch-Probe-Modifications/) (not the included XYZ probe block)
-* [**Pendant** device support](features/pendant-support.md) of **WHB04** family of **MPG devices**. Such devices can be used to jog, run macros, and perform feed/speed overrides.
+* [**Pendant** device support](features/pendant-support.md) — **WHB04** family and **gamepads**
 * [**Workspace Management**](features/workspace-management.md) options supporting multiple Work Coordinate Systems (WCS) From G54 to G59.3
 * [WCS Rotation](features/wcs-rotation.md) capability meaning no more tramming of vises for alignment
 * Options to **reduce** the **autolevel** probe **area** to avoid probing obstacles
 * **Tooltip support** for user guidance with over 110 tips and counting
+* Green **?** help buttons that open the matching docs page
 * **Background images** for bolt hole positions in probe/start screens; users can add their own too
 * Support for setting/changing to **custom tool numbers** beyond 1-6
 * [Keyboard button](features/jogging-controls.md#keyboard-jogging) based **jog movement** controls
@@ -18,16 +19,19 @@ The Community Controller is a [fork ](https://en.wikipedia.org/wiki/Fork_\(softw
 * Various **Quality-of-life** improvements:
   * **Controller config settings** (UI Density, screensaver disable, Allow MDI while machine running, virtual keyboard)
   * **Enclosure light** and **External Output** switch toggle in the center control panel
-  * Machine **reconnect** functionality with stored last used **machine network address**
+  * [**Auto Ext. Out**](features/auto-ext-out.md) for auto running devices connected to the External Output plug when the spindle enabled
+  * Machine **reconnect** functionality with stored last used **machine network address** ([USB + WiFi](features/connection-and-protocol.md))
   * **Set Origin** Screen pre-populated with **current** offset values
   * **Collet Clamp/Unclamp** buttons in Tool Changer menu for the original Carvera
-  * Better file browser **upload-and-select** workflow
+  * Better file browser **upload-and-select** workflow; remote **multi-select** delete
   * **Previous** file browsing location is **reopened** and **previously** used locations stored to **quick access list**
   * **Greater speed/feed** override scaling range from **10%** and up to **300%**
-  * **Improved** 3D gcode visualisations, including **correct rendering** of movements around the **A axis**
+  * Improved [**3D gcode viewer**](features/gcode-viewer.md) (view cube, ortho, colour schemes, tool-change markers)
   * [**Continuous Jogging**](features/jogging-controls.md#continuous-jogging) support
   * [Auto-Reconnect capability](features/auto-reconnect.md)
   * [Logging](features/logging.md)
+  * [Probe Scan](features/probe_scan.md) - CMM-style probing tool for building a 2D sketch of probed and constructed features, then exporting them.
+  * [Facing Wizard](features/facing-widget.md)
 
 ## **Screenshots**
 
