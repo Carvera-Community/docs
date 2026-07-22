@@ -1,7 +1,3 @@
----
-description: Resume playback at line number was added in version 2.1.0
----
-
 # Resume playback at line number
 
 On the **Config and Run** screen you can start G-code playback from a chosen line instead of from the beginning of the file.

@@ -12,11 +12,7 @@ The auto-reconnection settings are found in **Settings** <img src="../../.gitboo
 
 <figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
-* **Auto-reconnect** — enable automatic recovery after an unexpected drop
-* **Preferred connection method** — used on a **fresh app launch** when auto-reconnect is on (USB vs WiFi)
-* After a mid-session drop, reconnect prefers the **last successful** method
 
-App-launch auto-connect only runs when auto-reconnect is enabled.
 
 ## Usage
 

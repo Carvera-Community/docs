@@ -1,7 +1,3 @@
----
-description: USB serial speed negotiation was added in version 2.1.0
----
-
 # USB serial speed
 
 When the machine is running **Community firmware** that supports it (2.1.0 and above), the Controller can negotiate with the machine to use a **higher USB serial baud rate** for higher throughput.

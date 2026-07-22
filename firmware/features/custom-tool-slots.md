@@ -1,7 +1,3 @@
----
-description: Custom Tool Slots was added in version 2.1.0c
----
-
 # Custom Tool Slots
 
 This functionality enables the capability to configure up to 255 custom tool slots. If any custom tool slots are defined, the machine default slots are ignored. It's expected that you are either have defined all the slots via the Custom Tool Slot functionality, or are using the stock tool slots. Custom tool slots are defined by the individual slot's X/Y/Z MCS location, and is not affected by changes in other machine position offsets.

@@ -1,7 +1,3 @@
----
-description: Machine configuration backup was added in version 2.1.0
----
-
 # Machine configuration backup
 
 The Controller can copy **specific configuration files from the machine’s SD card** to the **computer** where the Controller is running, so you keep a local backup of your machine specific configuration.

@@ -1,25 +1,2 @@
 # Features
 
-Controller feature guides:
-
-* [Probing](../../firmware/supported-commands/mcodes/probing/README.md)
-* [Probe Scan](probe_scan.md)
-* [Facing Wizard](facing-widget.md)
-* [G-code Viewer](gcode-viewer.md)
-* [Advanced TLO Calibration](advanced-tlo-calibration.md)
-* [Auto Ext. Out](auto-ext-out.md)
-* [Connection & Protocol](connection-and-protocol.md)
-* [Resume playback at line number](resume-playback-start-at-line.md)
-* [MDI Terminal](mdi-terminal.md)
-* [Hidden Wifi networks](wifi-auto-connect-and-hidden-networks.md)
-* [Machine Configuration Backup](machine-config-backup.md)
-* [USB serial speed](usb-serial-speed.md)
-* [Pendant Support](pendant-support.md)
-* [Workspace Management](workspace-management.md)
-* [WCS Rotation](wcs-rotation.md)
-* [Controller in a Web Browser](controller-in-a-web-browser.md)
-* [Macros](macros.md)
-* [Logging](logging.md)
-* [Auto-Reconnect](auto-reconnect.md)
-* [Jogging Controls](jogging-controls.md)
-* [Auto-Leveling](auto-leveling.md)

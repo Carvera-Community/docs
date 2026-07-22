@@ -1,7 +1,3 @@
----
-description: Configurable spindle maximum RPM was added in version 2.1.0c
----
-
 # Spindle maximum RPM
 
 Community firmware enforces a **maximum spindle speed** so commanded RPM (for example from **M3** / **S**) is **clamped** to a safe upper limit for your machine and spindle.

@@ -1,7 +1,3 @@
----
-description: USB serial baud rate support was added in version 2.1.0c
----
-
 # USB serial baud rate
 
 Community firmware lets you run the **main USB serial console** faster than default when the host supports it. Higher rates improve transfer speeds when streaming large gcode programs.

@@ -1,7 +1,3 @@
----
-description: USB baud console command was added in version 2.1.0c
----
-
 # baud
 
 Query or change the **USB serial** baud rate on the USB serial interface.
