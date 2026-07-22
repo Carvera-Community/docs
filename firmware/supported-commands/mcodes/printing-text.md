@@ -20,14 +20,15 @@ M118 Starting milling job
 
 ### Description
 
-M118.1 evaluates and prints the value of a specified parameter. This is useful for debugging parameter values during program execution.
+M118.1 evaluates the expression after **P** and prints it as ` <expression> = <value>`. Expressions such as `#101` or `#101+3` are supported.
 
 ### Parameters
 
-* P: Parameter number to evaluate and print (required)
+* P: Parameter or expression to evaluate (required)
 
 ### Example
 
 ```
-M118.1 P#100        ; Print the value of parameter #100
+M118.1 P#100        ; Prints:  #100 = 12.000
+M118.1 P#101+3      ; Prints:  #101+3 = 15.000
 ```
