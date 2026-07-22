@@ -1,18 +1,29 @@
 ---
-description: WiXHC WBH04 Pendant support was added in version 0.10.0
+description: WHB04 Pendant support was added in version 0.10.0; gamepad support in 2.2.0
 ---
 
 # Pendant Support
 
-The Community Controller supports the [WiXHC HB](https://www.wixhc.cn/product/4-axis-usb-cnc-controller-whb04b-4) family of pendants to control the machine. They can be purchased from [AliExpress](https://www.aliexpress.com/item/1005006270475983.html) or from other online retailers. There are a number of variations within this family of devices, including 4/6 axis models (WHB04/WHB06), and wired/wireless (LHB04/LHB06). All them are expected to work with the Community Controller.&#x20;
+The Community Controller supports hardware jogging devices:
+
+* [WiXHC HB](https://www.wixhc.cn/product/4-axis-usb-cnc-controller-whb04b-4) family pendants (WHB04/WHB06, wired or wireless)
+* Standard **gamepads** (Xbox / PlayStation-style and similar HID joysticks)
+
+WHB04 devices can be purchased from [AliExpress](https://www.aliexpress.com/item/1005006270475983.html) or other retailers.
 
 {% hint style="warning" %}
-This functionality is supported on Windows, MacOS and Linux. It is not available for iOS or Android.
+WHB04 pendant support is for Windows, macOS, and Linux — not iOS or Android. Gamepads use the desktop joystick API on the same platforms.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/PXL_20250728_083517873.MP.jpg" alt="" width="375"><figcaption><p>Pictured is a 4 axis, wireless WBH04</p></figcaption></figure>
 
-## Configuration
+## Gamepad
+
+In Settings → Pendant, choose **Gamepad**. Defaults target Xbox 360 / Xbox One layouts; PlayStation (DS4 / DualSense) presets are available. Bind axes, buttons, and triggers in the gamepad bindings UI. Options include deadzone, max jog speed, and per-axis invert.
+
+Typical defaults (Xbox): left stick X/Y jog, right stick for Z/A, triggers for feed override, bumpers for step size, Back toggles step/continuous, Start toggles spindle.
+
+## WHB04 configuration
 
 ### Possible Configuration Options
 
@@ -59,7 +70,9 @@ To jog with the pendant you must have the Pendant Jogging toggle <img src="../..
 
 <figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
-## Linux&#x20;
+## Linux
+
+On Linux, if the WHB04 is enabled but permissions are wrong, the Controller shows an error instead of a silent “No Pendant”. Follow the udev steps below.
 
 To use the pendant in Linux your system needs the `libhidapi-hidraw0` package.
 
