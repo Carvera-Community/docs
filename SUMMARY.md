@@ -80,7 +80,7 @@
     * [Tool Slot Management](firmware/supported-commands/mcodes/tool-slot-management.md)
     * [Tool Change](firmware/supported-commands/mcodes/tool-change.md)
     * [Advanced Motion Control](firmware/supported-commands/mcodes/m400-wait-for-moves.md)
-    * [Endstop Repeatability](firmware/supported-commands/mcodes/endstop-repeatability.md)
+    * [Hardware Tests](firmware/supported-commands/mcodes/endstop-repeatability.md)
   * [Console Commands](firmware/supported-commands/console-commands/README.md)
     * [WCS Management](firmware/supported-commands/console-commands/wcs-management.md)
     * [config-delete](firmware/supported-commands/console-commands/config-delete.md)
