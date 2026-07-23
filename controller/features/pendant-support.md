@@ -59,6 +59,19 @@ To jog with the pendant you must have the Pendant Jogging toggle <img src="../..
 
 <figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
+## MacOSX&#x20;
+
+To use the pendant in MacOSX your system needs the `hidapi` package. When installing the official DMG image this dependency is installed for you, developers not using the official DMG may need to manually install this dependency.
+
+The easiest way to install this dependency is to install it with homebrew:
+
+```
+brew install hidapi
+```
+For more information on Homebrew check this Website:
+
+[Homebrew](https://brew.sh/)
+
 ## Linux&#x20;
 
 To use the pendant in Linux your system needs the `libhidapi-hidraw0` package.
