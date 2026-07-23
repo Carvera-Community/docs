@@ -10,7 +10,7 @@ If the Controller loses connection to the machine for a reason other than the op
 
 The auto-reconnection settings are found in **Settings** <img src="../../.gitbook/assets/image (18).png" alt="" data-size="line">, in the **Controller** section:
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-07-23 at 4.54.39 pm.png" alt=""><figcaption></figcaption></figure>
 
 * **Auto-reconnect** — enable automatic recovery after an unexpected drop
 * **Preferred connection method** — used on a **fresh app launch** when auto-reconnect is on (USB vs WiFi)
@@ -23,8 +23,6 @@ App-launch auto-connect only runs when auto-reconnect is enabled.
 When disconnected and auto-reconnect is not enabled this error prompt is given:<br>
 
 <figure><img src="../../.gitbook/assets/477768490-44b5e9db-3031-42f9-9484-1b8daf661d85.png" alt="" width="375"><figcaption></figcaption></figure>
-
-
 
 When disconnected and auto-reconnect is enabled you get a count down like this:
 

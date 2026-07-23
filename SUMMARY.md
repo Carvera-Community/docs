@@ -21,7 +21,7 @@
   * [Probing](firmware/supported-commands/mcodes/probing/README.md)
   * [Probe Scan](controller/features/probe_scan.md)
   * [Facing Wizard](controller/features/facing-widget.md)
-  * [G-code Viewer](controller/features/gcode-viewer.md)
+  * [G-Code Viewer](controller/features/gcode-viewer.md)
   * [Advanced TLO Calibration](controller/features/advanced-tlo-calibration.md)
   * [Auto Ext. Out](controller/features/auto-ext-out.md)
   * [Connection & Protocol](controller/features/connection-and-protocol.md)
@@ -74,7 +74,7 @@
     * [Printing Text](firmware/supported-commands/mcodes/printing-text.md)
     * [Self-Calibration](firmware/supported-commands/mcodes/self-calibration.md)
     * [Probing](firmware/supported-commands/mcodes/probing/README.md)
-      * [3D Probe Hardware Setup](firmware/supported-commands/mcodes/probing/3d-probe-support.md)
+      * [3D Probe Hardware Setup](/broken/pages/MsXz8XBNa8t4CiSiigjM)
       * [Makera Probing (M480)](firmware/supported-commands/mcodes/probing/makera-probing-m480.md)
     * [Tool Offset Management](firmware/supported-commands/mcodes/tool-offset-management.md)
     * [Tool Slot Management](firmware/supported-commands/mcodes/tool-slot-management.md)
@@ -88,7 +88,7 @@
     * [debugmode](firmware/features/debug-mode.md)
   * [Variables (link)](firmware/features/variables.md)
   * [Math (link)](firmware/features/math.md)
-  * [O Codes](firmware/supported-commands/o-codes.md)
+  * [O Codes](/broken/pages/VmPU1cOJ4Xs4VdG0T8tV)
 
 ## Fusion 360
 

@@ -1,10 +1,16 @@
 ---
-description: G-code Viewer enhancements were added in version 2.2.0
+description: Many G-code Viewer enhancements were added in version 2.2.0
 ---
 
-# G-code Viewer
+# G-Code Viewer
 
-3D toolpath preview on Config and Run (and related screens).
+A number of enhancements are present on the G-Code Viewer page:
+
+* View Controls
+* File Viewer
+* Playback progress
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-07-23 at 4.28.07 pm copy.png" alt=""><figcaption></figcaption></figure>
 
 ## View controls
 
@@ -17,14 +23,22 @@ Toolbar options include:
 
 The view fits the path bounding box.
 
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
 ## File viewer
+
+
 
 The text G-code view supports syntax highlighting for G/M codes, comments, and O-code / math constructs.
 
-When a file contains O-codes, playback automatically passes `-O` so the firmware pre-scans subroutines (see [O Codes](../../firmware/supported-commands/o-codes.md)).
+<figure><img src="../../.gitbook/assets/image (24).png" alt="" width="375"><figcaption></figcaption></figure>
 
-Syntax highlighting colours can be customised in the Controller settings.
+Syntax highlighting colours can be customised in the Controller settings:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-07-23 at 4.31.49 pm.png" alt=""><figcaption></figcaption></figure>
 
 ## Playback progress
 
 Tool-change locations can be shown as markers on the playback progress bar. Toggle under Controller settings (`show_playbar_tool_change_markers`).
+
+<figure><img src="../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>

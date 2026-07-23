@@ -8,6 +8,7 @@ The Controller software works on the following systems:
 * Linux using x64 CPUs running a Linux distribution with Glibc 2.35 or above (eg. Ubuntu 22.04 or higher)
 * Linux using aarch64 CPUs (eg Raspberyy Pi 3+) running a Linux distribution with Glibc 2.39 or above (eg. Ubuntu 24.04 or higher)
 * Apple iPad with iOS 17.6 or higher
+* Apple iPhone with iOS 17.6 or higher
 * Android devices with Android 11 or higher running ARM 32 and 64-bit processors (ARMv7a and ARMv8a) and x86\_64
 * Other systems might be work via the Python Package, see [Python Package](where-to-get.md#python-package) for more details.
 
@@ -17,7 +18,7 @@ The Controller software works on the following systems:
 
 You may get the error "Apple could not verify “Carvera Controller Community” is free of malware that may harm your Mac or compromise your privacy." as we do not currently sign our MacOS releases.
 
-You can overcome this issue by opening System Settings, then click Privacy & Security in the sidebar.  Scroll to the bottom and click "Open Anyway". After doing this once the App can be opened normally.
+You can overcome this issue by opening System Settings, then click Privacy & Security in the sidebar. Scroll to the bottom and click "Open Anyway". After doing this once the App can be opened normally.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-01-10 at 2.05.06 pm.png" alt=""><figcaption></figcaption></figure>
 

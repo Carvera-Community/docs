@@ -9,21 +9,31 @@ The Community Controller supports hardware jogging devices:
 * [WiXHC HB](https://www.wixhc.cn/product/4-axis-usb-cnc-controller-whb04b-4) family pendants (WHB04/WHB06, wired or wireless)
 * Standard **gamepads** (Xbox / PlayStation-style and similar HID joysticks)
 
-WHB04 devices can be purchased from [AliExpress](https://www.aliexpress.com/item/1005006270475983.html) or other retailers.
-
-{% hint style="warning" %}
-WHB04 pendant support is for Windows, macOS, and Linux — not iOS or Android. Gamepads use the desktop joystick API on the same platforms.
-{% endhint %}
-
 <figure><img src="../../.gitbook/assets/PXL_20250728_083517873.MP.jpg" alt="" width="375"><figcaption><p>Pictured is a 4 axis, wireless WBH04</p></figcaption></figure>
 
-## Gamepad
+## Usage
 
-In Settings → Pendant, choose **Gamepad**. Defaults target Xbox 360 / Xbox One layouts; PlayStation (DS4 / DualSense) presets are available. Bind axes, buttons, and triggers in the gamepad bindings UI. Options include deadzone, max jog speed, and per-axis invert.
+To jog with the pendant you must have the Pendant Jogging toggle <img src="../../.gitbook/assets/image (27).png" alt="" data-size="line"> enabled on the main control screen. The button is blue when pendant based jogging is enabled. The action/macro buttons will work irrespective if <img src="../../.gitbook/assets/image (27).png" alt="" data-size="line"> is enabled or not.
 
-Typical defaults (Xbox): left stick X/Y jog, right stick for Z/A, triggers for feed override, bumpers for step size, Back toggles step/continuous, Start toggles spindle.
+<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
-## WHB04 configuration
+## Gamepads
+
+Gamepads are supported for use as Pendants. This can be configured in Settings → Pendant, Under Use Hardware Pendant choose **Gamepad**.&#x20;
+
+Defaults target Xbox 360 / Xbox One layouts, but PlayStation and Switch Pro presets are also available. Generic gamepads are also supported via button customisation.
+
+Button bindings can be customised in the gamepad bindings UI. Options include deadzone, max jog speed, and per-axis invert.
+
+<div><figure><img src="../../.gitbook/assets/Screenshot 2026-07-23 at 4.45.31 pm.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2026-07-23 at 4.45.06 pm.png" alt=""><figcaption></figcaption></figure></div>
+
+## WiXHC HB04 Family Devices
+
+WiXHC HB04 family of devices can be purchased from [AliExpress](https://www.aliexpress.com/item/1005006270475983.html) or other retailers. Both 4 and 6 Axis models, as well are wired and wireless are supported.
+
+{% hint style="warning" %}
+WHB04 pendant support is for Windows, macOS, and Linux. Mobile operating systems iOS and Android are not supported.
+{% endhint %}
 
 ### Possible Configuration Options
 
@@ -36,9 +46,9 @@ The following is a screenshot of the Pendant configuration screen, showing all t
 To enable the WBH04 pendant support in the Controller:
 
 1. Plug the Pendant receiver (if wireless) or Pendant USB cable into the computer that will run the Controller software. No drivers are required.
-2. Open the Controller and browse to the Settings screen.&#x20;
+2. Open the Controller and browse to the Settings screen.
 3. In the Pendant section of Settings select the "Use Hardware Pendant" dropdown, and choose the WHB04 option. This option will only be present if a WHB04 type device is connected to the computer.
-4. Apply the Setting. The pendant can now be used.&#x20;
+4. Apply the Setting. The pendant can now be used.
 
 ### Setting a Primary Action on the Pendant
 
@@ -64,13 +74,7 @@ As of machine firmware version 2.0.0[ continuous jogging mode](../../firmware/fe
 
 If the speed/step dial is set to Lead <img src="../../.gitbook/assets/PXL_20251020_023753175.MP (1).jpg" alt="" data-size="line">and Continuous mode is selected the movement speed will be variable based on the speed of jogging wheel and the selected Jog Speed in the [Jogging Controls](jogging-controls.md).
 
-## Usage
-
-To jog with the pendant you must have the Pendant Jogging toggle <img src="../../.gitbook/assets/image (27).png" alt="" data-size="line"> enabled on the main control screen. The button is blue when pendant based jogging is enabled. The action/macro buttons will work irrespective if <img src="../../.gitbook/assets/image (27).png" alt="" data-size="line"> is enabled or not.
-
-<figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
-
-## Linux
+### Linux
 
 On Linux, if the WHB04 is enabled but permissions are wrong, the Controller shows an error instead of a silent “No Pendant”. Follow the udev steps below.
 
@@ -93,11 +97,11 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-## Known Limitations
+### Known Limitations
 
 There are a number of known limitations to the WBH04 pendant/integration.
 
-### Movement step is shown as % on LCD
+#### Movement step is shown as % on LCD
 
 <figure><img src="../../.gitbook/assets/image (6) (1).png" alt="" width="188"><figcaption></figcaption></figure>
 
@@ -105,6 +109,6 @@ The pendant LCD screen always shows the movement step (STP) as a %, however the 
 
 <figure><img src="../../.gitbook/assets/image (7) (1).png" alt="" width="188"><figcaption></figcaption></figure>
 
-### Invalid Axis Values
+#### Invalid Axis Values
 
-When the Axis selector is set to Off or the Controller has not yet connected to the machine, the axis position values on the Pendant screen can display incorrect values.&#x20;
+When the Axis selector is set to Off or the Controller has not yet connected to the machine, the axis position values on the Pendant screen can display incorrect values.
