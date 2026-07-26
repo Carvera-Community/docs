@@ -108,6 +108,7 @@
   * [Start from Middle of File](guides/start-from-middle-of-file.md)
   * [Measuring Bed Flatness](guides/measuring-bed-flatness.md)
 * [Anatomy of a Carvera](anatomy-of-a-carvera.md)
+* [Common Accessories](common-accessories.md)
 * [Mods](mods/README.md)
   * [C1](mods/c1/README.md)
     * [C1 Z axis leadscrew bottom cover](mods/c1/c1-z-axis-leadscrew-bottom-cover.md)

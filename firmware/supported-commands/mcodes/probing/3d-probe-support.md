@@ -2,7 +2,9 @@
 
 The Community firmware supports 3D Touch probes, these are measurement devices that trigger when they make contact in either of the 3 axis. Such devices connect to the machine via the probe interface port and can have wiring that is either Normally Open (NO) or Normally Closed (NC). As the stock probes included with the machine are NO, it is preferred to also use a NO 3D Probe, however functionality to support NC models has also been added to the Community firmware.
 
-The 3D Probe functionality is written generically so many different models are supported. A popular inexpensive model is sold as "V6 3D Touch Probe" can be found on many online marketplaces.
+The 3D Probe functionality is written generically so many different models are supported. A popular inexpensive model is sold as "V6 3D Touch Probe" can be found on many online marketplaces. Out of the box the NO version works like other probes on the machine, using a NC version requires a configuration setting change. The V6 probes use a M2.5 thread for the stylus
+
+The Makera branded 3 axis wired probe works the same way as the NO V6 Probe. It uses a M2 thread for the stylus
 
 All of the probing functionality of the OEM probe can be performed by the 3D Probe. For many people this means the 3D Probe becomes the only probe they use.
 
@@ -20,7 +22,7 @@ The [Community firmware is required](../../../installation-upgrade.md) to be use
 {% step %}
 **Connect the probe**
 
-Set the tool to number to ≥ **999990** for the firmware to register that you are using a 3D probe. This can be done using the Controller by [setting/changing the tool to **3D Probe**](https://app.gitbook.com/s/hIcl2yLv4r2ehdkJpmlK/controller/features/3d-probing) or by running the command `M6 T999990` in the **MDI**.
+Set the tool to number to ≥ **999990** for the firmware to register that you are using a 3D probe. This can be done using the Controller by [setting/changing the tool to **3D Probe**](/broken/pages/UmezVPp7oK6okbQB4rPN) or by running the command `M6 T999990` in the **MDI**.
 
 Once connected and correct tool number has been selected, the probe should have a LED light to show that it is powered and ready for use. The "V6 3D Touch Probe" has a green led that shines through the clear plastic in the probe body (part #5 in [Figure 1](3d-probe-support.md#notes-for-v6-3d-touch-probe)).
 {% endstep %}
@@ -74,7 +76,7 @@ Hold the probe in the collet until the machine has clamped it.
 {% step %}
 **Set the current tool to Probe**
 
-By [setting/changing the tool to **3D Probe**](https://app.gitbook.com/s/hIcl2yLv4r2ehdkJpmlK/controller/features/3d-probing) **in the Controller** or by running the command `M6 T999990` in the **MDI**.
+By [setting/changing the tool to **3D Probe**](/broken/pages/UmezVPp7oK6okbQB4rPN) **in the Controller** or by running the command `M6 T999990` in the **MDI**.
 {% endstep %}
 
 {% step %}
@@ -86,7 +88,7 @@ For Z probing to be accurate the machine needs to perform a TLO calibration. Thi
 {% step %}
 **Ready to use Probing Commands**
 
-Now the probe can be used in the [Controller ](https://app.gitbook.com/s/hIcl2yLv4r2ehdkJpmlK/controller/features/3d-probing)or [MDI](./)
+Now the probe can be used in the [Controller ](/broken/pages/UmezVPp7oK6okbQB4rPN)or [MDI](./)
 {% endstep %}
 {% endstepper %}
 
