@@ -18,4 +18,5 @@ Community firmware feature guides:
 * [Communication Protocol](communication-protocol.md)
 * [WiFi AP Auto-Disable](wifi-ap-auto-disable.md)
 * [Debug Mode](debug-mode.md)
+* [Hardware Health Checks](hardware-health-checks.md)
 * [3D Probe Support](../supported-commands/mcodes/probing/3d-probe-support.md)
