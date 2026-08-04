@@ -1,8 +1,8 @@
 ---
-description: Probe Scan was added in version 2.2.0
+description: CMM Workbench was added in version 2.2.0
 ---
 
-# Probe Scan
+# CMM Workbench
 
 CMM-style probing tool for building a 2D sketch of probed and constructed features, then exporting the result as design file. Basically a way of using a 3D Probe to reverse engineer physical objects.
 
@@ -10,9 +10,9 @@ CMM-style probing tool for building a 2D sketch of probed and constructed featur
 A 3D probe is required for X/Y side probing. The stock machine probe only works in Z.
 {% endhint %}
 
-You can open Probe Scan from the Tools section of the main control page of the Controller UI.
+You can open CMM Workbench from the Tools section of the main control page of the Controller UI.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-07-23 at 4.03.07 pm.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-04 at 10.45.53 pm.png" alt=""><figcaption></figcaption></figure>
 
 ## Workflow
 

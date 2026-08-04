@@ -26,11 +26,11 @@ The Community Controller is a [fork ](https://en.wikipedia.org/wiki/Fork_\(softw
   * Better file browser **upload-and-select** workflow; remote **multi-select** delete
   * **Previous** file browsing location is **reopened** and **previously** used locations stored to **quick access list**
   * **Greater speed/feed** override scaling range from **10%** and up to **300%**
-  * Improved [**3D gcode viewer**](features/gcode-viewer.md) (view cube, ortho, colour schemes, tool-change markers)
+  * Improved [**3D gcode viewer**](features/gcode-viewer.md) (view cube, ortho, colour schemes, tool-change markers, tool geometry visualization, Z1 live camera)
   * [**Continuous Jogging**](features/jogging-controls.md#continuous-jogging) support
   * [Auto-Reconnect capability](features/auto-reconnect.md)
   * [Logging](features/logging.md)
-  * [Probe Scan](features/probe_scan.md) - CMM-style probing tool for building a 2D sketch of probed and constructed features, then exporting them.
+  * [CMM Workbench](features/cmm_workbench.md) - CMM-style probing tool for building a 2D sketch of probed and constructed features, then exporting the design.
   * [Facing Wizard](features/facing-widget.md)
 
 ## **Screenshots**
