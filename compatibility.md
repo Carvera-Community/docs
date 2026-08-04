@@ -4,7 +4,7 @@
 
 What CNC mills does the Carvera Community firmware support?
 
-<table><thead><tr><th width="152"></th><th width="525.5">Compatibility Status</th></tr></thead><tbody><tr><td>Carvera</td><td>Fully Supported</td></tr><tr><td>Carvera Air</td><td>Fully Supported <a href="compatibility.md#id-1-rare-issue-with-carvera-air-and-v1.9-boards"><sup>[1]</sup></a></td></tr><tr><td>Z1</td><td>Coming Soon</td></tr></tbody></table>
+<table><thead><tr><th width="152"></th><th width="525.5">Compatibility Status</th></tr></thead><tbody><tr><td>Carvera</td><td>Fully Supported</td></tr><tr><td>Carvera Air</td><td>Fully Supported <a href="compatibility.md#id-1-rare-issue-with-carvera-air-and-v1.9-boards"><sup>[1]</sup></a></td></tr><tr><td>Z1</td><td>Limited support in Controller. Full support coming soon.</td></tr></tbody></table>
 
 ## Software
 

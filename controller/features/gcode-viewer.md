@@ -12,7 +12,7 @@ A number of enhancements are present on the G-Code Viewer page:
 * Tool visualization
 * Z1 camera
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-07-23 at 4.28.07 pm copy.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-04 at 10.38.36 pm.png" alt=""><figcaption></figcaption></figure>
 
 ## View controls
 
