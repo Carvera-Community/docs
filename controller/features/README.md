@@ -3,7 +3,7 @@
 Controller feature guides:
 
 * [Probing](../../firmware/supported-commands/mcodes/probing/README.md)
-* [Probe Scan](probe_scan.md)
+* [CMM Workbench](cmm_workbench.md)
 * [Facing Wizard](facing-widget.md)
 * [G-code Viewer](gcode-viewer.md)
 * [Advanced TLO Calibration](advanced-tlo-calibration.md)

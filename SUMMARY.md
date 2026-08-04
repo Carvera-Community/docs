@@ -19,7 +19,7 @@
 * [Supported OS](controller/supported-os.md)
 * [Features](controller/features/README.md)
   * [Probing](firmware/supported-commands/mcodes/probing/README.md)
-  * [Probe Scan](controller/features/probe_scan.md)
+  * [CMM Workbench](controller/features/cmm_workbench.md)
   * [Facing Wizard](controller/features/facing-widget.md)
   * [G-Code Viewer](controller/features/gcode-viewer.md)
   * [Advanced TLO Calibration](controller/features/advanced-tlo-calibration.md)
