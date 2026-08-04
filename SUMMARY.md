@@ -2,6 +2,7 @@
 
 * [Community Software Documentation](README.md)
 * [Updates](updates/README.md)
+  * [Firmware/Controller 2.2.0c-RC1](updates/firmware-controller-2.2.0c-rc1.md)
   * [Firmware/Controller 2.1.0c](updates/firmware-controller-2.1.0c.md)
   * [Fusion Plugin v0.9.0](updates/fusion-plugin-0.9.0.md)
   * [Firmware/Controller 2.0.0c-RC2](updates/firmware-controller-2.0.0c-rc2.md)
@@ -9,7 +10,6 @@
   * [Firmware 1.0.9c and Controller v0.10.0](updates/firmware-1.0.9c-and-controller-v0.10.0.md)
   * [Controller v0.9.0](updates/controller-v0.9.0.md)
   * [Firmware v1.0.10c](updates/firmware-v1.0.10c.md)
-  * [Firmware/Controller 2.2.0c-RC1](updates/firmware-controller-2.2.0c-rc1.md)
 * [Outside Resources](outside-resources.md)
 * [Compatibility](compatibility.md)
 
