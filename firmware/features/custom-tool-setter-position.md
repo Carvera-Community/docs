@@ -1,3 +1,7 @@
+---
+description: Custom Tool Setter Position was added in version 2.1.0c
+---
+
 # Custom Tool Setter Position
 
 The location of the tool setter can be customized using the configuration elements `coordinate.probe_mcs_x` and `coordinate.probe_mcs_y`. Normally the location is set by way of reference to the toolrack but setting these two configuration keys you can use a specific MCS location.

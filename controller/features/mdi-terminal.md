@@ -1,3 +1,7 @@
+---
+description: Most MDI Terminal enhancements were added in version 2.1.0
+---
+
 # MDI Terminal
 
 The **MDI** (Manual Data Input) area is where you send individual G-code lines or short programs to the machine without loading a full file.\

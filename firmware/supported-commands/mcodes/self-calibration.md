@@ -77,20 +77,48 @@ M469.4 Y50 E30      ; Calibrate at Y offset of 50, allowing the probe 30mm of do
 
 ### Description
 
-M469.5 calibrates the A-axis center height using a 3-axis probe. Full documentation in the works
+M469.5 calibrates `rotation_offset_z` by probing a known-diameter pin in the 4th-axis chuck from four A orientations, after first probing the module reference surface (same surface used for absolute Z probe). Requires the machine to be homed and a 3-axis probe installed.
+
+Check the MDI for suggested `config-set` values when finished.
 
 ### Parameters
 
-* I: Invert probe direction (optional, default: 0)
-  * 0: Normal probe direction
-  * 1: Inverted probe direction
-* X: X-axis offset (optional, default: 60mm)
-* E: Probe height (optional, default: from config rotation\_offset\_z)
+* I: Invert probe for NC probe (optional, default: 0)
+* X: Distance along the chuck axis from the headstock centreline to probe (optional, default: 60mm)
+* C: Retract height between pin probes (optional, default: 4mm)
 * R: Pin diameter (optional, default: 6mm)
 
 ### Example
 
 ```
 M469.5              ; Calibrate A-axis height with defaults
-M469.5 X60 E40 R4   ; Calibrate with a 4mm pin, allowing the probe 40mm of downwards travel, at the x offset of 60mm
+M469.5 X60 C4 R4    ; 4mm pin, 4mm retract, X offset 60mm
+```
+
+## M469.6 - Calibrate A-Axis Centre of Rotation
+
+### Description
+
+M469.6 finds the true 4th-axis centre of rotation in Y and Z by probing a round artifact (for example the chuck body) from multiple directions. Unlike pin-based height calibration, this is not skewed by runout or surface imperfections on a single contact. For this reason this calibration routine is recommended over M469.4/5
+
+M469.6 probes the module reference surface (same as M469.5) and temporarily sets both `coordinate.rotation_offset_y` and `coordinate.rotation_offset_z`. Run the printed `config-set` commands to make them permanent.
+
+Requirements:
+
+* Machine homed
+* 3-axis probe selected (tool **0**, **9999**, or **≥ 999990**) with TLO already calibrated
+* Probe tip positioned above the artifact centre, within clearance of its surface
+
+### Parameters
+
+* R: Artifact diameter (optional, default: 50mm — typical Sanou K02-50 chuck body)
+* D: Probe tip diameter (optional, default: `zprobe.probe_tip_diameter` or 2mm)
+* C: Clearance around the artifact (optional, default: 2mm)
+* F: Positioning feed rate (optional, default: 400 mm/min)
+* I: Invert probe for NC probe (optional, default: 0)
+
+### Example
+
+```
+M469.6                 ; 50mm chuck body
 ```

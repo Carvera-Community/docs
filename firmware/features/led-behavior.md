@@ -1,3 +1,7 @@
+---
+description: LED Behaviour updates were added in version 2.1.0c
+---
+
 # LED Behaviour
 
 The Community firmware drives the **RGB LEDs** on the **Carvera (C1)** and **Carvera Air**. Colours and patterns reflect **machine state** (idle, running, homing, held, tool change, and so on).
