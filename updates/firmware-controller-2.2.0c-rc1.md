@@ -11,6 +11,13 @@ You can download the releases and see the full changelog on GitHub:
 * [Carvera Community Firmware 2.2.0c-RC1](https://github.com/Carvera-Community/Carvera_Community_Firmware/releases/tag/v2.2.0c-RC1)
 * [Carvera Community Controller 2.2.0-RC1](https://github.com/Carvera-Community/Carvera_Controller/releases/tag/v2.2.0-RC1)
 
+
+
+Known issues are being tracked via the following pages:
+
+* [Controller](https://github.com/Carvera-Community/Carvera_Controller/milestone/8)
+* [Firmware](https://github.com/Carvera-Community/Carvera_Community_Firmware/milestone/4)
+
 ## Release highlights
 
 #### CMM Workbench
@@ -76,7 +83,7 @@ Firmware now supports a subset of [LinuxCNC-style O-codes](firmware-controller-2
 
 #### Hardware Health Checks
 
-Two [new diagnostic commands](firmware-controller-2.2.0c-rc1.md#hardware-health-checks) help catch mechanical and media problems early:
+Two [new diagnostic commands](../firmware/features/hardware-health-checks.md) help catch mechanical and media problems early:
 
 * [M575](../firmware/supported-commands/mcodes/hardware-health-checks.md#m575-endstop-repeatability-test) - Endstop repeatability test
 * [M576](../firmware/supported-commands/mcodes/hardware-health-checks.md#m576-check-all-hashed-files) - SD card file integrity check against stored MD5 hashes
