@@ -43,7 +43,7 @@ In addition to WHB04-family hardware, the Controller now supports standard [game
 
 #### Advanced TLO Calibration
 
-[Advanced TLO Calibration](firmware-controller-2.2.0c-rc1.md#advanced-tlo-calibration) (“Adv Calibrate” in the Tool dropdown) runs `M491` with optional X/Y offset from the tool setter and a repeat count. This is essential for probing face mills that not-center cutting and require being offset from the tool setter.
+[Advanced TLO Calibration](firmware-controller-2.2.0c-rc1.md#advanced-tlo-calibration) (“Adv Calibrate” in the Tool dropdown) runs `M491` with optional X/Y offset from the tool setter and a repeat count. This is essential for probing face mills that are not-center cutting and require being offset from the tool setter.
 
 #### Auto Ext. Out
 
@@ -68,7 +68,7 @@ A new [M469.6 self-calibration routine](../firmware/supported-commands/mcodes/se
 
 #### C1 Improved PID Spindle Control
 
-Carvera C1 owners can switch to a [improved PID spindle control](firmware-controller-2.2.0c-rc1.md#c1-improved-pid-spindle-control) code (`spindle.type pid_pwm`) and gain up to 2× better spindle performance and torque under load. No electronic modifications required. Follow the documentation guide for recommended config values and optional motor-controller knob adjustments. Not for Air or Z1 (those already use external closed-loop motor controllers).
+Carvera C1 owners can switch to a [improved PID spindle control](../firmware/features/spindle-control-types/c1-improved-pid-spindle-control.md) code (`spindle.type pid_pwm`) and gain up to 2× better spindle performance and torque under load. No electronic modifications required. Follow the documentation guide for recommended config values and optional motor-controller knob adjustments. Not for Air or Z1 (those already use external closed-loop motor controllers).
 
 #### O-Codes
 
