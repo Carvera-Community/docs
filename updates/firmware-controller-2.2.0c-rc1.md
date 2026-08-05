@@ -47,7 +47,7 @@ In addition to WHB04-family hardware, the Controller now supports standard [game
 
 #### Auto Ext. Out
 
-An [Auto Ext. Out](firmware-controller-2.2.0c-rc1.md#auto-ext.-out) feature has been exposed in the spindle dropdown and Config and Run screen. This turns on devices connected to the extend port (vacuum, compressor, etc.) whenever the spindle is running.
+An [Auto Ext. Out](firmware-controller-2.2.0c-rc1.md#auto-ext.-out) feature has been exposed in the spindle dropdown and Config and Run screen. This turns on devices connected to the extend port (vacuum, compressor, etc.) whenever the spindle is running. Users of the Original Carvera please note that to support the Makera Vacuum we have changed the default pin that Ext. Out toggles to the USB, if you want to revert it to controlling the Ext Out port on the Control board please use the command `config-set sd switch.extendout.output_pin 2.2` and then `reset` to apply\`
 
 #### Connection & Protocol
 
