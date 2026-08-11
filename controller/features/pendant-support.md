@@ -19,7 +19,7 @@ To jog with the pendant you must have the Pendant Jogging toggle <img src="../..
 
 ## Gamepads
 
-Gamepads are supported for use as Pendants. This can be configured in Settings → Pendant, Under Use Hardware Pendant choose **Gamepad**.&#x20;
+Gamepads are supported for use as Pendants. This can be configured in Settings → Pendant, Under Use Hardware Pendant choose **Gamepad**.
 
 Defaults target Xbox 360 / Xbox One layouts, but PlayStation and Switch Pro presets are also available. Generic gamepads are also supported via button customisation.
 
@@ -73,6 +73,14 @@ This will bring up the Macro edit screen:
 As of machine firmware version 2.0.0[ continuous jogging mode](../../firmware/features/jog-modes.md) is supported. Pressing the Continuous <img src="../../.gitbook/assets/image (25).png" alt="" data-size="line"> or Step <img src="../../.gitbook/assets/image (26).png" alt="" data-size="line"> buttons switches the jogging mode. The current mode is shown on the pendant LCD as STP or CON, and is also reflected in the Controller UI.
 
 If the speed/step dial is set to Lead <img src="../../.gitbook/assets/PXL_20251020_023753175.MP (1).jpg" alt="" data-size="line">and Continuous mode is selected the movement speed will be variable based on the speed of jogging wheel and the selected Jog Speed in the [Jogging Controls](jogging-controls.md).
+
+### Jog movement buffer
+
+The default setting in the Controller do not allow queuing of multiple movement commands. If a movement is being executed, the Controller will ignore any jog wheel input until the movement is complete. This is done intentionally, as a novice operator can easily queue many more movement commands than they intend and crash their spindle.
+
+To allow movements to be queued set the setting _**Allow jogging when machine running**_ to true:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-11 at 3.28.09 pm.png" alt=""><figcaption></figcaption></figure>
 
 ### Linux
 
