@@ -40,6 +40,7 @@
   * [Auto-Reconnect](controller/features/auto-reconnect.md)
   * [Jogging Controls](controller/features/jogging-controls.md)
   * [Auto-Leveling](controller/features/auto-leveling.md)
+  * [Z1 USB Support](controller/features/z1-usb-support.md)
 * [Common Error Messages](controller/common-error-messages.md)
 
 ## Firmware
