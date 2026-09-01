@@ -9,7 +9,7 @@ Release candidates are feature locked and thoroughly tested by the community dev
 You can download the releases and see the full changelog on GitHub:
 
 * [Carvera Community Firmware 2.2.0c-RC3](https://github.com/Carvera-Community/Carvera_Community_Firmware/releases/tag/v2.2.0c-RC3)
-* [Carvera Community Controller 2.2.0-RC3](https://github.com/Carvera-Community/Carvera_Controller/releases/tag/v2.2.0-RC1)
+* [Carvera Community Controller 2.2.0-RC3](https://github.com/Carvera-Community/Carvera_Controller/releases/tag/v2.2.0-RC3)
 
 
 
