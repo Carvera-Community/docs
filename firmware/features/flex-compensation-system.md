@@ -197,3 +197,21 @@ None
 ```
 M380.3
 ```
+
+***
+
+### M380.4 - Delete saved flex compensation data
+
+#### Description
+
+Deletes the flex compensation profile stored on the SD card. Does not change the profile currently in memory.
+
+#### Parameters
+
+None
+
+#### Example
+
+```
+M380.4
+```
