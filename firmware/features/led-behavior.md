@@ -64,3 +64,9 @@ If the internal **check LED** flag is on (see below), during **RUN** the ring br
 ## Long-press progress on the Air
 
 If **`main_button_long_press_enable`** is set to a non-empty string, a **long press** (before the hold threshold is reached) can show **progress** on the led strip as **filled segments** (roughly 0–20–40–60–80–100% of **`main_button_long_press_time`**).
+
+***
+
+## Manual colour (M337)
+
+On **Air**, [M337](../supported-commands/mcodes/led-bar.md) sets the LED bar to an RGB colour. The C1 button LED is not an addressable bar, so M337 does not apply there. The state colours above still take over when the machine state changes.

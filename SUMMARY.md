@@ -73,6 +73,7 @@
   * [MCodes](firmware/supported-commands/mcodes/README.md)
     * [Optional Stop Mode](firmware/supported-commands/mcodes/optional-stop-mode.md)
     * [Line-by-Line Execution Mode](firmware/supported-commands/mcodes/line-by-line-execution-mode.md)
+    * [LED Bar Colour](firmware/supported-commands/mcodes/led-bar.md)
     * [Macros](firmware/supported-commands/mcodes/macros.md)
     * [Printing Text](firmware/supported-commands/mcodes/printing-text.md)
     * [Self-Calibration](firmware/supported-commands/mcodes/self-calibration.md)
