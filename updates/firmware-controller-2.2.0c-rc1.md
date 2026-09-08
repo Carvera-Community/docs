@@ -90,7 +90,7 @@ Two [new diagnostic commands](../firmware/features/hardware-health-checks.md) he
 
 #### Spindle Suspend / Resume
 
-On pause, the firmware can save spindle state, stop the spindle, and restore speed on resume only if it was running. Enabled by default; disable with `config-set sd spindle_suspend_restore_enable false` if you prefer the previous behaviour.
+On pause, the firmware can save spindle state, stop the spindle, and restore speed on resume only if it was running. Enabled by default; disable with `config-set sd spindle_suspend_restore_enable false` if you prefer the previous behaviour. See [Playback Suspend and Resume](../firmware/features/playback-suspend.md).
 
 #### iPhone & Initial Z1 Support
 

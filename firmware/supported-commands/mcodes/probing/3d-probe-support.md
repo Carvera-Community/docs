@@ -30,7 +30,7 @@ Once connected and correct tool number has been selected, the probe should have 
 {% step %}
 **Test the probe**
 
-It's important to test that the machine registers when the probe is triggered. The Community firmware has 3D Probe Crash Protection which will halt the machine if the probe is activated while the spindle is moving and a probe macro is not being executed. This will help protect the probe stylus from damage from unexpected collisions, however this functionality requires the machine correctly receive the signal that the probe has been triggered.
+It's important to test that the machine registers when the probe is triggered. The Community firmware has [3D Probe Crash Protection](../../../features/probe-crash-protection.md) which will halt the machine if the probe is activated while the spindle is moving and a probe macro is not being executed. This will help protect the probe stylus from damage from unexpected collisions, however this functionality requires the machine correctly receive the signal that the probe has been triggered.
 
 You can test that the machine is receiving probe trigger signals by lightly pressing the probe tip with your hands. On the "V6 3D Touch Probe" the green led will change to red when it is triggered, and in the Diagnostic Panel of the Controller the Probe input should be lite green.
 
