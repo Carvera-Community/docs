@@ -21,7 +21,7 @@ Full details to come in the 2.0.0c release. Here is a taste for those interested
 * [**The Community projects documentation site**](https://carvera-community.gitbook.io/docs/) is live!
 * [**Continuous Jog Mode**](https://carvera-community.gitbook.io/docs/firmware/features/jog-modes) - Capability to move at a continuous speed without specifying direction has been added to the firmware and supported in the Controller
 * [**Carvera Air Flex Compensation System**](https://carvera-community.gitbook.io/docs/firmware/features/flex-compensation-system) - Automated x-rod flex measurement and compensation. This improves the stock machine’s accuracy by up to 0.05mm in the Z/Y axis in the middle of the x-rail.
-* 3D Probe Crash Protection - When jogging the spindle with the 3D Probe attached, movement is prevented if the Probe triggers. This prevents destruction of the probe tips.
+* 3D Probe Crash Protection - When jogging the spindle with the 3D Probe attached, movement is prevented if the Probe triggers. This prevents destruction of the probe tips. See [3D Probe Crash Protection](../firmware/features/probe-crash-protection.md).
 * [**Auto-Reconnect capability in the Controller**](https://carvera-community.gitbook.io/docs/controller/features/auto-reconnect) - The controller will automatically reconnect if the connection to the machine is lost.
 * [**Configurable Macro buttons**](https://carvera-community.gitbook.io/docs/controller/features/macros) - Short snippets of gcode can now be saved for execution via 3 dedicated macro buttons on the main control panel
 

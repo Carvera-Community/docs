@@ -81,6 +81,8 @@ You can configure custom G-code to run before resuming by setting:
 before_resume_gcode M3                 ; Turn the Spindle back on
 ```
 
+Spindle save/restore on pause is documented in [Playback Suspend and Resume](../../features/playback-suspend.md).
+
 ## M333 - Disable Optional Stop Mode
 
 ### Description

@@ -15,7 +15,7 @@ You can download the releases and see the full changelog on GitHub:
 
 ### 4th Axis
 
-After careful examination of the codebase it has been found that the stock control implementation had a number of artificial and unnecessary restrictions affecting the max/resolution/accuracy of the 4th axis speed. These are addressed in this release and result in:
+After careful examination of the codebase it has been found that the stock control implementation had a number of artificial and unnecessary restrictions affecting the max/resolution/accuracy of the 4th axis speed. These are addressed in this release ([4th Axis Feed Rate](../firmware/features/rotary-a-feed-rate.md)) and result in:
 
 * removal of a hardcoded RPM cap of 5 RPM, now the machine configuration for max rotational speed will be correctly used. This is an outright max speed increase on the harmonic drive 4th axis from 5 to 6.6 RPM using the advertised/configured speeds from Makera. Testing has shown that the speed can be further increased to 12.5 RPM, but perform this at your own risk.
 * removal of an artificial +30mm diameter padding during speed calculation, as an example on 20mm stock this change alone results in 2.5x increase in speed
