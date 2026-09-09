@@ -18,7 +18,7 @@ This mod rewires the button to normally-closed (NC) and updates the firmware pin
 4. Start the machine **without** the e-stop button plugged in.
 5. In the controller MDI console, run the following command depending on your machine model:
    CA1/Z1: `config-set sd e_stop_pin 0.20!^`
-   C1: `config-set sd e_stop_pin 0.26!^`
+   C1: `config-set sd e_stop_pin 0.26^`
 6. Plug in the e-stop button and restart the machine.
 
 The machine will now stop if the e-stop circuit is open (button pressed, button unplugged, or wire fault).
