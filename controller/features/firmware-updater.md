@@ -6,6 +6,10 @@ description: The Firmware Update Screen was reworked in version 2.3.0
 
 The Controller includes a built-in update screen for upgrading both the Controller application and the machine firmware. Open it from the top-right menu dropdown.
 
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 10.00.48 pm.png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 10.02.12 pm.png" alt=""><figcaption></figcaption></figure>
+
 ## Checking for Updates
 
 Version data is fetched directly from the Carvera-Community GitHub Releases. The screen shows the latest available version for both the Controller and Firmware side by side, with a clear indication of whether:
@@ -52,12 +56,12 @@ The **Install from file…** button is always available as a fallback. It opens 
 
 ### Z1 firmware type detection
 
-The updater auto-detects the type of firmware file selected (whether via one-click or install-from-file):
+The Z1 model machine has a multi-MCU archiecture, and firmware updates can target either or both processors. The updater auto-detects the type of firmware file selected (whether via one-click or install-from-file):
 
-| Firmware type | Install method |
-| --- | --- |
-| **Combined LPC+ESP bundle** | Uploaded to the SD card as `firmware.bin` |
-| **ESP-only image** | Sent via WiFi OTA to the machine's HTTP updater |
-| **LPC-only image** | Uploaded to the SD card as `lpc1768.bin` |
+| Firmware type               | Install method                                  |
+| --------------------------- | ----------------------------------------------- |
+| **Combined LPC+ESP bundle** | Uploaded to the SD card as `firmware.bin`       |
+| **ESP-only image**          | Sent via WiFi OTA to the machine's HTTP updater |
+| **LPC-only image**          | Uploaded to the SD card as `lpc1768.bin`        |
 
 C1 and Air firmware is always installed as `firmware.bin`.

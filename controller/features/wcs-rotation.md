@@ -10,7 +10,7 @@ No more! With the _**Rotated WCS**_ feature a 3D Probe can be used to determine 
 
 To use this feature you need the Community Firmware 1.0.9c or above, and v0.10.0 of the Community Controller.
 
-<figure><img src="../../.gitbook/assets/rotated_wcs_support.png" alt=""><figcaption><p>Preview visualization showing rotated WCS applied</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.37.17 pm.png" alt=""><figcaption><p>Preview visualization showing rotated WCS applied</p></figcaption></figure>
 
 ## Usage
 
@@ -45,6 +45,14 @@ Now the WCS rotation correction has been set continue as normal probing your WCS
 If you know the rotation angle you can apply it directly via the `Set Rotation option` on the WCS Workspace Top Bar dropdown
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+### Via WCS Settings
+
+You can open the WCS Settings via the dropdown on the workspace status button:&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.40.10 pm.png" alt="" width="117"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.39.01 pm.png" alt=""><figcaption></figcaption></figure>
 
 ## How to know if WCS Rotation Correction is being Applied?
 

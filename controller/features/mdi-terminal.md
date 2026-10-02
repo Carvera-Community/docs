@@ -8,9 +8,9 @@ The **MDI** (Manual Data Input) area is where you send individual G-code lines o
 \
 To access the MDI, click the button that says MDI in the bottom left corner of the first control screen. It will swap to saying File and show a terminal instead of the file contents
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-04-08 at 10.52.08 pm.png" alt="" width="375"><figcaption><p>File View with arrow highlight MDI button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.25.15 pm.png" alt="" width="563"><figcaption><p>File View with arrow highlight MDI button</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-04-08 at 10.53.40 pm.png" alt="" width="375"><figcaption><p>MDI Terminal open</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.27.57 pm.png" alt="" width="563"><figcaption><p>MDI Terminal open</p></figcaption></figure>
 
 ## Sending commands
 
@@ -26,6 +26,8 @@ To access the MDI, click the button that says MDI in the bottom left corner of t
 
 ## Keyboard shortcuts
 
+Keyboard short cuts can be [remapped](keyboard-shortcuts.md), but the defaults are:
+
 * **Ctrl+,** — open **Settings**.
 * **Ctrl+M** — focus / jump to **MDI** quickly.
 
@@ -36,6 +38,10 @@ When the **MDI text box has focus**, **keyboard jogging** is disabled so typed k
 ## Intellisense
 
 While typing in the MDI input box, an **Intellisense-like popup** appears showing the command name, a short description, and parameter details for recognised G-codes, M-codes, and console commands. The same popups appear when selecting a line in the G-code file viewer.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.30.49 pm.png" alt="" width="375"><figcaption></figcaption></figure>
+
+
 
 The syntax highlighter also colours G/M codes, comments, O-code constructs, and SimpleShell commands in the MDI history.
 

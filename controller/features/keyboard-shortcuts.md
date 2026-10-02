@@ -8,39 +8,43 @@ All keyboard shortcuts in the Controller can be viewed and reassigned in **Setti
 
 Shortcuts are grouped into three contexts:
 
-| Context | When active |
-| --- | --- |
-| **Global** | Any time the application has focus |
+| Context     | When active                            |
+| ----------- | -------------------------------------- |
+| **Global**  | Any time the application has focus     |
 | **Jogging** | Only while Keyboard Jogging is enabled |
-| **MDI** | Only while the MDI text box has focus |
+| **MDI**     | Only while the MDI text box has focus  |
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.44.09 pm.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Default Bindings
 
 ### Global
 
-| Action | Default |
-| --- | --- |
-| Open Online Documentation | F1 |
-| Open Settings | Cmd+, (macOS) / Ctrl+, |
-| Open / Focus MDI | Ctrl+M |
-| Open / Focus G-Code | Ctrl+G |
-| Open File Browser | Ctrl+O |
-| Toggle Keyboard Jogging | Ctrl+J |
-| Switch Jog Mode | Ctrl+K |
-| Open Start Job | _Unbound_ |
+| Action                    | Default                |
+| ------------------------- | ---------------------- |
+| Open Online Documentation | F1                     |
+| Open Settings             | Cmd+, (macOS) / Ctrl+, |
+| Open / Focus MDI          | Ctrl+M                 |
+| Open / Focus G-Code       | Ctrl+G                 |
+| Open File Browser         | Ctrl+O                 |
+| Toggle Keyboard Jogging   | Ctrl+J                 |
+| Switch Jog Mode           | Ctrl+K                 |
+| Open Start Job            | _Unbound_              |
 
 ### Jogging
 
-| Action | Default |
-| --- | --- |
+| Action | Default     |
+| ------ | ----------- |
 | Jog X+ | Right Arrow |
-| Jog X− | Left Arrow |
-| Jog Y+ | Down Arrow |
-| Jog Y− | Up Arrow |
-| Jog Z+ | Page Up |
-| Jog Z− | Page Down |
-| Jog A+ | _Unbound_ |
-| Jog A− | _Unbound_ |
+| Jog X− | Left Arrow  |
+| Jog Y+ | Down Arrow  |
+| Jog Y− | Up Arrow    |
+| Jog Z+ | Page Up     |
+| Jog Z− | Page Down   |
+| Jog A+ | _Unbound_   |
+| Jog A− | _Unbound_   |
 
 {% hint style="info" %}
 When the **Invert Y-Axis Jogging Buttons** setting is enabled, the default Y+ and Y− keys are swapped so Up moves the spindle away and Down moves it toward the user.
@@ -48,10 +52,10 @@ When the **Invert Y-Axis Jogging Buttons** setting is enabled, the default Y+ an
 
 ### MDI
 
-| Action | Default |
-| --- | --- |
-| Send Command | Ctrl+Enter |
-| Insert New Line | Enter |
+| Action          | Default    |
+| --------------- | ---------- |
+| Send Command    | Ctrl+Enter |
+| Insert New Line | Enter      |
 
 {% hint style="info" %}
 Not currently configurable are the key short cuts to recall past MDI command history (up/down arrow keys), and selecting a Intellisense command suggestion (tab).

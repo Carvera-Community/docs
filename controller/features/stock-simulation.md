@@ -12,11 +12,11 @@ The G-Code viewer can simulate how the loaded toolpath carves into a block of st
 
 Open the stock settings from the G-Code viewer toolbar. From here you can configure:
 
-* **Stock dimensions** — width, depth, height (or diameter and length for cylindrical stock)
-* **Stock origin** — where the WCS origin sits on the stock (a 3×3 grid of corner/edge/centre choices)
-* **Material** — visual material preset for the rendered stock
-* **Simulation quality** — resolution of the carving engine (low / medium / high)
-* **Simulate while playing** — update the carved mesh live during playback
+* **Stock dimensions** - width, depth, height (or diameter and length for cylindrical stock)
+* **Stock origin** - where the WCS origin sits on the stock (a 3×3 grid of corner/edge/centre choices)
+* **Material** - visual material preset for the rendered stock
+* **Simulation quality** - resolution of the carving engine (low / medium / high)
+* **Simulate while playing** - update the carved mesh live during playback
 
 Stock size and origin are auto-detected from comments embedded by supported CAM post-processors:
 
@@ -32,11 +32,11 @@ The **Automatically display stock when available** setting in Controller setting
 
 The simulator selects a carving engine automatically based on the job type and tools. You can also override the selection manually.
 
-| Engine | Best for | How it works |
-| --- | --- | --- |
-| **Heightmap** | 3-axis jobs without undercuts | Fast 2D height array; one Z value per cell |
-| **Cylindrical** | 4th-axis wrapping jobs | Radial dexel array in (X, θ) space for outside-in turning |
-| **Voxel** | Jobs with undercuts or off-axis 4th-axis | Full 3D grid; accurate for re-entrant tool profiles at higher memory cost |
+| Engine          | Best for                                 | How it works                                                              |
+| --------------- | ---------------------------------------- | ------------------------------------------------------------------------- |
+| **Heightmap**   | 3-axis jobs without undercuts            | Fast 2D height array; one Z value per cell                                |
+| **Cylindrical** | 4th-axis wrapping jobs                   | Radial dexel array in (X, θ) space for outside-in turning                 |
+| **Voxel**       | Jobs with undercuts or off-axis 4th-axis | Full 3D grid; accurate for re-entrant tool profiles at higher memory cost |
 
 When set to **Auto** the simulator picks **Heightmap** for standard 3-axis files, **Cylindrical** for rotary wrapping jobs, and **Voxel** when any tool has an undercut profile (such as a lollipop endmill, dovetail, or thread mill) or when Y-axis moves are present in a 4th-axis file.
 
@@ -54,6 +54,8 @@ For 4th-axis wrapping jobs the cylindrical carver uses dexels arranged on the su
 
 It is the default choice for 4th-axis jobs that have no undercut-capable tools and no off-axis Y moves.
 
+<figure><img src="../../.gitbook/assets/639666549-7a2e7206-adcc-4fdd-b4fb-64bd06353cc9 (1).gif" alt=""><figcaption></figcaption></figure>
+
 ### Voxel carver
 
 The voxel carver represents the stock as a full 3D grid. It takes the longest axis of the stock and divides it based on the quality level target (clamped so voxel size stays between 0.1 mm and 1 mm). For example:
@@ -61,31 +63,15 @@ The voxel carver represents the stock as a full 3D grid. It takes the longest ax
 * A 200 × 20 × 10 mm stock at Low quality (100 voxels on the long axis) produces 100 × 10 × 5 voxels of 2 mm each.
 * A 50 × 100 × 5 mm stock at High quality (500 voxels on the long axis) produces 250 × 500 × 25 voxels of 0.2 mm each.
 
-Instead of allocating every voxel individually, the grid is divided into 16 × 16 × 16 clusters. Each cluster can be in one of three states:
-
-| State | Memory | Meaning |
-| --- | --- | --- |
-| **Full** | None | Every voxel in the cluster is solid (default for rectangular stock) |
-| **Empty** | None | Every voxel has been carved out |
-| **Partial** | Per-voxel | At least one voxel is removed but some remain solid |
-
-This sparse storage keeps memory use proportional to the cut surface area rather than the full volume. Carving can also skip entire empty clusters and avoid per-voxel checks on full clusters that do not intersect the tool path.
-
-The carving process checks each cutting move against the tool's flute/shoulder profile (excluding the shank). Rapid moves are ignored. Several optimisations keep simulation speed manageable:
-
-* Nearly collinear same-tool cuts are merged into a single straight line (up to 64 segments, capped at approximately 8 mm or 16 voxels).
-* Flat endmills skip profile interpolation because their radius is constant.
-* Cluster and voxel bounds are tested against the tool bounding box before per-voxel intersection.
-
 ### Simulation quality
 
 Quality controls how many cells the engine uses along the stock's reference length:
 
-| Level | Heightmap | Cylindrical | Voxel |
-| --- | --- | --- | --- |
-| **Low** | 200 | 150 | 100 |
-| **Medium** | 500 | 400 | 300 |
-| **High** | 1000 | 800 | 500 |
+| Level      | Heightmap | Cylindrical | Voxel |
+| ---------- | --------- | ----------- | ----- |
+| **Low**    | 200       | 150         | 100   |
+| **Medium** | 500       | 400         | 300   |
+| **High**   | 1000      | 800         | 500   |
 
 Higher values produce a more detailed carved surface but use more memory and take longer to compute.
 
@@ -94,10 +80,10 @@ Higher values produce a more detailed carved surface but use more memory and tak
 A material preset changes the surface appearance of the stock and carved surfaces in the 3D view. Available presets:
 
 * **Default** (beige)
-* **PCB** — copper-clad board with foil surface and substrate interior
+* **PCB** - copper-clad board with foil surface and substrate interior
 * **Wood**
 * **Acrylic**
-* **Acrylic (bicolour)** — white surface over dark core
+* **Acrylic (bicolour)** - white surface over dark core
 * **Aluminium**
 * **Copper**
 
@@ -108,12 +94,16 @@ Materials are visual only and do not affect simulation accuracy.
 * **4th-axis wrapping** jobs render on a cylindrical stock. The simulator auto-selects cylindrical or voxel carving depending on whether off-axis Y moves are present.
 * **Laser** jobs are simulated as surface engraving on a flat heightmap.
 
+
+
+<figure><img src="../../.gitbook/assets/638384879-9492a2e8-1e1a-45ce-a00c-a580360a7ec4.png" alt=""><figcaption></figcaption></figure>
+
 ## Simulate While Playing
 
 When enabled, the carved stock mesh updates live as the machine executes lines. The simulation runs in a background worker thread:
 
-* **While playing** — the worker carves up to the current playback position so the 3D mesh stays in sync with the tool.
-* **While paused** — the worker processes ahead of the current position on a second sparse grid, building checkpoints without affecting the live view.
+* **While playing** - the worker carves up to the current playback position so the 3D mesh stays in sync with the tool.
+* **While paused** - the worker processes ahead of the current position on a second sparse grid, building checkpoints without affecting the live view.
 
 ### Playback scrubbing and checkpoints
 

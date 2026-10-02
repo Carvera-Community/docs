@@ -4,7 +4,7 @@ The Controller **Auto Level** feature probes a grid over the stock or bed and le
 
 Community Controller can **shrink the probe area** (offsets) so the grid skips clamps, screws, or the tool rack. That setting is on the auto-level configuration screen:
 
-<figure><img src="../../.gitbook/assets/autolevel_with_offsets_config.png" alt="Autolevel with offset configuration"><figcaption><p>Autolevel with offset config</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.45.02 pm.png" alt="Autolevel with offset configuration" width="375"><figcaption><p>Autolevel config</p></figcaption></figure>
 
 ## Auto Z Probe
 

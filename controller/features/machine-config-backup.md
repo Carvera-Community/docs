@@ -10,13 +10,9 @@ The Controller can copy **specific configuration files from the machine’s SD c
 
 Open **Settings** and use the **Machine - Backup** section to start the backup workflow. Alternatively the button "Back up machine config" is present on the Firmware Upgrade screen. When a backup is triggered the Controller lists the files on the SD card root, downloads only the files in the list below, then asks you to **choose a folder on the computer** where those files should be saved.
 
-
-
 <figure><img src="../../.gitbook/assets/Screenshot 2026-07-23 at 4.41.56 pm.png" alt=""><figcaption></figcaption></figure>
 
-
-
-<figure><img src="../../.gitbook/assets/Screenshot 2026-07-23 at 4.42.44 pm.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.33.04 pm.png" alt=""><figcaption></figcaption></figure>
 
 ## Files that are backed up
 
@@ -40,7 +36,7 @@ Likewise, **firmware**, logs, arbitrary folders, and any other files on the card
 
 ## Mobile platforms
 
-Backup from the machine to the Controller host is **disabled on mobile** builds. Use the desktop Controller when you need this workflow.
+Backup from the machine to the Controller host is **disabled on mobile** builds. Use the desktop Controller when you need this feature.
 
 ## Restore
 

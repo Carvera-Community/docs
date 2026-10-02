@@ -26,6 +26,7 @@
   * [Advanced TLO Calibration](controller/features/advanced-tlo-calibration.md)
   * [Auto Ext. Out](controller/features/auto-ext-out.md)
   * [Connection & Protocol](controller/features/connection-and-protocol.md)
+  * [Z1 USB Support](controller/features/z1-usb-support.md)
   * [Resume playback at line number](controller/features/resume-playback-start-at-line.md)
   * [MDI Terminal](controller/features/mdi-terminal.md)
   * [Hidden Wifi networks](controller/features/wifi-auto-connect-and-hidden-networks.md)
@@ -44,7 +45,6 @@
   * [Stock Simulation](controller/features/stock-simulation.md)
   * [File Browser](controller/features/file-browser.md)
   * [Firmware Updater](controller/features/firmware-updater.md)
-  * [Z1 USB Support](controller/features/z1-usb-support.md)
   * [Z1 Camera](controller/features/z1-camera.md)
 * [Common Error Messages](controller/common-error-messages.md)
 

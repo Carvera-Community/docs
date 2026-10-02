@@ -10,8 +10,6 @@ The machine can be jogged via three possible inputs:
 * Using the keyboard arrow buttons, and Pg Up/Down
 * [Pendant](pendant-support.md)
 
-
-
 ## Advanced Jogging Options
 
 The Control screen has a number of additional Jogging related options:
@@ -21,7 +19,7 @@ The Control screen has a number of additional Jogging related options:
 * Keyboard Jogging: Enabled (blue button background) or Disabled (grey)
 * Pendant Jogging: If a [Pendant ](pendant-support.md)is configured whether moving it's jog wheel will move the machine or not
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.42.02 pm.png" alt=""><figcaption></figcaption></figure>
 
 ## Keyboard Jogging
 
@@ -30,6 +28,8 @@ If Keyboard Jogging is toggled on (blue button background) the following keys ca
 * Arrow keys move X/Y
 * Pg Up - Increase the Z
 * Pg Down - Decrease the Z
+
+You can also change the buttons on the [Keyboard Shortcuts](keyboard-shortcuts.md) settings page.
 
 ## Continuous Jogging
 

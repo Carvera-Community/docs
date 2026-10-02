@@ -16,11 +16,11 @@ There are a number of ways the start line can be set:
 * **Right-click** a line in the G-code file view (or **long-press** on a touchscreen) to open a context menu. Choose the option to use that line for resume playback.
 * You can **clear** the resume-at-line setting from the same context menu when it is available.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-04-08 at 10.48.35 pm.png" alt="" width="563"><figcaption><p>Resume at line config option on the Config-n-Run screen</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.06.49 pm.png" alt=""><figcaption><p>Resume at line config option on the Config-n-Run screen</p></figcaption></figure>
 
 The line number set for resume is highlighted with a green flag icon in the file viewer:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-04-05 at 9.53.44 am.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.23.34 pm.png" alt=""><figcaption></figcaption></figure>
 
 ## After halt or stop
 

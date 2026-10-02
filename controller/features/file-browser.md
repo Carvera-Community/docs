@@ -4,19 +4,14 @@ description: The tab-based File Browser was added in version 2.3.0
 
 # File Browser
 
-The Controller uses a tab-based file browser for managing G-code files on the machine and on your computer.
+The Controller uses a tab-based file browser for managing G-code files on the machine and on your computer:
+
+* This device - Local files on the computer running the Controller
+* CNC Machine - Files stored on the connected machine's SD card
 
 The file browser can be opened from the main control screen or with the keyboard shortcut **Ctrl+O** (customisable in [Keyboard Shortcuts](keyboard-shortcuts.md)).
 
-## Tabs
-
-| Tab | Contents |
-| --- | --- |
-| **CNC machine** | Files stored on the connected machine's SD card |
-| **This device** | Local files on the computer running the Controller |
-| **History** | Recently accessed files from either location |
-
-The current path is displayed under the tab name while browsing.
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.59.07 pm.png" alt=""><figcaption></figcaption></figure>
 
 ## Actions
 
@@ -34,6 +29,8 @@ Long-press a file (or use the multi-select toggle) to enter multi-select mode. I
 * **Shift-click** selects a contiguous range of files, and automatically enters multi-select mode if it is not already active.
 * Upload and download actions work on the full selection — a single progress popup tracks the entire batch.
 * Deleting a multi-selection removes all selected files in one step.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 9.59.53 pm.png" alt=""><figcaption></figcaption></figure>
 
 ## Makera Studio Preview
 
