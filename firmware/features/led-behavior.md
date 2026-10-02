@@ -67,6 +67,10 @@ If **`main_button_long_press_enable`** is set to a non-empty string, a **long pr
 
 ***
 
-## Manual colour (M337)
+## Manual colour (M337 / M338)
 
-On **Air**, [M337](../supported-commands/mcodes/led-bar.md) sets the LED bar to an RGB colour. The C1 button LED is not an addressable bar, so M337 does not apply there. The state colours above still take over when the machine state changes.
+[M337](../supported-commands/mcodes/led-bar.md) sets the LED colour on both the **Air** LED bar and the **C1** main-button LED. On the Air, individual segments (1–5) can be addressed with the **I** parameter. On the C1, only one LED is present (I1).
+
+The override is held until the machine enters a blinking state (HOLD, SUSPEND, WAIT, TOOL), the state changes, or [M338](../supported-commands/mcodes/led-bar.md) is sent to explicitly restore the status colour.
+
+Without colour parameters, M337 **reports** the current LED colour instead of setting it.

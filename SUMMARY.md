@@ -39,8 +39,12 @@
   * [Logging](controller/features/logging.md)
   * [Auto-Reconnect](controller/features/auto-reconnect.md)
   * [Jogging Controls](controller/features/jogging-controls.md)
+  * [Keyboard Shortcuts](controller/features/keyboard-shortcuts.md)
   * [Auto-Leveling](controller/features/auto-leveling.md)
+  * [Stock Simulation](controller/features/stock-simulation.md)
+  * [File Browser](controller/features/file-browser.md)
   * [Z1 USB Support](controller/features/z1-usb-support.md)
+  * [Z1 Camera](controller/features/z1-camera.md)
 * [Common Error Messages](controller/common-error-messages.md)
 
 ## Firmware
@@ -77,7 +81,7 @@
   * [MCodes](firmware/supported-commands/mcodes/README.md)
     * [Optional Stop Mode](firmware/supported-commands/mcodes/optional-stop-mode.md)
     * [Line-by-Line Execution Mode](firmware/supported-commands/mcodes/line-by-line-execution-mode.md)
-    * [LED Bar Colour](firmware/supported-commands/mcodes/led-bar.md)
+    * [LED Colour Control](firmware/supported-commands/mcodes/led-bar.md)
     * [Macros](firmware/supported-commands/mcodes/macros.md)
     * [Printing Text](firmware/supported-commands/mcodes/printing-text.md)
     * [Self-Calibration](firmware/supported-commands/mcodes/self-calibration.md)

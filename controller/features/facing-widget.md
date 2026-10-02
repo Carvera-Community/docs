@@ -22,6 +22,19 @@ You can open the Facing wizard from the Tools section of the main control page o
 
 Selected probe tool and collet choices are kept when you reopen the wizard.
 
+## Milling patterns
+
+The wizard supports three roughing patterns:
+
+* **Along X** — raster passes parallel to the X axis
+* **Along Y** — raster passes parallel to the Y axis
+* **Spiral** — outside-in rectangular spiral. A **corner radius** can be set to round the spiral corners instead of making sharp turns.
+* **Round Spiral** — outside-in Archimedean (circular) spiral clipped to the facing rectangle. Also supports a corner radius for filleted transitions.
+
+## WCS origin
+
+The wizard supports placing the WCS origin at the **corner** (default) or the **centre** of the facing area. When set to centre, the generated G-code offsets all moves so the WCS origin sits at the middle of the stock.
+
 ## Screenshots
 
 <div><figure><img src="../../.gitbook/assets/589978347-2d3c1200-a11a-4758-be83-5e32d5aed98e.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/589978450-57831e9c-f6fa-418e-8886-61c1849be53a.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/590110603-5f5254e4-e28c-4e31-981d-05fb82ddd23a.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/590110647-befd9259-b1d0-44be-9916-470f290c21b8.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/590110677-69c3974b-cd54-4f89-83c8-2c0c4c8465c2.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/590110700-599b1513-a935-4ad5-ad73-056d1b5e882f.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/590110731-aba1eaa0-51b0-45d9-92de-4b7a508b4923.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/590110768-c0e29a01-a4c1-4fec-8669-f2fde9c0cdcf.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/590110787-2de1f935-27ae-440e-b27e-859230dba320.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/590110819-952c28b9-c2f9-4877-b007-7594f78a613a.png" alt=""><figcaption></figcaption></figure></div>

@@ -10,7 +10,11 @@ A number of enhancements are present on the G-Code Viewer page:
 * File Viewer
 * Playback progress
 * Tool visualization
-* Z1 camera
+* Ghost display
+* Bed visualization
+* Stock simulation
+* Intellisense
+* Time estimates
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-08-04 at 10.38.36 pm.png" alt=""><figcaption></figcaption></figure>
 
@@ -64,13 +68,32 @@ If no definition is present for a tool, a generic mesh is used.
 ### Screenshots
 <div><figure><img src="../../.gitbook/assets/467c5cad-3e5e-448a-9ce4-8184ba527b04.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/f2b6a7a4-f5a4-4093-961a-a5b243c00857.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/8a554448-e9ec-4de5-bc09-10b5b49e9275.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/12373be3-4a70-4a22-af12-fc576da3f522.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/05ac37e6-fe6f-4879-a7f9-651aa4507a79.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/9cd81ade-1e44-4252-983d-ff3dccc1319a.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/10dcef0c-7ce7-48d0-b299-41e4b3034ec9.png" alt=""><figcaption></figcaption></figure></div>
 
-## Z1 camera
+## Ghost display
 
-On a Makera Z1 connected over WiFi, the Controller supports viewing the built-in camera. When found, a camera button appears in the G-code viewer toolbar.
+The **Ghost** display mode makes older toolpath moves faint and draws recent moves at full opacity. This creates a trailing highlight that follows the playback position, making it easier to see where the tool is and where it has been.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-04 at 9.30.04 pm.png" alt=""><figcaption><p>Camera Viewer</p></figcaption></figure>
+Toggle Ghost mode from the display options in the G-Code viewer toolbar (setting `gcode_viewer_ghost_paths`). When Ghost is off, all toolpath lines draw at full opacity as before.
 
-Tap it to start or stop the live stream. While streaming, the configure panel offers:
+## Bed visualization
 
-* **Resolution** — changeable live (640×480 default; also 800×600, 1024×768, 1280×720, 1280×1024, 1600×1200). Higher sizes may run at a lower frame rate depending on the quality of the wifi connection.
-* **Brightness**, **Contrast**, **Gamma** adjustment
+A machine bed model can be shown behind the toolpath in the 3D viewer. The bed button on the toolbar opens the bed settings where you can:
+
+* **Select a bed** — choose from built-in beds for the Carvera C1, Carvera Air, and Makera Z1, or add a custom bed
+* **Add / delete** custom beds — import your own fixture-plate or vice model
+* **Position the bed** relative to the machine origin
+
+Bed images in the Config and Run preview screen are filtered to show only beds that match the connected machine model. The bed is sized using the machine's configured `worksize_x` / `worksize_y`.
+
+## Stock simulation
+
+The viewer can simulate how the loaded toolpath carves into stock for a 3D preview of the finished part. See the dedicated [Stock Simulation](stock-simulation.md) page for full details.
+
+## Intellisense
+
+Hovering over or selecting a line in the G-code file viewer shows an **Intellisense-like popup** explaining the commands on that line. The same popups appear while typing in the [MDI Terminal](mdi-terminal.md).
+
+Recognised commands include G-codes, M-codes, and console (SimpleShell) commands. Each popup shows the command name, a short description, and parameter details.
+
+## Time estimates
+
+The progress bar shows the estimated total run time after a file is selected (before the job starts). During playback, tool-change flags along the bar have **hover tooltips** showing the time remaining until each tool change. The remaining-time text in the bar alternates between time to the next tool change and time to job completion.

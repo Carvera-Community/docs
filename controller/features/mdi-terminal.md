@@ -33,6 +33,18 @@ To access the MDI, click the button that says MDI in the bottom left corner of t
 
 When the **MDI text box has focus**, **keyboard jogging** is disabled so typed keys do not move the machine. Click outside the field or use the UI to jog if needed.
 
+## Intellisense
+
+While typing in the MDI input box, an **Intellisense-like popup** appears showing the command name, a short description, and parameter details for recognised G-codes, M-codes, and console commands. The same popups appear when selecting a line in the G-code file viewer.
+
+The syntax highlighter also colours G/M codes, comments, O-code constructs, and SimpleShell commands in the MDI history.
+
+## Auto-correct command case
+
+When enabled (the default), commands typed in lowercase are automatically corrected to their canonical case before being sent. For example, `g0 x10 f500` is sent as `G0 X10 F500`. The correction applies to G-codes, M-codes, and known parameter letters. Comments are left untouched.
+
+This can be toggled in **Settings -> Auto-Correct MDI Command Case**.
+
 ## MDI while the program is running
 
 Whether you can send MDI during playback depends on Controller setting **allow MDI while running**.

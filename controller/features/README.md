@@ -22,4 +22,8 @@ Controller feature guides:
 * [Logging](logging.md)
 * [Auto-Reconnect](auto-reconnect.md)
 * [Jogging Controls](jogging-controls.md)
+* [Keyboard Shortcuts](keyboard-shortcuts.md)
 * [Auto-Leveling](auto-leveling.md)
+* [Stock Simulation](stock-simulation.md)
+* [File Browser](file-browser.md)
+* [Z1 Camera](z1-camera.md)
