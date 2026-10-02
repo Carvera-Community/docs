@@ -28,7 +28,7 @@ The timelapse status (recording state, file transfer activity, and SD card space
 Recorded videos are stored on the machine's SD card under `/sd/videos`. When that folder exists, the [File Browser](file-browser.md) can open it for downloading or deleting recordings.
 
 {% hint style="warning" %}
-Timelapse is an feature of the Makera esp32 firmware.The follow are some known issues:
+Timelapse is an feature of the Makera esp32 firmware. The following are some known issues:
 
 1. Sometimes it doesn't stop recording when gcode file playback has finished. The only way the only fix seems to be to just power cycle the machine using the switch at the back.
 2. Video files that are currently being written are visible in the file browser but cannot be downloaded. A generic download error is returned until the ESP releases it's file handle on the file
