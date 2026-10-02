@@ -3,7 +3,7 @@
 The Community Controller is a [fork ](https://en.wikipedia.org/wiki/Fork_\(software_development\))of the Makera Carvera Controller that has a number of features and bug fixes added above and beyond the Makera software. See the [CHANGELOG](https://github.com/Carvera-Community/Carvera_Controller/blob/develop/CHANGELOG.md) and [screenshots](about.md#screenshots) for more details.
 
 * **3-axis** and advanced **probing** UI screens for various geometries (**corners**, **axis**, **bore/pocket**, **angles**) for use with a [true 3D touch probe](https://www.instructables.com/Carvera-Touch-Probe-Modifications/) (not the included XYZ probe block)
-* [**Pendant** device support](features/pendant-support.md) — **WHB04** family and **gamepads**
+* [**Pendant** device support](features/pendant-support.md) — **WHB04** family of devices and **gamepads**
 * [**Workspace Management**](features/workspace-management.md) options supporting multiple Work Coordinate Systems (WCS) From G54 to G59.3
 * [WCS Rotation](features/wcs-rotation.md) capability meaning no more tramming of vises for alignment
 * Options to **reduce** the **autolevel** probe **area** to avoid probing obstacles
@@ -13,7 +13,7 @@ The Community Controller is a [fork ](https://en.wikipedia.org/wiki/Fork_\(softw
 * Support for setting/changing to **custom tool numbers** beyond 1-6
 * Fully configurable [**keyboard shortcuts**](features/keyboard-shortcuts.md)
 * [Keyboard button](features/jogging-controls.md#keyboard-jogging) based **jog movement** controls
-* **No dial-home** back to Makera
+* **No dial-home** back to Makera or requirement to be on the internet
 * **Single portable binary** for Windows and Linux
 * **Laser Safety** prompt to **remind** operators to put on **safety glasses**
 * **Multiple developers** with their own **Carvera** machines _"drinking their own \[software] champagne"_ daily and working to improve the machine's capabilities.
@@ -31,9 +31,9 @@ The Community Controller is a [fork ](https://en.wikipedia.org/wiki/Fork_\(softw
   * [**Continuous Jogging**](features/jogging-controls.md#continuous-jogging) support
   * [Auto-Reconnect capability](features/auto-reconnect.md)
   * [Logging](features/logging.md)
-  * [CMM Workbench](features/cmm_workbench.md) — CMM-style probing tool for building a 2D sketch of probed and constructed features, then exporting the design
+  * [CMM Workbench](features/cmm_workbench.md) — CMM-style probing tool for building a 2D sketch of probed and constructed features from a real object. Something like a reverse engineering tool.
   * [Facing Wizard](features/facing-widget.md) with spiral, round spiral, and centre-origin strategies
-  * [One-click firmware updates](../updates/firmware-controller-2.3.0c-rc1.md#firmware-update-screen)
+  * [One-click firmware updates](features/firmware-updater.md)
 
 ## **Screenshots**
 

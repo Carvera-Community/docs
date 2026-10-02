@@ -6,6 +6,10 @@
 Do note that the support they can provide maybe limited, and they may ask you to revert to Makera software to ensure that the issue is not specified to Community code. Reach out via the [bug report button](../controller/features/logging.md#viewing-logs) or in #mods in [Makera Discord](https://discord.gg/xwJMTD22) for Community support.
 {% endhint %}
 
+{% hint style="info" %}
+Starting with Controller version 2.3.0, firmware can be installed with a single click from the [Firmware Updater](../controller/features/firmware-updater.md) - it downloads the binary from GitHub, verifies its checksum, and uploads it to the machine. The manual steps below still work and are useful when the updater is not available.
+{% endhint %}
+
 ## Installation
 
 {% stepper %}

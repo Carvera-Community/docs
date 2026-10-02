@@ -26,4 +26,5 @@ Controller feature guides:
 * [Auto-Leveling](auto-leveling.md)
 * [Stock Simulation](stock-simulation.md)
 * [File Browser](file-browser.md)
+* [Firmware Updater](firmware-updater.md)
 * [Z1 Camera](z1-camera.md)
