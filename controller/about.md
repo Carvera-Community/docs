@@ -11,6 +11,7 @@ The Community Controller is a [fork ](https://en.wikipedia.org/wiki/Fork_\(softw
 * Green **?** help buttons that open the matching docs page
 * **Background images** for bolt hole positions in probe/start screens; users can add their own too
 * Support for setting/changing to **custom tool numbers** beyond 1-6
+* Fully configurable [**keyboard shortcuts**](features/keyboard-shortcuts.md)
 * [Keyboard button](features/jogging-controls.md#keyboard-jogging) based **jog movement** controls
 * **No dial-home** back to Makera
 * **Single portable binary** for Windows and Linux
@@ -23,15 +24,16 @@ The Community Controller is a [fork ](https://en.wikipedia.org/wiki/Fork_\(softw
   * Machine **reconnect** functionality with stored last used **machine network address** ([USB + WiFi](features/connection-and-protocol.md))
   * **Set Origin** Screen pre-populated with **current** offset values
   * **Collet Clamp/Unclamp** buttons in Tool Changer menu for the original Carvera
-  * Better file browser **upload-and-select** workflow; remote **multi-select** delete
-  * **Previous** file browsing location is **reopened** and **previously** used locations stored to **quick access list**
+  * [**File browser**](features/file-browser.md) with tab-based layout, batch upload/download
   * **Greater speed/feed** override scaling range from **10%** and up to **300%**
-  * Improved [**3D gcode viewer**](features/gcode-viewer.md) (view cube, ortho, colour schemes, tool-change markers, tool geometry visualization, Z1 live camera)
+  * Improved [**3D gcode viewer**](features/gcode-viewer.md) with view cube, colour schemes, tool visualization, [stock simulation](features/stock-simulation.md), bed visualization, ghost display, and [Z1 camera](features/z1-camera.md) support
+  * [**MDI terminal**](features/mdi-terminal.md) with intellisense popups, syntax highlighting, and auto-correct case
   * [**Continuous Jogging**](features/jogging-controls.md#continuous-jogging) support
   * [Auto-Reconnect capability](features/auto-reconnect.md)
   * [Logging](features/logging.md)
-  * [CMM Workbench](features/cmm_workbench.md) - CMM-style probing tool for building a 2D sketch of probed and constructed features, then exporting the design.
-  * [Facing Wizard](features/facing-widget.md)
+  * [CMM Workbench](features/cmm_workbench.md) — CMM-style probing tool for building a 2D sketch of probed and constructed features, then exporting the design
+  * [Facing Wizard](features/facing-widget.md) with spiral, round spiral, and centre-origin strategies
+  * [One-click firmware updates](../updates/firmware-controller-2.3.0c-rc1.md#firmware-update-screen)
 
 ## **Screenshots**
 

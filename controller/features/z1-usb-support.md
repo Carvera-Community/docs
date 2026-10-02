@@ -2,11 +2,11 @@
 
 ## Z1 USB Support
 
-The Makera Z1 uses a vendor-class USB interface (`303A:4002`), not a normal serial port.&#x20;
+The Makera Z1 uses a vendor-class USB interface (`303A:4002`), not a normal serial port like on the C1/CA1.
 
 ### MacOS
 
-No driver needs to be installed, the connection works straight away when
+No driver needs to be installed, just plug the usb in and use the drop down usb option in the Controller.
 
 ### Windows
 
