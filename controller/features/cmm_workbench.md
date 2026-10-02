@@ -12,7 +12,9 @@ A 3D probe is required for X/Y side probing. The stock machine probe only works 
 
 You can open CMM Workbench from the Tools section of the main control page of the Controller UI.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-04 at 10.45.53 pm.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-08-04 at 10.45.53 pm.png" alt="" width="563"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/595805595-65474793-8404-4a4b-96b2-1603705468af.png" alt=""><figcaption><p>Example of a controller being probed</p></figcaption></figure>
 
 ## Workflow
 
@@ -34,4 +36,4 @@ Save/Load is disabled on iOS currently.
 
 ## Screenshots
 
-<div><figure><img src="../../.gitbook/assets/593271445-85587db7-9838-409c-b44f-52f2b1a637a6.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/595805422-33025bb7-80aa-40bd-9328-165134e36e53.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/595805595-65474793-8404-4a4b-96b2-1603705468af.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/595805648-6bd1088d-a3c9-4cac-aee2-6e567e912d64.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/595805685-67a3c8f6-b975-4f1c-a049-6d2b6ac5241b.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/595805725-021f6c83-2c63-4fe5-8b9e-1c6a732839dc.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/595805755-4385607a-a9fb-4354-9242-12537afdd5ad.png" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../.gitbook/assets/593271445-85587db7-9838-409c-b44f-52f2b1a637a6.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/595805422-33025bb7-80aa-40bd-9328-165134e36e53.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/595805648-6bd1088d-a3c9-4cac-aee2-6e567e912d64.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/595805685-67a3c8f6-b975-4f1c-a049-6d2b6ac5241b.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/595805725-021f6c83-2c63-4fe5-8b9e-1c6a732839dc.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/595805755-4385607a-a9fb-4354-9242-12537afdd5ad.png" alt=""><figcaption></figcaption></figure></div>

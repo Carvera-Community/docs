@@ -1,5 +1,7 @@
 ---
-description: Many G-code Viewer enhancements were added in version 2.2.0
+description: >-
+  Many G-code Viewer enhancements were added in version 2.2.0, further
+  simulation enhancements were made in 2.3.0
 ---
 
 # G-Code Viewer
@@ -13,23 +15,23 @@ A number of enhancements are present on the G-Code Viewer page:
 * Ghost display
 * Bed visualization
 * Stock simulation
-* Intellisense
-* Time estimates
+* Selected line explanation
+* Playback progress
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-08-04 at 10.38.36 pm.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 7.16.20 pm.png" alt=""><figcaption></figcaption></figure>
 
 ## View controls
 
 Toolbar options include:
 
-* **View cube** — click a face to orient the camera
-* **Orthographic projection** — toggle perspective vs ortho
-* **Grid** — machine grid overlay (visibility is remembered)
-* **Color scheme** — colour by move type, tool, feed speed, or Z height (with legend)
+* **View cube** - click a face to orient the camera
+* **Orthographic projection** - toggle perspective vs ortho
+* **Grid** - machine grid overlay (visibility is remembered)
+* **Ghost Display -** Makes older toolpaths faint, and recent toolpaths solid
+* **Stock Simulation -** Simulations the stock material being cut
+* **Bed Visualisation -** Adds the machine bed to the visualisation&#x20;
 
-The view fits the path bounding box.
-
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 7.34.20 pm.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## File viewer
 
@@ -57,22 +59,27 @@ Supported sources:
 * Makera Studio
 * FreeCAD (Carvera Community post-processor)
 
-When at least one tool definition is found, tool icons appear in the viewer toolbar (space permitting). Hover a tool for diameter, length, flute/shoulder, and related details. Manual tool-change prompts include the same summary so you know which cutter to load.
+When at least one tool definition is found, tool icons appear and their descriptions appear as a list in the upper right of the view. Hover a tool for diameter, length, flute/shoulder, and related details. Manual tool-change prompts include the same summary so you know which cutter to load.
 
 If no definition is present for a tool, a generic mesh is used.
 
-<figure><img src="../../.gitbook/assets/814d3198-edd3-4167-ab0e-bc3b8e0ac57a.png" alt=""><figcaption><p>Tool tooltip on hover</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 7.45.39 pm.png" alt="" width="429"><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 7.46.30 pm.png" alt="" width="287"><figcaption><p>Hovering over a tool shows more information</p></figcaption></figure>
+
+
 
 <figure><img src="../../.gitbook/assets/4fe16264-199c-4eb6-a5c5-81a6ced41c74.png" alt=""><figcaption><p>Manual tool-change popup with tool details</p></figcaption></figure>
 
 ### Screenshots
+
 <div><figure><img src="../../.gitbook/assets/467c5cad-3e5e-448a-9ce4-8184ba527b04.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/f2b6a7a4-f5a4-4093-961a-a5b243c00857.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/8a554448-e9ec-4de5-bc09-10b5b49e9275.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/12373be3-4a70-4a22-af12-fc576da3f522.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/05ac37e6-fe6f-4879-a7f9-651aa4507a79.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/9cd81ade-1e44-4252-983d-ff3dccc1319a.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/10dcef0c-7ce7-48d0-b299-41e4b3034ec9.png" alt=""><figcaption></figcaption></figure></div>
 
 ## Ghost display
 
 The **Ghost** display mode makes older toolpath moves faint and draws recent moves at full opacity. This creates a trailing highlight that follows the playback position, making it easier to see where the tool is and where it has been.
 
-Toggle Ghost mode from the display options in the G-Code viewer toolbar (setting `gcode_viewer_ghost_paths`). When Ghost is off, all toolpath lines draw at full opacity as before.
+<figure><img src="../../.gitbook/assets/655154075-81a55014-129c-469e-9225-5698a572909d.gif" alt=""><figcaption></figcaption></figure>
 
 ## Bed visualization
 
@@ -82,11 +89,13 @@ A machine bed model can be shown behind the toolpath in the 3D viewer. The bed b
 * **Add / delete** custom beds — import your own fixture-plate or vice model
 * **Position the bed** relative to the machine origin
 
-Bed images in the Config and Run preview screen are filtered to show only beds that match the connected machine model. The bed is sized using the machine's configured `worksize_x` / `worksize_y`.
+<figure><img src="../../.gitbook/assets/643288118-3fd54283-cf98-4975-818d-3b35b569f8e0.png" alt=""><figcaption></figcaption></figure>
 
 ## Stock simulation
 
 The viewer can simulate how the loaded toolpath carves into stock for a 3D preview of the finished part. See the dedicated [Stock Simulation](stock-simulation.md) page for full details.
+
+<figure><img src="../../.gitbook/assets/639666549-7a2e7206-adcc-4fdd-b4fb-64bd06353cc9.gif" alt=""><figcaption></figcaption></figure>
 
 ## Intellisense
 
@@ -94,6 +103,10 @@ Hovering over or selecting a line in the G-code file viewer shows an **Intellise
 
 Recognised commands include G-codes, M-codes, and console (SimpleShell) commands. Each popup shows the command name, a short description, and parameter details.
 
+<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+
 ## Time estimates
 
 The progress bar shows the estimated total run time after a file is selected (before the job starts). During playback, tool-change flags along the bar have **hover tooltips** showing the time remaining until each tool change. The remaining-time text in the bar alternates between time to the next tool change and time to job completion.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-02 at 7.58.31 pm.png" alt="" width="375"><figcaption></figcaption></figure>
