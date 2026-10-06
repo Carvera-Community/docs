@@ -7,6 +7,7 @@ The Community Controller is a [fork ](https://en.wikipedia.org/wiki/Fork_\(softw
 * [**Workspace Management**](features/workspace-management.md) options supporting multiple Work Coordinate Systems (WCS) From G54 to G59.3
 * [WCS Rotation](features/wcs-rotation.md) capability meaning no more tramming of vises for alignment
 * Options to **reduce** the **autolevel** probe **area** to avoid probing obstacles
+* [**Guided tour**](features/guided-tour.md) on first launch that walks through the basics of the user interface
 * **Tooltip support** for user guidance with over 110 tips and counting
 * Green **?** help buttons that open the matching docs page
 * **Background images** for bolt hole positions in probe/start screens; users can add their own too

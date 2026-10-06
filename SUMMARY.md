@@ -44,6 +44,7 @@
   * [Auto-Leveling](controller/features/auto-leveling.md)
   * [Stock Simulation](controller/features/stock-simulation.md)
   * [File Browser](controller/features/file-browser.md)
+  * [Guided Tour](controller/features/guided-tour.md)
   * [Firmware Updater](controller/features/firmware-updater.md)
   * [Z1 Camera](controller/features/z1-camera.md)
 * [Common Error Messages](controller/common-error-messages.md)
