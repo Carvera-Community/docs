@@ -6,7 +6,7 @@ description: The Guided Tour was added in version 2.3.0
 
 The Controller includes a guided tour that walks new users through the interface. It highlights key UI elements one at a time, with a short explanation of what each one does.
 
-{% embed url="https://youtu.be/p2mGbvEtsIs" %}
+{% embed url="https://www.youtube.com/watch?v=p2mGbvEtsIs" %}
 
 ## First run
 
