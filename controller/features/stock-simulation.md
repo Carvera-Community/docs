@@ -54,7 +54,7 @@ For 4th-axis wrapping jobs the cylindrical carver uses dexels arranged on the su
 
 It is the default choice for 4th-axis jobs that have no undercut-capable tools and no off-axis Y moves.
 
-<figure><img src="../../.gitbook/assets/639666549-7a2e7206-adcc-4fdd-b4fb-64bd06353cc9 (1).gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/639666549-7a2e7206-adcc-4fdd-b4fb-64bd06353cc9.gif" alt=""><figcaption></figcaption></figure>
 
 ### Voxel carver
 
@@ -93,8 +93,6 @@ Materials are visual only and do not affect simulation accuracy.
 
 * **4th-axis wrapping** jobs render on a cylindrical stock. The simulator auto-selects cylindrical or voxel carving depending on whether off-axis Y moves are present.
 * **Laser** jobs are simulated as surface engraving on a flat heightmap.
-
-
 
 <figure><img src="../../.gitbook/assets/638384879-9492a2e8-1e1a-45ce-a00c-a580360a7ec4.png" alt=""><figcaption></figcaption></figure>
 
