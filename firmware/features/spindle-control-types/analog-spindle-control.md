@@ -48,7 +48,7 @@ reset
 {% step %}
 **Run the autotune**
 The analog control system needs a map of what a duty cycle from the control board means to the spindle motor controller.
-If you can enter these values manually with [M959](../../supported-commands/mcodes/analog-spindle-control.md#m959---set-or-report-the-pwm-map), but since the system already has a functioning rpm feedback to the control board, you can simply run [M959.1](../../supported-commands/mcodes/analog-spindle-control.md#m959.1---auto-tune-the-pwm-map).
+You can enter these values manually, but since the system has a functioning rpm feedback to the control board, it can self-tune itself by running [M959.1](../../supported-commands/mcodes/analog-spindle-control.md#m959.1---auto-tune-the-pwm-map).
 
 ```
 M959.1
@@ -56,7 +56,7 @@ M959.1
 {% endstep %}
 {% step %}
 **Save the autotune**
-On completion of the auto-tune, the [`M959.1`](../../supported-commands/mcodes/analog-spindle-control.md#m959.1---auto-tune-the-pwm-map) command will output the `config-set` commands that you need to run to save the analog control duty cycle values. Run these commands, then reset to make sure.
+On completion of the auto-tune, the [`M959.1`](../../supported-commands/mcodes/analog-spindle-control.md#m959.1---auto-tune-the-pwm-map) command will output the `config-set` commands that you need to run to save the analog control duty cycle values. Run these commands, then reset to apply them.
 {% endstep %}
 {% endstepper %}
 
