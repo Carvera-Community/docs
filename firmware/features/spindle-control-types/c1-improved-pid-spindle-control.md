@@ -6,7 +6,7 @@ description: C1 PID Spindle Control was added in version 2.2.0c
 
 This feature implements a PID feedback control loop to the spindle motor control. This is beneficial to original Carvera (C1) as it uses the control as part of the motor speed control loop. The stock implementation is basic and does not make use of the industry standard [PID controller](https://en.wikipedia.org/wiki/PID_controller) feedback loop.
 
-Using this spindle control type requires no rewiring or hardware modification, by changing to this the spindle type configuration to the `pid_pwm` type motor performance and torque is increased by up to 2x from standard. This feature should not be used on the Air or Z1 as those machines have closed loop control in the motor controller.
+Using this spindle control type requires no rewiring or hardware modification on the Carvera. By changing to this the spindle type configuration to the `pid_pwm` type motor performance and torque is increased by up to 2x from standard. This feature should not be used on the Air or Z1 as those machines have closed loop control in the motor controller. Use [Analog Spindle Control](analog-spindle-control.md) on those machines.
 
 ## Basic Configuration
 The feature can be turned on by running the following commands in the [MDI console](../../../controller/features/mdi-terminal.md):

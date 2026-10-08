@@ -17,6 +17,7 @@ Community firmware feature guides:
 * [USB serial baud rate](usb-serial-baud-rate.md)
 * [Spindle Control Types](spindle-control-types/README.md)
   * [C1 Improved PID Spindle Control](spindle-control-types/c1-improved-pid-spindle-control.md)
+  * [Analog Spindle Control](spindle-control-types/analog-spindle-control.md)
   * [VESC USB Spindle](spindle-control-types/vesc-usb-spindle.md)
 * [Communication Protocol](communication-protocol.md)
 * [WiFi AP Auto-Disable](wifi-ap-auto-disable.md)
