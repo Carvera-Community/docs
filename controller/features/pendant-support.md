@@ -6,10 +6,10 @@ description: WHB04 Pendant support was added in version 0.10.0; gamepad support 
 
 The Community Controller supports hardware jogging devices:
 
-* [WiXHC HB](https://www.wixhc.cn/product/4-axis-usb-cnc-controller-whb04b-4) family pendants (WHB04/WHB06, wired or wireless)
+* [WiXHC HB](https://www.wixhc.cn/product/4-axis-usb-cnc-controller-whb04b-4) family pendants (WHB04B-4, WHB04B-6, LHB04B-4, LHB04B-6)
 * Standard **gamepads** (Xbox / PlayStation-style and similar HID joysticks)
 
-<figure><img src="../../.gitbook/assets/PXL_20250728_083517873.MP.jpg" alt="" width="375"><figcaption><p>Pictured is a 4 axis, wireless WBH04</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/PXL_20250728_083517873.MP.jpg" alt="" width="375"><figcaption><p>Pictured is a 4 axis, wireless WHB04B-4</p></figcaption></figure>
 
 ## Usage
 
