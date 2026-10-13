@@ -2,6 +2,7 @@
 
 * [Community Software Documentation](README.md)
 * [Updates](updates/README.md)
+  * [Firmware/Controller 2.3.0-RC1](updates/firmware-controller-2.3.0-rc1.md)
   * [Firmware/Controller 2.2.0c-RC1](updates/firmware-controller-2.2.0c-rc1.md)
   * [Firmware/Controller 2.1.0c](updates/firmware-controller-2.1.0c.md)
   * [Fusion Plugin v0.9.0](updates/fusion-plugin-0.9.0.md)
