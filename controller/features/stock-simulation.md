@@ -24,6 +24,12 @@ Stock size and origin are auto-detected from comments embedded by supported CAM 
 * Makera Studio
 * FreeCAD (Carvera Community post-processor)
 
+{% hint style="warning" %}
+The feature in the post-processor required for stock size and origin metadata are not yet in a release version of the Community post-processors.\
+\
+You can preview this functionality by downloading the current development versions of the Fusion and FreeCAD post-processors from [here](https://github.com/Carvera-Community/Carvera_Community_Profiles/tree/dev)
+{% endhint %}
+
 If no stock comments are found, the viewer estimates a bounding box from the G-code extents. The estimated size uses the min/max X and Y coordinates with an offset based on the largest tool diameter. For Z, the 95th-percentile cutting depth is used instead of the absolute maximum to avoid inflating the stock with retraction or clearance moves.
 
 The **Automatically display stock when available** setting in Controller settings tells the viewer to show the stock shell whenever a compatible file is loaded.
