@@ -24,12 +24,14 @@ On Linux, if the Z1 is listed but cannot be opened, the Controller shows an erro
 
 Run this command to create the udev rule:
 
+{% code overflow="wrap" %}
 ```
-sudo sh -c 'echo "SUBSYSTEM=="usb", ATTR{idVendor}=="303a", ATTR{idProduct}=="4002", MODE="0660", GROUP="plugdev", TAG+="uaccess"" > /etc/udev/rules.d/99-makera-z1.rules'
+sudo sh -c 'echo "SUBSYSTEM==\"usb\", ATTR{idVendor}==\"303a\", ATTR{idProduct}==\"4002\", MODE=\"0660\", GROUP=\"plugdev\", TAG+=\"uaccess\"" > /etc/udev/rules.d/99-makera-z1.rules'
 ```
+{% endcode %}
 
 After creating the rule, reload udev and replug the cable:
 
 ```
-sudo udevadm control --reload-rules sudo udevadm trigger
+sudo udevadm control --reload-rules; sudo udevadm trigger
 ```

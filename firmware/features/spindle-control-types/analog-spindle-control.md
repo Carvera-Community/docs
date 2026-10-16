@@ -69,7 +69,7 @@ Command reference: [M959](../../supported-commands/mcodes/analog-spindle-control
 
 ## Reverting back to original spindle control system on CA1 or Z1
 
-Change the spindle type to analog and reset: To revert back to the original control system of the CA1 or Z1 simply run:
+To revert back to the original control system of the CA1 or Z1 simply run:
 
 ```
 config-set sd spindle.type pwm
