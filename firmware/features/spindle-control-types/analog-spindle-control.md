@@ -42,6 +42,12 @@ Available configuration keys:
 
 Commands below are entered in the [MDI console](../../../controller/features/mdi-terminal.md).
 
+{% hint style="info" %}
+The default rpm measurement config on the CA1/Z1 smoothes out the rpm values across 2.5 seconds. This negatively affects auto-tune.\
+\
+Set it to 0.1 before running auto-tune using: `config-set sd spindle.control_smoothing 0.1` and `reset`  before tuning
+{% endhint %}
+
 {% stepper %}
 {% step %}
 **Switch to analog control** Change the spindle type to analog and reset:
