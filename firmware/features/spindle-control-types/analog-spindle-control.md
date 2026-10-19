@@ -50,12 +50,17 @@ Set it to 0.1 before running auto-tune using: `config-set sd spindle.control_smo
 
 {% stepper %}
 {% step %}
-**Switch to analog control** Change the spindle type to analog and reset:
+**Switch to analog control** Change the spindle type to analog then reset:
 
 ```
 config-set sd spindle.type analog
+```
+
+{% code overflow="wrap" %}
+```
 reset
 ```
+{% endcode %}
 {% endstep %}
 
 {% step %}
