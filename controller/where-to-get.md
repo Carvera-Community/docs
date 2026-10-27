@@ -54,4 +54,4 @@ The application can then be accessed via a web browser at `http://<host>:8080` o
 
 ## iOS
 
-The iOS build of the Carvera Community Controller is available on the [Apple App store](https://apps.apple.com/us/app/carvera-community-controller/id6743028299).
+Stable iOS build of the Carvera Community Controller are available on the [Apple App store](https://apps.apple.com/us/app/carvera-community-controller/id6743028299). Release Candidates are available via [TestFlight](https://testflight.apple.com/join/fh9ausqj).
