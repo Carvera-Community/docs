@@ -4,7 +4,7 @@
 
 What CNC mills does the Carvera Community firmware support?
 
-<table><thead><tr><th width="152"></th><th width="525.5">Compatibility Status</th></tr></thead><tbody><tr><td>Carvera</td><td>Fully Supported</td></tr><tr><td>Carvera Air</td><td>Fully Supported <a href="compatibility.md#id-1-rare-issue-with-carvera-air-and-v1.9-boards"><sup>[1]</sup></a></td></tr><tr><td>Z1</td><td>Limited support in Controller. Full support coming soon.</td></tr></tbody></table>
+<table><thead><tr><th width="152"></th><th width="525.5">Compatibility Status</th></tr></thead><tbody><tr><td>Carvera</td><td>Fully Supported</td></tr><tr><td>Carvera Air</td><td>Fully Supported <a href="compatibility.md#id-1-rare-issue-with-carvera-air-and-v1.9-boards"><sup>[1]</sup></a></td></tr><tr><td>Z1</td><td>Limited support in Controller only, no community firmware support in 2.2.0. Full support in both Controller and firmware is <a href="updates/firmware-controller-2.3.0-rc1.md#makera-z1-and-z1-pro-support">coming in 2.3.0</a>.</td></tr></tbody></table>
 
 ## Software
 
@@ -29,19 +29,18 @@ It is expected that if you are using the Community Firmware, that you are also u
 
 Basic Makera Studio connectivity with Community Firmware may work but this is best-effort only and none of the new Community features will be present in the UI. Use Community Controller for full support.
 
-
 ## Community Firmware with Community Controller
 
 The best experience will be running matching versions of the Community Firmware and Controller, as both are tested and released in lockstep.
 
 The following table notes any known issues when not using matching versions:
 
-|                               | Community Controller Support                                                                                                                                                                                                  |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Community Firmware** ≥2.1.0 | <p>Requires Controller ≥ 2.1.0. <br></p><p>Using earlier versions will experience an issue after each gcode playback where the Controller will think that the file is still playing, and prevent subsequent file playback</p> |
+|                               | Community Controller Support                                                                                                                                                                                                 |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Community Firmware** ≥2.1.0 | <p>Requires Controller ≥ 2.1.0.<br></p><p>Using earlier versions will experience an issue after each gcode playback where the Controller will think that the file is still playing, and prevent subsequent file playback</p> |
 
 ## \[1] Rare boot issue with Carvera Air and v1.9 revision control boards
 
-A small number of users have reported an [boot issue](https://github.com/Carvera-Community/Carvera_Community_Firmware/issues/243) running the Community Firmware on Carvera Air v1.9 control board. This has been investigated by both Makera and Carvera Community teams, and is concluded to be an isolated issue with some individual boards. If you encounter this issue, open a warranty claim with Makera for a replacement board.&#x20;
+A small number of users have reported an [boot issue](https://github.com/Carvera-Community/Carvera_Community_Firmware/issues/243) running the Community Firmware on Carvera Air v1.9 control board. This has been investigated by both Makera and Carvera Community teams, and is concluded to be an isolated issue with some individual boards. If you encounter this issue, open a warranty claim with Makera for a replacement board.
 
 If you are experiencing this issue a known workaround is to rapidly cycle the power twice when cold-booting the machine. Once successfully booted, subsequent soft-resets are unaffected.
