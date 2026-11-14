@@ -29,6 +29,7 @@ It is expected that if you are using the Community Firmware, that you are also u
 
 Basic Makera Studio connectivity with Community Firmware may work but this is best-effort only and none of the new Community features will be present in the UI. Use Community Controller for full support.
 
+<table><thead><tr><th width="281.5"></th><th>Makera Studio Known Issues</th></tr></thead><tbody><tr><td><strong>Community Firmware</strong> ≥2.3.0-RC1</td><td><ul><li><a href="https://github.com/Carvera-Community/Carvera_Community_Firmware/issues/447">Probing in Makera Studio doesn't work</a></li><li><a href="https://github.com/Carvera-Community/Carvera_Community_Firmware/issues/493">Makera Studio - Gcode file playback finished but still shows as running</a><br></li></ul></td></tr></tbody></table>
 
 ## Community Firmware with Community Controller
 
@@ -36,9 +37,9 @@ The best experience will be running matching versions of the Community Firmware 
 
 The following table notes any known issues when not using matching versions:
 
-|                               | Community Controller Support                                                                                                                                                                                                  |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Community Firmware** ≥2.1.0 | <p>Requires Controller ≥ 2.1.0. <br></p><p>Using earlier versions will experience an issue after each gcode playback where the Controller will think that the file is still playing, and prevent subsequent file playback</p> |
+|                               | Community Controller Support                                                                                                                                                                                                 |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Community Firmware** ≥2.1.0 | <p>Requires Controller ≥ 2.1.0.<br></p><p>Using earlier versions will experience an issue after each gcode playback where the Controller will think that the file is still playing, and prevent subsequent file playback</p> |
 
 ## Z1 Firmware Compatibility
 
@@ -48,19 +49,20 @@ However, a small number of Community-exclusive features are **not available on t
 
 ### Features not available on Z1
 
-| Feature | Reason |
-| --- | --- |
-| [O-Code](../firmware/supported-commands/o-codes.md) support | O-Codes require seeking to specific G-code file locations on the SD card, which is not supported by the Makera ESP32 firmware |
-| [Firmware-based macros](../firmware/supported-commands/mcodes/macros.md) | ESP32 file access limitations prevent macro files from being loaded during playback |
-| [WiFi AP auto-disable](../firmware/features/wifi-ap-auto-disable.md) | No ESP32 command interface exists for the LPC to control the AP state |
-| [USB serial speed](../firmware/features/usb-serial-baud-rate.md) | The Z1's USB is not serial-based — it is implemented in the ESP32 as a vendor-class interface, so baud rate negotiation does not apply |
-| Save/load bed-leveling grid ([M374](../firmware/supported-commands/mcodes/README.md)/M375) | File I/O on the ESP32 does not support the grid save/load paths |
-| [VESC USB spindle](../firmware/features/spindle-control-types/vesc-usb-spindle.md) | The USB port on the Z1 is connected to the ESP32, not the LPC — USB-host peripherals cannot be used |
+| Feature                                                                         | Reason                                                                                                                                 |
+| ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| [O-Code](firmware/supported-commands/o-codes.md) support                        | O-Codes require seeking to specific G-code file locations on the SD card, which is not supported by the Makera ESP32 firmware          |
+| [Firmware-based macros](firmware/supported-commands/mcodes/macros.md)           | ESP32 file access limitations prevent macro files from being loaded during playback                                                    |
+| [WiFi AP auto-disable](firmware/features/wifi-ap-auto-disable.md)               | No ESP32 command interface exists for the LPC to control the AP state                                                                  |
+| [USB serial speed](firmware/features/usb-serial-baud-rate.md)                   | The Z1's USB is not serial-based - it is implemented in the ESP32 as a vendor-class interface, so baud rate negotiation does not apply |
+| Save/load bed-leveling grid ([M374](firmware/supported-commands/mcodes/)/M375)  | File I/O on the ESP32 does not support the grid save/load paths                                                                        |
+| [VESC USB spindle](firmware/features/spindle-control-types/vesc-usb-spindle.md) | The USB port on the Z1 is connected to the ESP32, not the LPC - USB-host peripherals cannot be used                                    |
+| Repeat playback of last played gcode file                                       | [Requires ESP32 support for LPC initiated file access](https://github.com/Carvera-Community/Carvera_Community_Firmware/issues/459)     |
 
 ### Behavioural differences on Z1
 
-| Behaviour | Detail |
-| --- | --- |
+| Behaviour                | Detail                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 3D Probe TLO calibration | TLO calibration uses a single-tap method (same as Makera firmware) rather than the spring-compensation method used on C1 and Air. The Z1's tool length sensor spring is significantly softer than the 3D probe stylus spring, so the compression-compensation technique used on other models does not produce meaningful results on the Z1. |
 
 {% hint style="info" %}
@@ -69,6 +71,6 @@ These limitations will be revisited if and when a Community ESP32 firmware is de
 
 ## \[1] Rare boot issue with Carvera Air and v1.9 revision control boards
 
-A small number of users have reported an [boot issue](https://github.com/Carvera-Community/Carvera_Community_Firmware/issues/243) running the Community Firmware on Carvera Air v1.9 control board. This has been investigated by both Makera and Carvera Community teams, and is concluded to be an isolated issue with some individual boards. If you encounter this issue, open a warranty claim with Makera for a replacement board.&#x20;
+A small number of users have reported an [boot issue](https://github.com/Carvera-Community/Carvera_Community_Firmware/issues/243) running the Community Firmware on Carvera Air v1.9 control board. This has been investigated by both Makera and Carvera Community teams, and is concluded to be an isolated issue with some individual boards. If you encounter this issue, open a warranty claim with Makera for a replacement board.
 
 If you are experiencing this issue a known workaround is to rapidly cycle the power twice when cold-booting the machine. Once successfully booted, subsequent soft-resets are unaffected.
