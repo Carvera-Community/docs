@@ -60,8 +60,27 @@ After resetting, you will need to reconnect the Controller. You can check if the
 
 If it's not possible to transfer the firmware using the Controller software it is always possible to change the firmware (even back to the Makera firmware) by:
 
+{% tabs %}
+{% tab title="Carvera / Carvera Air" %}
+
+
 1. Removing the SD card from the machine control board
 2. Insert the SD card to a computer
-3. Delete the `FIRMWARE.CUR` file
+3. Delete the `FIRMWARE.CUR` file if it exists on the SD card
 4. Copy the new firmware file to the root of the card with the filename `firmware.bin`
 5. Next time the control board powers on, it will flash this firmware file to itself
+{% endtab %}
+
+{% tab title="Z1 / Z1 Pro" %}
+
+
+
+
+1. Removing the SD card from the machine control board
+2. Insert the SD card to a computer
+3. Delete the `FIRMWARE.CUR` or `firmware.bin` file if these files exists on the sd card.
+4. Copy the new firmware file to the root of the card with the filename `lpc1768.bin`
+5. Next time the control board powers on, it will flash this firmware file to itself
+{% endtab %}
+{% endtabs %}
+
